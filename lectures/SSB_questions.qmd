@@ -1,0 +1,246 @@
+---
+title: "Daily Egg Production Method (DEPM) - Sample Questions"
+subtitle: "AQ 232 - Fish Population Dynamics and Stock Assessment"
+author: "Nyamisi Peter"
+date: 2026-02-11
+format: html
+---
+
+## Daily Egg Production Method (DEPM) Formula
+
+$$SSB = \frac{P_0 \times A}{R \times S \times F}$$
+
+Where:
+- **SSB** = Spawning stock biomass
+- **$P_0$** = Daily egg production per unit area
+- **$A$** = Spawning area
+- **$R$** = Sex ratio (proportion female)
+- **$S$** = Spawning fraction (proportion spawning per day)
+- **$F$** = Batch fecundity (eggs per spawning female)
+
+---
+
+## Question 1: Basic Calculation
+
+A sardine spawning survey in Tanzanian coastal waters collected the following data:
+
+- Daily egg production per unit area ($P_0$) = 450 eggs/m²/day
+- Spawning area ($A$) = 5,000 km²
+- Sex ratio ($R$) = 0.52 (52% female)
+- Spawning fraction ($S$) = 0.35 (35% spawn per day)
+- Batch fecundity ($F$) = 12,000 eggs/female
+
+**Calculate the spawning stock biomass (SSB).**
+
+### Answer:
+
+First, convert spawning area to m²:
+$$A = 5,000 \text{ km}^2 = 5,000 \times 10^6 \text{ m}^2 = 5 \times 10^9 \text{ m}^2$$
+
+Apply DEPM formula:
+$$SSB = \frac{450 \times 5 \times 10^9}{0.52 \times 0.35 \times 12,000}$$
+
+$$SSB = \frac{2.25 \times 10^{12}}{2,184} = 1.03 \times 10^9 \text{ eggs}$$
+
+Converting to biomass (sardine eggs ~0.75 mg = 0.00075 g per egg):
+$$1.03 \times 10^9 \text{ eggs} \times 0.00075 \text{ g/egg} = 7.73 \times 10^8 \text{ g}$$
+
+Convert to tonnes (1 tonne = $10^6$ g):
+$$\frac{7.73 \times 10^8 \text{ g}}{10^6 \text{ g/tonne}} = 773 \text{ tonnes}$$
+
+$$SSB \approx 773 \text{ tonnes}$$
+
+---
+
+## Question 2: Parameter Interpretation
+
+**Explain what each parameter in the DEPM formula represents and why it is important for SSB estimation.**
+
+### Answer:
+
+- **$P_0$ (Daily Egg Production)**: Measures spawning intensity in the survey area. Higher $P_0$ indicates active spawning; reflects reproductive output per unit spawning habitat.
+
+- **$A$ (Spawning Area)**: Geographic extent of the spawning ground. Larger area = greater total egg production. Accurate delineation is critical.
+
+- **$R$ (Sex Ratio)**: Only females produce eggs. Must adjust for proportion of females in spawning population. Typically 0.48-0.52 depending on species.
+
+- **$S$ (Spawning Fraction)**: Not all females spawn on a given day. Varies by species and environmental conditions. Lower $S$ = smaller daily fraction of stock spawning.
+
+- **$F$ (Batch Fecundity)**: Individual female reproductive capacity. Higher $F$ = fewer females needed to produce observed eggs. Critical parameter often determined from histological analysis.
+
+**Importance**: Each parameter affects SSB inversely or directly. Small errors in any parameter compound to large SSB estimation errors.
+
+---
+
+## Question 3: Sensitivity Analysis
+
+**If spawning fraction ($S$) decreases from 0.40 to 0.25 due to poor environmental conditions, how does this affect SSB estimates? What does this imply biologically?**
+
+### Answer:
+
+**Effect on SSB:**
+
+With $S = 0.40$: Denominator = $0.52 \times 0.40 \times 12,000 = 2,496$
+
+With $S = 0.25$: Denominator = $0.52 \times 0.25 \times 12,000 = 1,560$
+
+$$\frac{\text{SSB}_{new}}{\text{SSB}_{old}} = \frac{2,496}{1,560} = 1.60$$
+
+**SSB increases by 60%** for same number of observed eggs.
+
+**Biological Implication:**
+
+If fewer females spawn per day ($S$ decreases), a **larger total stock is required** to produce the observed daily egg production. This indicates:
+
+- **Reduced spawning activity** per individual female
+- Possible **physiological stress** (food scarcity, temperature extremes, pollution)
+- **Recruitment failure** or poor condition of females
+- Need for **management intervention** (reduced fishing pressure)
+
+---
+
+## Question 4: Data Collection Problem
+
+**A researcher estimates spawning stock biomass using DEPM but realizes the sex ratio in the spawning population differs from the population overall. How would this bias SSB estimates?**
+
+### Answer:
+
+**Scenario 1: Actual $R$ > Assumed $R$**
+
+If more females spawn than assumed:
+- Denominator is **underestimated**
+- SSB estimates are **inflated** (overestimate of true stock)
+- Result: More liberal catch recommendations (dangerous)
+
+**Scenario 2: Actual $R$ < Assumed $R$**
+
+If fewer females spawn than assumed:
+- Denominator is **overestimated**
+- SSB estimates are **deflated** (underestimate of true stock)
+- Result: More conservative catch recommendations (safer)
+
+**Why This Matters:**
+
+Sex ratio bias directly affects SSB by factor of (assumed $R$ / actual $R$). A 10% error in sex ratio causes ~10% error in SSB.
+
+**Solution:** 
+- Sample spawning ground directly
+- Use separate sex ratio estimates from spawning area
+- Conduct sensitivity analysis on $R$ uncertainty
+
+---
+
+## Question 5: Application Question
+
+**A small pelagic fishery in Zanzibar wants to set catch limits based on SSB estimates from DEPM. What assumptions must be met for this method to be reliable?**
+
+### Answer:
+
+**Biological Assumptions:**
+
+1. **Pelagic eggs**: Eggs develop in water column (accessible to sampling). Not suitable for demersal or adhesive eggs.
+
+2. **Defined spawning area**: Spawning concentrated in identifiable, accessible location. Not dispersed throughout stock range.
+
+3. **Synchronous spawning**: Most females spawn within defined period (season/month).
+
+4. **Steady-state stock**: Population not experiencing catastrophic recruitment failure or exceptional year-classes.
+
+**Data Assumptions:**
+
+5. **Accurate fecundity ($F$)**: Must be determined from gonad analysis of spawning females. Not from historical literature.
+
+6. **Accurate sex ratio ($R$)**: Sampled directly from spawning grounds, not from general population.
+
+7. **Accurate spawning fraction ($S$)**: Requires histological analysis or mark-recapture on spawning ground.
+
+8. **Representative $P_0$ sampling**: Survey must cover entire spawning area, account for spatial patchiness.
+
+**Oceanographic Assumptions:**
+
+9. **Negligible egg mortality**: Assumes eggs survive until next sampling occasion (typically <24 hours).
+
+10. **No egg advection**: Spawned eggs remain in survey area (weak currents).
+
+**If assumptions violated:**
+
+- SSB estimates become unreliable
+- Catch recommendations may be inappropriate
+- Use sensitivity analysis or combine with other methods (acoustic, VPA, CPUE)
+
+---
+
+## Question 6: Comparative Assessment
+
+**Compare DEPM with other spawning stock biomass estimation methods (mark-recapture, acoustic surveys, VPA). What are relative advantages and disadvantages?**
+
+### Answer:
+
+| Method | Data Needs | Cost | Accuracy | Time Scale | Best For |
+|--------|-----------|------|----------|-----------|----------|
+| **DEPM** | Fecundity, sex ratio, egg production | High | High | 1-2 seasons | Small pelagics with defined spawning |
+| **Acoustic** | Calibrated echo sounder | High | Medium | Days-weeks | Pelagic schools, real-time |
+| **Mark-Recapture** | Tagging program | Medium | Medium | Weeks-months | Discrete populations, movement |
+| **VPA** | Catch-at-age, M estimate | Low | Medium | Long-term | Multiple data sources, retrospective |
+
+**DEPM Advantages:**
+- Direct spawning stock estimate (not index)
+- Theoretically sound biological basis
+- Works when catch data unreliable
+
+**DEPM Disadvantages:**
+- Very data-intensive
+- Sensitive to parameter uncertainty
+- Species-specific requirements
+- Expensive and labor-intensive
+
+**Recommendation:** Use DEPM combined with 1-2 other methods for cross-validation.
+
+---
+
+## Question 7: Real Data Problem
+
+**Given the following data from a Zanzibar anchovy spawning survey:**
+
+- Survey area: 2,500 km²
+- Average daily egg production: 320 eggs/m²
+- Sex ratio: 0.50
+- Spawning fraction: 0.30
+- Batch fecundity: 8,500 eggs/female
+- Survey duration: 5 days
+- Total catch during survey: 150 tonnes
+
+**Calculate:**
+
+a) Spawning stock biomass
+b) Exploitation rate (Catch/SSB)
+c) Is this sustainable? (Assume target exploitation rate = 10%)
+
+### Answer:
+
+**a) Calculate SSB:**
+
+$$SSB = \frac{320 \times 2,500 \times 10^6}{0.50 \times 0.30 \times 8,500}$$
+
+$$SSB = \frac{8 \times 10^{11}}{1,275} = 6.27 \times 10^8 \text{ eggs}$$
+
+Converting to biomass (anchovy eggs ~0.75 mg per egg):
+$$6.27 \times 10^8 \text{ eggs} \times 0.00075 \text{ g/egg} = 4.70 \times 10^8 \text{ g} = 470 \text{ tonnes}$$
+
+**SSB = 470 tonnes**
+
+**b) Exploitation Rate:**
+
+$$E = \frac{\text{Catch}}{\text{SSB}} = \frac{150}{470} = 0.319 = 31.9\%$$
+
+**c) Sustainability Assessment:**
+
+- Current exploitation: 31.9%
+- Target exploitation: 10%
+- **Conclusion**: Stock is **overexploited** at current fishing pressure. Catch should be reduced to ~47 tonnes to meet the 10% target exploitation rate
+- This indicates unsustainable harvest levels and need for management intervention
+
+---
+
+*Last updated: February 2026*
+

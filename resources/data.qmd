@@ -1,0 +1,109 @@
+---
+title: "Course Data Files"
+---
+
+## Available Datasets
+
+### Sample Landings Data
+
+**File:** `sample_landings_data_raw.csv` / `sample_landings_data_raw.txt`
+
+**Description:**
+Raw landings data from fishery landing sites. Contains catch records including species, weight, and landing site information.
+
+**Location:** 
+- Main: `/data/sample_landings_data_raw.csv`
+- Alternative: `/data/sample_landings_data_raw.txt`
+- Assignment folder: `/Exercises/Assignment/sample_landings_data_raw.csv`
+
+**Variables:**
+- Date
+- Landing site
+- Species
+- Total catch weight
+- Fishing effort
+- Gear type
+
+**Use Cases:**
+- Analyzing landing patterns
+- Estimating total catch
+- Examining seasonal variation
+- Comparing landing sites
+
+---
+
+### Caesio Landings Data
+
+**File:** `caesio_landings.csv`
+
+**Description:**
+Specialized dataset focusing on Caesio species (fusiliers) catches. Used for assignment exercises.
+
+**Location:** `/Exercises/Assignment/caesio_landings.csv`
+
+**Use Cases:**
+- Species-specific analysis
+- Assignment 2 exercises
+
+---
+
+### Location and EEZ Data
+
+**File:** `lw_location_eez.csv`
+
+**Description:**
+Location data including Exclusive Economic Zone (EEZ) information for landing sites and fishing grounds.
+
+**Location:** 
+- Main: `/lw_location_eez.csv`
+- Notes: `/lecture_notes/lw_location_eez.csv`
+
+**Use Cases:**
+- Spatial analysis of fisheries
+- EEZ mapping and management
+- Geographic information systems
+
+---
+
+### Catch Assessment Survey Data
+
+**File:** `cw.csv` / `aq232_cw.qmd`
+
+**Description:**
+Catch Assessment Survey results with detailed catch composition data.
+
+**Location:** `/Exercises/test/results/`
+
+---
+
+### Stock Tutorial Data
+
+**Files:**
+- `neritic_fish.csv`
+- `lw_lv_hydro_bt.csv`
+- `Fisheries Publications.csv`
+
+**Location:** `/stock_tutorial/`
+
+**Description:**
+Various datasets for stock assessment tutorials and exercises.
+
+---
+
+## Data Access and Usage
+
+### Guidelines
+
+- All datasets are provided for educational purposes
+- Cite the source when using data in reports or presentations
+- Data quality notes available upon request
+
+### Data Preparation
+
+Raw data files may require cleaning and formatting before analysis. See lectures for appropriate preprocessing steps.
+
+---
+
+## Questions About Data?
+
+Contact the course instructor for clarification on data contents, collection methods, or appropriate usage.

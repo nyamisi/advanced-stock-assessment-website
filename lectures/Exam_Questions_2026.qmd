@@ -1,0 +1,907 @@
+---
+title: "AQ 232 - Examination Questions"
+subtitle: "Fish Population Dynamics and Stock Assessment"
+author: "Nyamisi Peter"
+date: 2026-02-15
+format: html
+---
+
+# SECTION A: Unit Stock (Lecture 5)
+
+## Question 1.1 (Conceptual)
+
+**Define a unit stock and explain the key characteristics that distinguish one unit stock from another.**
+
+### Model Answer:
+
+A **unit stock** is a population of fish (single or multiple species) grouped together for assessment and management purposes that shares a common gene pool and occupies a defined geographical area.
+
+**Key characteristics:**
+- **Common gene pool** – Can interbreed and maintain genetic continuity
+- **Defined geographic area** – Specific distribution boundaries and habitat
+- **Similar life history traits** – Comparable growth, reproduction, and mortality rates
+- **Common fishing pressures** – Subject to same fisheries and exploitation patterns
+- **Managed as single entity** – Can be independently managed and assessed
+
+**Significance:** Unit stocks allow management of complex multispecies tropical fisheries by dividing populations into manageable units for assessment and conservation.
+
+---
+
+## Question 1.2 (Application)
+
+**You are tasked with determining whether yellowfin tuna in the Indian Ocean constitute one stock or multiple unit stocks. What methods would you use, and what data would you collect?**
+
+### Model Answer:
+
+**Methods for stock determination:**
+
+1. **Genetic analysis** – DNA markers, microsatellites to assess gene flow and population structure
+2. **Morphometric analysis** – Vertebrae counts, scale patterns, size-at-age differences
+3. **Parasitology** – Parasite species/intensity indicating isolation
+4. **Otolith microchemistry** – Chemical signatures reflecting spawning area origin
+5. **Tagging studies** – Track movements and migration patterns
+
+**Data to collect:**
+- Tissue samples from throughout Indian Ocean
+- Spawning location records (time, area, temperature)
+- Growth rates at different locations
+- Catch composition and fishing effort data
+- Environmental data (temperature, currents, productivity)
+
+**Expected outcomes:** Multiple stocks likely exist (e.g., eastern, western Indian Ocean; seasonal variations)
+
+---
+
+## Question 1.3 (Calculation)
+
+**A lake contains an estimated 50,000 tilapia. A survey found spawning occurring in two separate locations with different substrate types. Genetic analysis shows 85% within-population similarity but only 42% between-population similarity. Should these be managed as one or two unit stocks?**
+
+### Model Answer:
+
+**Analysis:**
+- Within-population similarity (85%) indicates relatively homogeneous genetics
+- Between-population similarity (42%) suggests significant differentiation and limited gene flow
+- Separate spawning locations with different habitats indicate ecological separation
+
+**Recommendation:** Manage as **TWO UNIT STOCKS**
+
+**Rationale:**
+- Low between-population genetic similarity (<50%) indicates reproductive isolation
+- Separate spawning habitats with different substrates suggest adapted populations
+- Independent management prevents mixing strategies and allows location-specific interventions
+- May have different growth rates, maturity ages, vulnerability to fishing
+
+---
+
+## Question 1.4 (Essay)
+
+**Discuss the importance of properly identifying and delineating unit stocks for fisheries management in Tanzania's coastal waters. Include examples of straddling and highly migratory species.**
+
+### Model Answer:
+
+**Importance of unit stock identification:**
+
+1. **Accurate Assessment** – Proper stock delineation ensures abundance estimates reflect actual population boundaries, not artificial divisions
+
+2. **Sustainable Harvesting** – Prevents overfishing by matching catch limits to correct population size. Mixing stocks artificially inflates perceived population
+
+3. **Management Independence** – Allows location-specific regulations (closed seasons, gear restrictions) suited to each stock's dynamics
+
+4. **International Coordination** – Critical for stocks crossing borders (EEZ boundaries)
+
+**Tanzanian Examples:**
+
+**Straddling Species:**
+- **Yellowfin tuna** – Exists in both Tanzania's EEZ and high seas; managed by IOTC
+- **Swordfish** – Distributed across multiple EEZs; requires transboundary agreements
+- **Kingfish** – Moves between Tanzanian and Kenyan waters seasonally
+
+**Highly Migratory Species:**
+- **Bigeye tuna** – Oceanic distribution throughout Indian Ocean
+- **Albacore** – Annual migrations across thousands of kilometers
+
+**Management Challenges:**
+- Must coordinate with IOTC and neighboring countries
+- Catch limits set at regional level may not reflect Tanzania's specific fishing pressure
+- Stock mixing complicates assessment of Tanzania's impact on global stocks
+
+**Recommendation:** Establish Tanzania-specific monitoring for shared stocks; coordinate assessment data with regional management bodies
+
+---
+
+# SECTION B: Methods of Stock Abundance Estimation (Lectures 6-7)
+
+## Question 2.1 (Conceptual)
+
+**Distinguish between direct and indirect methods of estimating fish stock abundance. Provide examples of each and discuss their advantages and disadvantages.**
+
+### Model Answer:
+
+**Direct Methods** – Independent abundance estimates not dependent on catch data
+
+*Examples:* Trawl surveys, acoustic surveys, mark-recapture, visual census
+
+**Advantages:**
+- Independent of commercial fishery data (unaffected by reporting biases)
+- Can provide absolute population estimates
+- Give information on spatial distribution
+
+**Disadvantages:**
+- High cost and equipment requirements
+- Limited temporal coverage
+- Species/habitat specific (not universally applicable)
+- Logistically demanding
+
+**Indirect Methods** – Use commercial fishery data as index of abundance
+
+*Examples:* CPUE, depletion methods, VPA
+
+**Advantages:**
+- Cost-effective (uses existing data)
+- Long time series often available
+- Large spatial/temporal coverage
+- Real-time updates possible
+
+**Disadvantages:**
+- Affected by fishing behavior changes
+- Technology changes over time bias trends
+- Confounded by effort standardization issues
+- May not reflect true population dynamics
+
+**Best Practice:** Use combination of methods for cross-validation and uncertainty quantification
+
+---
+
+## Question 2.2 (Comparison Table)
+
+**Complete the following comparison table for methods of estimating fish stock abundance:**
+
+| Method | Data Needs | Cost | Precision | Best For | Key Assumptions |
+|--------|-----------|------|-----------|----------|-----------------|
+| Acoustic survey | ? | ? | ? | ? | ? |
+| CPUE | ? | ? | ? | ? | ? |
+| Mark-recapture | ? | ? | ? | ? | ? |
+| VPA | ? | ? | ? | ? | ? |
+| Depletion | ? | ? | ? | ? | ? |
+
+### Model Answer:
+
+| Method | Data Needs | Cost | Precision | Best For | Key Assumptions |
+|--------|-----------|------|-----------|----------|-----------------|
+| Acoustic | Calibrated echo sounder, fish behavior data | High | Medium-High | Pelagic schooling species | Predictable target strength, minimal scattering |
+| CPUE | Catch and effort records | Low | Medium | Commercial stocks with long history | Constant catchability, homogeneous population |
+| Mark-recapture | Capture, marking, recapture data | Medium | Medium | Discrete populations | Closed population, equal capture probability |
+| VPA | Catch-at-age, natural mortality estimate | Low | Medium-High | Age-structured stocks | Accurate age data, known M |
+| Depletion | Sequential catch and effort data | Low | Low-Medium | Closed populations (octopus) | Significant removal (>30%), constant q |
+
+---
+
+## Question 2.3 (Application)
+
+**A fisheries manager in Zanzibar must choose an abundance estimation method for assessing small pelagic fish (sardines and anchovies). The fishery has:**
+- 20 years of commercial catch data
+- Limited research budget
+- Recent acoustic survey equipment available
+- No historical age-structure data
+
+**Which method(s) would you recommend and why?**
+
+### Model Answer:
+
+**Recommended approach: COMBINED METHOD**
+
+**Primary:** Acoustic surveys + CPUE standardization
+
+**Rationale:**
+
+1. **Acoustic surveys (PRIMARY)**
+   - Small pelagics form dense schools (ideal for acoustics)
+   - Non-lethal monitoring allows repeated surveys
+   - Provides spatial distribution information
+   - Can estimate size distribution from target strength
+
+2. **CPUE standardization (SECONDARY)**
+   - 20-year historical data valuable for trend analysis
+   - Can use GLM/GAM to standardize for effort, vessel, season effects
+   - Cost-effective complement to surveys
+   - Provides long-term context
+
+3. **Why NOT VPA:**
+   - Requires accurate age-structure data (not available)
+   - Sensitive to terminal F assumptions
+   - Better for demersal/single-species stocks
+
+**Implementation Plan:**
+- Year 1-2: Conduct seasonal acoustic surveys (3-4 per year) to establish baseline
+- Standardize historical CPUE using regression models
+- Cross-validate acoustic estimates with CPUE indices
+- Establish confidence intervals around abundance estimates
+- Use combined estimates for catch recommendations
+
+---
+
+## Question 2.4 (Calculation - Leslie Depletion Method)
+
+**An octopus population in a coastal cove showed the following catch and effort data over 8 consecutive weeks:**
+
+| Week | Effort (traps) | Days | Catch |
+|------|----------------|------|-------|
+| 1 | 40 | 5 | 520 |
+| 2 | 45 | 5 | 465 |
+| 3 | 50 | 5 | 420 |
+| 4 | 55 | 5 | 375 |
+| 5 | 60 | 5 | 325 |
+| 6 | 65 | 5 | 270 |
+| 7 | 70 | 5 | 210 |
+| 8 | 75 | 5 | 155 |
+
+**Using Leslie Method:**
+a) Calculate cumulative catch and CPUE
+b) Fit regression of Catch vs. Cumulative Catch
+c) Estimate initial population ($N_0$) and catchability (q)
+
+### Model Answer:
+
+**a) Calculate cumulative catch and CPUE:**
+
+| Week | Catch | Cumulative Catch | Total Effort | CPUE |
+|------|-------|------------------|--------------|------|
+| 1 | 520 | 520 | 200 | 2.60 |
+| 2 | 465 | 985 | 225 | 2.07 |
+| 3 | 420 | 1405 | 250 | 1.68 |
+| 4 | 375 | 1780 | 275 | 1.36 |
+| 5 | 325 | 2105 | 300 | 1.08 |
+| 6 | 270 | 2375 | 325 | 0.83 |
+| 7 | 210 | 2585 | 350 | 0.60 |
+| 8 | 155 | 2740 | 375 | 0.41 |
+
+**b) Leslie regression:** $C_t = qN_0 - q \times IC$
+
+Using linear regression on Catch vs. Cumulative Catch:
+
+$$\text{Catch} = 543.6 - 0.187 \times (\text{Cumulative Catch})$$
+
+**c) Estimates:**
+- **Intercept ($qN_0$)** = 543.6
+- **Slope (−q)** = −0.187, so **q = 0.187**
+- **$N_0 = \frac{543.6}{0.187} = 2,905$ octopus**
+
+**Interpretation:** Initial population ≈ 2,905 individuals; 2,740 caught (94% depletion); high catchability indicates octopus are easily captured
+
+---
+
+## Question 2.5 (CPUE Standardization)
+
+**A longline fishery for yellowfin tuna in Tanzanian waters has 10 years of catch data. Raw CPUE (catch/hooks) shows declining trend. However, you notice:**
+- Vessel technology improved (GPS, sonar, better refrigeration)
+- Fishing season shifted from Jan-June to Mar-August
+- Number of vessels increased from 5 to 25
+
+**How would you standardize CPUE to account for these factors? What statistical method would you use?**
+
+### Model Answer:
+
+**Standardization Approach: Generalized Linear Model (GLM)**
+
+**Model specification:**
+$$\ln(\text{CPUE}) = \alpha + \beta_1 \text{Year} + \beta_2 \text{Season} + \beta_3 \text{Vessel\_Age} + \beta_4 \text{Technology} + \varepsilon$$
+
+**Factors to include:**
+1. **Year** – Captures stock abundance trend (primary variable of interest)
+2. **Season** – Accounts for seasonal availability/migration (categorical: Jan-Jun vs Mar-Aug)
+3. **Vessel size/class** – Standardize effort across different vessel types
+4. **Technology level** – Include GPS, sonar availability as binary factors
+5. **Fishing ground** – If spatial data available, include location
+
+**Alternative: Generalized Additive Model (GAM)**
+- More flexible for non-linear relationships
+- Better captures smoothed trends over time
+- Allows interaction between factors
+
+**Interpretation:**
+- **β₁ (Year coefficient)** = annual change in standardized CPUE
+- Negative β₁ = declining stock abundance (accounting for confounding factors)
+- Compare to raw CPUE to assess technology/behavior bias
+
+**Expected result:** Standardized CPUE may show less decline (or even slight recovery) compared to raw CPUE, indicating technology improvements masked actual stock status
+
+---
+
+# SECTION C: Fish Migration & Acoustic Methods
+
+## Question 3.1 (Terminology)
+
+**Define and provide examples for each migration category:**
+
+a) **Diadromous fish** – subcategories: anadromous, catadromous, amphidromous
+b) **Potamodromous fish**
+c) **Oceanodromous fish**
+
+### Model Answer:
+
+**a) Diadromous** – Migrate between marine and freshwater environments
+
+- **Anadromous** (born in freshwater, spawn in freshwater)
+  - *Examples:* Salmon, sea trout, shad
+  - Spawn in rivers, juveniles migrate to ocean, adults return to spawn
+  - High investment in single spawning event
+
+- **Catadromous** (born in marine, spawn in marine)
+  - *Examples:* Freshwater eel, milkfish
+  - Spend most life in freshwater, migrate to sea to spawn
+
+- **Amphidromous** (no spawning migration)
+  - *Examples:* Mullet, tilapia (some), ten-pounder
+  - Larvae spawned in marine environment drift to freshwater
+  - Settle and grow in freshwater as juveniles
+  - No return migration to spawn
+
+**b) Potamodromous** – Migrate wholly within freshwater
+
+- *Examples:* Trout, bream, coregonids (whitefish), Nile tilapia
+- Landlocked species with seasonal migrations
+- Migrate for spawning, feeding, or seasonal redistribution
+- Often triggered by water level/temperature changes
+
+**c) Oceanodromous** – Migrate wholly within ocean
+
+- *Examples:* Cod, herring, capelin, yellowfin tuna, mackerel
+- Long-distance oceanic migrations (thousands of km)
+- Spawning grounds separate from feeding grounds
+- Highly migratory species (tuna, billfish) may cross ocean basins
+
+**Stock Assessment Implications:**
+- Diadromous species require collaborative management between freshwater/marine authorities
+- Potamodromous species vulnerable to river barriers and freshwater habitat degradation
+- Oceanodromous species require international coordination (regional fisheries bodies like IOTC)
+
+---
+
+## Question 3.2 (Acoustic Surveys - Theory)
+
+**Explain the principle of acoustic fish detection. Include:**
+a) How echo sounders detect fish
+b) Why frequency selection matters
+c) The concept of target strength
+
+### Model Answer:
+
+**a) Echo sounder principle:**
+
+1. **Signal transmission** – Transducer emits brief sound pulse into water
+2. **Reflection** – Sound reflects off objects different in density from water (fish swim bladders)
+3. **Echo return** – Reflected sound returns to receiver
+4. **Distance calculation** – Time delay × sound speed = distance to object
+5. **Amplitude analysis** – Echo strength indicates fish size/density
+
+**b) Frequency selection:**
+
+- **High frequency (>200 kHz)** – Short wavelength, can detect plankton and small fish
+- **Lower frequency (<200 kHz)** – Penetrates deeper, detects larger fish, better range
+- **Trade-off** – Higher frequency = better resolution but shorter range
+- **Species considerations** – Small pelagics use 38-200 kHz; demersal surveys use 10-18 kHz
+
+**Example:**
+- Sardine/anchovy surveys: 38-120 kHz (schools near surface, need resolution)
+- Demersal surveys: 10-18 kHz (greater depth penetration required)
+
+**c) Target Strength (TS):**
+
+$$TS = 20 \log_{10}(L) + b_{20}$$
+
+- **TS** = Acoustic reflectivity (dB)
+- **L** = Fish length (cm)
+- **$b_{20}$** = Species-specific constant (typically −70 to −72 dB)
+
+**Interpretation:**
+- Larger fish have stronger target strength
+- Allows size discrimination from acoustic returns
+- Critical for converting acoustic backscatter to abundance estimates
+
+**Example values:**
+- Herring (20 cm): TS ≈ -40 dB
+- Sardine (12 cm): TS ≈ -50 dB
+- Anchovy (10 cm): TS ≈ -55 dB
+
+---
+
+## Question 3.3 (Acoustic Survey Design)
+
+**Design an acoustic survey for assessing small pelagic fish stocks off the coast of Dar es Salaam. Include:**
+a) Survey design and spatial coverage
+b) Equipment specifications
+c) Data collection protocol
+d) Validation methods
+
+### Model Answer:
+
+**a) Survey Design:**
+
+**Study Area:**
+- Depth range: 0-200 m (continental shelf)
+- Area: 50 km × 100 km = 5,000 km²
+- Transect design: Parallel lines perpendicular to coast, 5 km spacing
+
+**Transects:**
+- 20 transects, each 100 km long
+- Vessel speed: 10 knots (constant)
+- 3 survey lines at different times (replicate)
+- Seasonal design: 4 surveys per year (quarterly)
+
+**b) Equipment:**
+
+- **Echo sounder:** Split-beam, calibrated quarterly
+- **Frequency:** 38 kHz or 120 kHz (for small pelagics)
+- **Transducer:** Mounted 1-2 m below hull
+- **Data logging:** Simultaneous GPS, depth, temperature, echo integration
+
+**c) Data Collection Protocol:**
+
+1. **Pre-survey:** Calibrate echo sounder using copper sphere
+2. **Transect:** Log acoustic data continuously; record every 100 m
+3. **Sampling:** Collect biological samples (length, age, species ID) at strategic locations using trawls or nets
+4. **Environmental:** Record SST, salinity, turbidity, oxygen
+5. **Post-survey:** Verify data quality, conduct backup calibration
+
+**d) Validation:**
+
+1. **Biological sampling** – Conduct midwater trawls to confirm acoustic detections match captured species
+2. **Visual observation** – Verify surface schools observed match acoustic targets
+3. **Cross-validation** – Compare acoustic estimates with:
+   - Commercial CPUE data from same period
+   - Previous year acoustic surveys
+   - Larval/egg surveys (if available)
+4. **Uncertainty estimation** – Bootstrap or Bayesian methods to estimate confidence intervals around abundance
+
+**Expected Output:**
+- Biomass estimate (tonnes) with 95% CI
+- Spatial distribution map
+- Size-frequency distribution
+- Recruitment indices (juvenile abundance)
+
+---
+
+# SECTION D: Length-Weight Relationships (LWR)
+
+## Question 4.1 (Conceptual)
+
+**Define the length-weight relationship (LWR). Explain:**
+a) The biological meaning of the equation $W = aL^b$
+b) What isometric growth means
+c) Why LWR is important in fisheries management
+
+### Model Answer:
+
+**a) LWR equation: $W = aL^b$**
+
+- **W** = Weight (g or kg)
+- **L** = Length (cm or mm)
+- **a** = Condition coefficient (species and environment specific)
+- **b** = Growth exponent (allometric coefficient)
+
+**Biological interpretation:**
+- Describes how weight scales with length across population
+- $b = 3$ predicts isometric growth (weight increases with L³)
+- $b ≠ 3$ indicates allometric growth (disproportionate weight-to-length ratio)
+- Typically fits power-law relationship due to 3D body structure
+
+**b) Isometric growth ($b = 3$):**
+
+- Fish maintains constant body shape and density as it grows
+- Weight ∝ Length³ (volume relationship)
+- Example: Red snapper with b = 3.02
+
+**Allometric growth ($b ≠ 3$):**
+- **b > 3**: Fish becomes proportionally heavier with growth ("deepening body")
+- **b < 3**: Fish becomes proportionally lighter with growth ("thinning body")
+- May reflect seasonal changes, sexual maturity, environmental conditions
+
+**c) Importance in fisheries management:**
+
+1. **Condition monitoring** – Deviation from species-specific LWR indicates health/nutrition
+2. **Stock assessment** – Convert length data to biomass estimates
+3. **Population dynamics** – Combine with age-length keys for cohort analysis
+4. **Size regulations** – Establish minimum/maximum size limits based on weight-length trade-offs
+5. **Market standards** – Determine fish value/quality
+6. **Climate impacts** – Changes in slope/intercept may reflect environmental stress
+
+---
+
+## Question 4.2 (Calculation)
+
+**Red snapper length-weight data collected from Tanzanian coastal waters show:**
+- Sample size: 80 fish
+- Length range: 10-55 cm
+- Power-law regression: $\ln(W) = -2.45 + 3.02 \times \ln(L)$ (R² = 0.94)
+
+**Calculate:**
+a) Parameter *a* and *b*
+b) Expected weight at L = 30 cm and L = 50 cm
+c) Condition factor K at each length
+d) Assess growth pattern (isometric or allometric)
+
+### Model Answer:
+
+**a) Extract parameters from regression:**
+
+From $\ln(W) = -2.45 + 3.02 \times \ln(L)$:
+
+- $\ln(a) = -2.45$, therefore **a = e^{-2.45} = 0.086**
+- **b = 3.02**
+
+**Equation: $W = 0.086 \times L^{3.02}$**
+
+**b) Predicted weights:**
+
+At L = 30 cm:
+$$W = 0.086 \times 30^{3.02} = 0.086 \times 24,411 = 2,099 \text{ g} = 2.1 \text{ kg}$$
+
+At L = 50 cm:
+$$W = 0.086 \times 50^{3.02} = 0.086 \times 125,893 = 10,827 \text{ g} = 10.8 \text{ kg}$$
+
+**c) Condition factor K:**
+
+Standard form: $K = 100,000 \times \frac{W}{L^3}$ (or $K = 10 \times \frac{W}{L^3}$ in relative form)
+
+For L = 30 cm, W = 2.1 kg:
+$$K = \frac{1.0 \times 2100}{30^3} = \frac{2100}{27,000} = 0.078$$
+
+For L = 50 cm, W = 10.8 kg:
+$$K = \frac{1.0 \times 10,800}{50^3} = \frac{10,800}{125,000} = 0.086$$
+
+**d) Growth pattern assessment:**
+
+- **b = 3.02 ≈ 3** → **ISOMETRIC GROWTH**
+- Fish maintains constant shape and density across size range
+- Weight increases proportionally to volume (L³)
+- Growth is homogeneous (no allometric deviation)
+- R² = 0.94 indicates excellent fit (94% of variation explained)
+
+**Biological interpretation:** Red snapper shows uniform growth pattern; body proportions remain consistent from juvenile to adult
+
+---
+
+## Question 4.3 (Application - Fisheries Management)
+
+**Compare two fish populations based on their LWR:**
+
+**Population A (Lake Victoria Tilapia):**
+- $W = 0.018 \times L^{2.85}$
+
+**Population B (Lake Tanganyika Cichlid):**
+- $W = 0.025 \times L^{3.15}$
+
+**For fish of 25 cm length, calculate:**
+a) Expected weights
+b) Condition factors
+c) Which population has better condition? Explain biological implications.
+
+### Model Answer:
+
+**a) Expected weights at L = 25 cm:**
+
+**Population A:**
+$$W_A = 0.018 \times 25^{2.85} = 0.018 \times 3,570 = 64.3 \text{ g}$$
+
+**Population B:**
+$$W_B = 0.025 \times 25^{3.15} = 0.025 \times 9,441 = 236 \text{ g}$$
+
+**b) Condition factors:**
+
+**Population A:** $K_A = \frac{64.3}{25^3} = 0.041$ (below standard isometric of 0.05)
+
+**Population B:** $K_B = \frac{236}{25^3} = 0.151$ (above standard)
+
+**c) Comparison and interpretation:**
+
+| Metric | Population A | Population B | Interpretation |
+|--------|-------------|-------------|-----------------|
+| b value | 2.85 | 3.15 | B has allometric growth (heavier) |
+| Condition K | 0.041 | 0.151 | B in better nutritional condition |
+| Growth pattern | Negative allometry | Positive allometry | A losing weight proportionally; B gaining |
+
+**Biological Implications:**
+
+**Population A (Lake Victoria):**
+- **Negative allometry** (b < 3) indicates fish becoming "thinned" with growth
+- **Possible causes:** 
+  - Nutritional stress or food scarcity
+  - High fishing pressure on larger individuals
+  - Environmental degradation
+- **Management concern:** Declining condition may reduce fecundity and survival
+
+**Population B (Lake Tanganyika):**
+- **Positive allometry** (b > 3) indicates fish "deepening" with growth
+- **Likely healthier:** Better nutrition, adequate food resources
+- **Positive sign:** May reflect refuge status or lower fishing pressure
+- Population appears more robust for sustainable harvest
+
+**Management Recommendations:**
+- **Pop. A:** Investigate food availability; consider harvest restrictions or habitat restoration
+- **Pop. B:** Can likely sustain higher fishing pressure; monitor for changes in condition
+
+---
+
+## Question 4.4 (Statistical Analysis)
+
+**You collected LWR data on 100 sardines. Propose:**
+a) Statistical methods to fit LWR
+b) How to test for isometry (b = 3)
+c) Uncertainty quantification approach
+
+### Model Answer:
+
+**a) Statistical fitting methods:**
+
+**Method 1: Log-linear regression (Most Common)**
+- Transform: $\ln(W) = \ln(a) + b \times \ln(L)$
+- Fit OLS regression on log-transformed data
+- Advantages: Linear model, easy interpretation
+- Disadvantages: Assumes log-normal error structure
+
+**Method 2: Power-law regression (Direct)**
+- Fit $W = aL^b$ directly using non-linear regression
+- Advantages: Models original scale; avoids log-transformation bias
+- Disadvantages: Requires iterative algorithms (R: `nls()`, `nlme()`)
+
+**Method 3: Bayesian approach**
+- Specify prior distributions for a and b
+- Update with likelihood from data
+- Advantages: Incorporate prior knowledge; full posterior uncertainty
+- Disadvantages: More computationally intensive
+
+**b) Test for isometry (H₀: b = 3):**
+
+**Approach 1: Confidence interval**
+- Fit regression, extract 95% CI for b coefficient
+- If CI contains 3 → isometric (fail to reject H₀)
+- If CI excludes 3 → allometric (reject H₀)
+
+**Approach 2: t-test**
+$$t = \frac{b - 3}{SE_b}$$
+where $SE_b$ = standard error of b coefficient
+
+- If |t| > critical value → significantly different from 3
+- Disadvantage: Low statistical power with this design
+
+**Approach 3: Constraint regression**
+- Fit both models: (1) unconstrained; (2) constrained to b = 3
+- Use likelihood ratio test to compare models
+- More powerful than simple t-test
+
+**c) Uncertainty quantification:**
+
+**Method 1: Confidence intervals**
+- Extract 95% CI for parameters a, b from regression output
+- Propagate to predicted weight: 95% CI on weight at each length
+
+**Method 2: Prediction intervals**
+- Wider than confidence intervals (include prediction error)
+- Represents range for individual fish predictions
+
+**Method 3: Bootstrap**
+- Resample 100 sardines (with replacement) 1000 times
+- Fit LWR to each resample
+- Calculate percentile CI for a and b from bootstrap distribution
+
+**Method 4: Bayesian posterior samples**
+- Generate posterior samples of (a, b)
+- Compute credible intervals (typically 95%)
+- More intuitive interpretation: P(b = 3 | data)
+
+**Recommended approach:** Log-linear regression with bootstrap CI on parameters
+
+---
+
+# SECTION E: Integrated Assessment
+
+## Question 5.1 (Synthesis - All Topics)
+
+**You are assigned to conduct a stock assessment for yellowfin tuna in Tanzanian EEZ. The stock is:**
+- Highly migratory (oceanodromous)
+- Managed by IOTC (Indian Ocean Tuna Commission)
+- Recently showing declining CPUE trends
+- Subject to both artisanal and industrial fishing
+
+**Develop a comprehensive assessment plan including:**
+a) Unit stock definition and boundaries
+b) Methods for abundance estimation (justify selection)
+c) Data requirements
+d) Management recommendations
+
+### Model Answer:
+
+**a) Unit stock definition:**
+
+**Indian Ocean Yellowfin Tuna (Thunnus albacares):**
+
+- **Geographic scope:** Entire Indian Ocean (Tanzania's EEZ is part of larger stock)
+- **Distribution:** Pelagic, oceanodromous; seasonal distribution patterns
+- **Genetic unity:** Single panmictic population throughout Indian Ocean
+- **Management boundary:** IOTC statistical areas (5°S-20°E to 25°S-90°E)
+- **Spawning areas:** Multiple locations; seasonal convergence off Somalia, Mozambique
+
+**Implication for Tanzania:** Cannot manage independently; requires IOTC coordination
+
+**b) Abundance estimation methods (Combined approach):**
+
+**Primary Methods:**
+1. **Acoustic surveys** (2 per year, 2-week duration each)
+   - Target surface schools off Dar es Salaam, Zanzibar
+   - 38 kHz frequency (pelagic small-fish optimized)
+   - Covers shelf and slope regions
+
+2. **CPUE standardization** (commercial longline data)
+   - 20 years available data from industrial fleet
+   - Standardize for vessel type, technology, season, area
+   - Use GLM with year effect as abundance index
+
+3. **Mark-recapture** (tagging program, ongoing)
+   - Tag ~2,000 juvenile yellowfin annually
+   - Provides movement, survival, migration data
+   - Complements acoustic/CPUE estimates
+
+**Secondary Methods:**
+4. **Egg/larval surveys** (seasonal, if budget allows)
+   - DEPM during peak spawning (Sept-Nov)
+   - Estimates spawning stock biomass independent of catch
+
+**c) Data requirements:**
+
+| Data Type | Source | Frequency | Priority |
+|-----------|--------|-----------|----------|
+| Acoustic backscatter | Research vessel surveys | Quarterly | High |
+| Commercial catch | Landing records | Daily | High |
+| Fishing effort | Logbooks (GPS tracks) | Daily | High |
+| Biological (length, age) | Observer program | Continuous | High |
+| Environmental (SST, currents) | NOAA/Sentinel | Daily | Medium |
+| Tagging data | Research program | Annual | Medium |
+| Spawning indicators | Gonad analysis | Quarterly | Medium |
+
+**d) Management recommendations:**
+
+**Short-term (0-2 years):**
+- **Current status assessment:** Combine all methods for baseline estimate
+- **Catch limit:** Set at 80-90% of maximum sustainable yield (MSY) pending full assessment
+- **Data collection:** Intensify observer coverage (target 20% of boats monitored)
+- **Regional coordination:** Submit Tanzania data to IOTC working group
+
+**Medium-term (2-5 years):**
+- **Stock modeling:** Develop integrated population model combining all data sources
+- **Quota allocation:** If stock shared, negotiate Tanzania's share with IOTC
+- **Sustainability:** Implement seasonal closures during peak spawning if assessment indicates stress
+- **Economic efficiency:** License fewer high-tech vessels if CPUE standardization shows technology bias
+
+**Long-term (5+ years):**
+- **Ecosystem monitoring:** Track small pelagics (food base), larger predators (tuna competitors)
+- **Climate adaptation:** Monitor oceanographic changes (upwelling intensity, distribution shifts)
+- **Alternative livelihoods:** Develop contingency plans if stock declines necessitate fleet reduction
+
+---
+
+## Question 5.2 (Research Design)
+
+**Design a research project to investigate the relationship between ocean productivity (Chl-a from MODIS satellite data) and fish catch in Zanzibar coastal waters. Include:**
+
+a) Hypothesis and specific objectives
+b) Sampling design (spatial, temporal)
+c) Data collection protocol
+d) Statistical analysis approach
+
+### Model Answer:
+
+**a) Hypothesis and objectives:**
+
+**General Hypothesis:** Ocean productivity (chlorophyll-a concentration) is positively related to fish catch in Zanzibar coastal waters, with variable lag between productivity changes and catch response.
+
+**Specific Objectives:**
+1. Quantify spatial-temporal patterns of Chl-a in Zanzibar EEZ
+2. Characterize monthly variation in fish catch across coastal zones
+3. Determine correlation between Chl-a and catch (synchronous and lagged)
+4. Identify seasonal drivers of productivity-catch relationship
+
+**b) Sampling design:**
+
+**Spatial:**
+- Divide Zanzibar coastal zone into 5 grid cells (5°S-7°S; 39°E-42°E)
+- 1 km² resolution for satellite data; aggregate to 10 km for analysis
+- Focus on shelf waters (0-200 m depth)
+
+**Temporal:**
+- Time period: 2015-2025 (10 years complete data coverage)
+- Satellite data: Monthly MODIS Aqua Chl-a (4 km resolution)
+- Catch data: Monthly landing records from fish markets (3 major ports)
+- Frequency: Monthly aggregations for analysis; seasonal analysis secondary
+
+**c) Data collection protocol:**
+
+**Satellite data (MODIS Aqua):**
+- Download monthly L3 standard mapped images from NASA Earthdata
+- Extract Chl-a values (mg/m³) for 5 grid cells
+- Quality control: Remove cloud-covered pixels, interpolate if <20% missing
+- Calculate zonal means and standard deviation
+
+**Catch data:**
+- Survey landing sites: Dar es Salaam (main port), Zanzibar City, Bagamoyo
+- Record: Date, fish species, weight landed, vessel type, fishing area
+- Aggregate by month and grid cell using GPS coordinates if available
+- Cross-check against Ministry fisheries records
+
+**Environmental covariates:**
+- Sea surface temperature (SST) from MODIS
+- Photosynthetically active radiation (PAR)
+- Wind speed (from NOAA reanalysis)
+
+**d) Statistical analysis:**
+
+**Step 1: Descriptive analysis**
+- Time series plots of Chl-a and catch (overall and by grid cell)
+- Seasonal decomposition (trend + seasonal + residual components)
+- Calculate mean, SD, CV for each month/grid cell
+
+**Step 2: Correlation analysis**
+
+**Synchronous (same month):**
+$$\text{Catch}_t \sim \text{Chl-a}_t$$
+
+**Lagged (productivity leads catch):**
+$$\text{Catch}_t \sim \text{Chl-a}_{t-1}, \text{Chl-a}_{t-2}, \text{Chl-a}_{t-3}$$
+
+- Calculate Pearson/Spearman correlations
+- Test for significance (α = 0.05)
+- Identify optimal lag period
+
+**Step 3: Regression modeling**
+
+**Model structure (Poisson GLM or linear regression):**
+$$\ln(\text{Catch}_t) = \alpha + \beta_1 \text{Chl-a}_{t-\tau} + \beta_2 \text{SST}_t + \beta_3 \text{Season}_t + \varepsilon_t$$
+
+where τ = optimal lag identified in correlation analysis
+
+**Predictors:**
+- Chl-a at optimal lag
+- SST (thermal preference)
+- Seasonal dummy variables (Jan-March, etc.)
+- Interannual trends
+
+**Model diagnostics:**
+- Check residual normality, homoscedasticity
+- Test for temporal autocorrelation (Durbin-Watson)
+- Assess multicollinearity (VIF < 5)
+- Cross-validation: Split data 80/20, assess prediction error
+
+**Step 4: Spatial analysis**
+
+**Repeat regression by grid cell** to identify geographic variation in productivity-catch relationship
+
+**Expected outcomes:**
+- Significant positive Chl-a-catch correlation (lag 0-2 months expected)
+- Stronger relationship during upwelling season
+- Spatial heterogeneity in lag periods
+
+**Deliverables:**
+- Spatio-temporal maps of Chl-a and catch
+- Correlation/regression summary table
+- Predictive model for catch forecasting based on current Chl-a
+- Management recommendations for seasonal fishing timing
+
+---
+
+
+
+
+## [Discussion Questions]{style="background: #4a1035ff; color: #bebe56ff"}
+
+1. Why does the length-weight relationship follow a cubic pattern (b ≈ 3)?
+
+2. How would you explain the difference between isometric and allometric growth to fishery managers?
+
+3. Why is it important to update length-weight relationships periodically?
+
+4. How would changes in fish condition (well-fed vs. starving) affect the 'a' parameter?
+
+5. What would be the implications of using wrong L-W parameters in a stock assessment?
+
+*Last updated: February 2026*
+*Instructor: Nyamisi Peter*
+*AQ 232 - Fish Population Dynamics and Stock Assessment*

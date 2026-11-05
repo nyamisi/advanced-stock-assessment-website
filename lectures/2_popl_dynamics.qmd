@@ -1,0 +1,465 @@
+---
+title: "AF 603: Fish Population Dynamics and Stock Assessment"
+subtitle: "Fish Population Structure"
+date: "2026-11-05"
+author: "Nyamisi Peter"
+format: 
+    revealjs:
+      standalone: true
+      embed-resources: true
+      html-math-method: mathml
+      reference-location: document
+      theme: serif
+      highlight-style: ayu-mirage
+      footer: '[⬇ Download full lecture (PDF)](../downloads/AF603_L2_Fish_Population_Dynamics.pdf){download="AF603_L2_Fish_Population_Dynamics.pdf"} &nbsp;|&nbsp; [All downloads](downloads.html)'
+execute: 
+  echo: false
+  warning: false
+  message: false
+  comment: ""
+
+slide-number: true
+theme: "journal"
+code-fold: false
+scrollable: true
+code-line-numbers: true
+css: ../style.css
+---
+
+## [Introduction]{style="background: #4a1035ff; color: #bebe56ff"}
+
+### [Population Dynamics Vs. Structure]{style="background: #453d42ff; color: #f6773cff"}
+
+- **Population Dynamics:** - How population changes over time
+- **Population Structure:** - Composition of a population by age, size, sex, and other characteristics
+- Current population structure determines the future dynamics
+- For example, if a population has a structure with many big, mature female, the dynamic birth rate will increase.
+- But if higher fishing pressure catch all bigger fishes, it will alter the future structure, leaving behind only small juveniles. 
+
+## [What is Population Dynamics?]{style="background: #453d42ff; color: #f6773cff"}
+
+- Population Dynamics is the study of how populations change over time
+- It focuses on the processes that drive changes in population size and structure, including:
+  - Births (recruitment) -- Addition of new individuals through reproduction
+  - Growth -- Increase in size/weight of individuals
+  - Deaths (mortality) -- Deaths in the population
+
+---
+
+
+## [Why Population Dynamics?]{style="background: #4a1035ff; color: #bebe56ff"}
+
+**Population dynamics is the foundation for:**
+
+- Understanding how stocks change
+- Predicting future abundance
+- Setting appropriate harvest levels
+- Managing for sustainability
+
+**Key question:**
+
+How many fish can we harvest while maintaining the population?
+
+---
+
+## [Population Structure]{style="background: #4a1035ff; color: #bebe56ff"}
+
+### [What is Population Structure?]{style="background: #453d42ff; color: #f6773cff"}
+
+
+**Population structure:** Is the composition of a population by age, size, sex, and other characteristics
+
+**Why it matters:**
+
+- Different ages contribute differently to reproduction
+- Growth depends on age and size
+- Mortality varies by age
+- Sex ratios affect reproductive capacity
+
+---
+
+## [Age Structure]{style="background: #4a1035ff; color: #bebe56ff"}
+
+::: {.columns}
+::: {.column}
+
+```{=html}
+<svg width="500" height="300" style="margin: 0 auto; display: block;">
+  <!-- Background -->
+  <rect width="500" height="300" fill="#f0f0f0"/>
+  
+  <!-- Title -->
+  <text x="250" y="25" font-size="18" font-weight="bold" text-anchor="middle" fill="#000">Age Structure Example </text>
+  
+  <!-- Bars for different ages -->
+  <!-- Age 1 -->
+  <rect x="50" y="180" width="60" height="100" fill="#1f77b4"/>
+  <text x="80" y="290" font-size="12" text-anchor="middle" fill="#000">Age 1</text>
+  <text x="80" y="240" font-size="11" fill="white" text-anchor="middle">High</text>
+  
+  <!-- Age 2 -->
+  <rect x="120" y="200" width="60" height="80" fill="#ff7f0e"/>
+  <text x="150" y="290" font-size="12" text-anchor="middle" fill="#000">Age 2</text>
+  <text x="150" y="250" font-size="11" fill="white" text-anchor="middle">Med</text>
+  
+  <!-- Age 3 -->
+  <rect x="190" y="220" width="60" height="60" fill="#2ca02c"/>
+  <text x="220" y="290" font-size="12" text-anchor="middle" fill="#000">Age 3</text>
+  <text x="220" y="260" font-size="11" fill="white" text-anchor="middle">Low</text>
+  
+  <!-- Age 4 -->
+  <rect x="260" y="240" width="60" height="40" fill="#d62728"/>
+  <text x="290" y="290" font-size="12" text-anchor="middle" fill="#000">Age 4</text>
+  <text x="290" y="270" font-size="11" fill="white" text-anchor="middle">Very Low</text>
+  
+  <!-- Age 5+ -->
+  <rect x="330" y="260" width="60" height="20" fill="#9467bd"/>
+  <text x="360" y="290" font-size="12" text-anchor="middle" fill="#000">Age 5+</text>
+  <text x="360" y="278" font-size="10" fill="white" text-anchor="middle">Rare</text>
+  
+<!-- Y-axis label -->
+<text x="10" y="200" font-size="12" fill="#000" transform="rotate(-90, 10, 190)">Number of Fish</text>
+<line x1="40" y1="280" x2="40" y2="100" stroke="#000" stroke-width="2"/>
+</svg>
+```
+:::
+
+::: {.column}
+
+
+**Key pattern:**
+
+- Young ages: many fish
+- Older ages: fewer fish
+- Reflects mortality over time
+
+:::
+::: 
+
+---
+
+## [Size Structure]{style="background: #4a1035ff; color: #bebe56ff"}
+
+**Why size matters:**
+
+- Larger fish produce more eggs
+- Size affects vulnerability to fishing
+- Growth provides biomass to population
+- Size classes easier to measure than age
+
+**Size distribution:**
+
+- Can be wide (many sizes) or narrow (limited size range)
+- Affected by recent recruitment and fishing
+- Important for fisheries management
+
+---
+
+## [Sex Ratio]{style="background: #4a1035ff; color: #bebe56ff"}
+
+**Sex Ratio:** Is the proportion of males to females
+
+**Typical patterns:**
+
+- Often close to 1:1 at birth
+- May shift with age due to different mortality
+- Some species show sex-specific distributions
+
+**Management implications:**
+
+- Need enough females for reproduction
+- Overfishing can skew sex ratios
+- Particularly important for slow-growing species
+
+---
+
+## [Vital Rates]{style="background: #4a1035ff; color: #bebe56ff"}
+
+
+### [What are Vital Rates?]{style="background: #4a1035ff; color: #bebe56ff"}
+
+::: {.columns}
+::: {.column}
+
++ Vital rates are the key demographic parameters that determine how a population changes over time. 
+
+- The three main vital rates:
+
+1. **Recruitment:** Addition of new fish to population
+1. **Growth:** Increase in size/weight over time
+1. **Mortality:** Deaths in the population
+
+:::
+::: {.column}
+
+**Together they determine:**
+
+- Population growth rate
+- Sustainable harvest level
+- Recovery potential
+
+:::
+::: 
+
+## [Why Vital Rates matter?]{style="background: #4a1035ff; color: #bebe56ff"}
+
++ Together, they determine whether a population grows, stays stable, or declines
++ They are the foundation for all population models and harvest decisions
++ Understanding and measuring them is essential for stock assessment
+
+---
+
+## [Vital rates equation]{style="background: #4a1035ff; color: #bebe56ff"}
+
+**Population change Equation:** How Vital Rates work together
+
+$$N_{t+1} = N_t + R_t - M_t - C_t$$
+
+**What each term means:**
+
+- $N_{t+1}$ = Population next year
+- $N_t$ = Current population
+- $R_t$ = Recruitment (new fish added)
+- $M_t$ = Mortality (natural deaths)
+- $C_t$ = Catch (fishing removals)
+
+---
+
+## [Understanding the Equation]{style="background: #4a1035ff; color: #bebe56ff"}
+
+**Interpretation:**
+
+Next year's population = This year's fish + New recruits - Deaths from disease/predation - Fish caught by fishers
+
+**Example:**
+
+- Start with 10,000 fish
+- Add 3,000 recruits
+- Lose 1,500 to natural causes
+- Remove 2,000 by fishing
+- **Result: 10,000 + 3,000 - 1,500 - 2,000 = 9,500 fish next year**
+
+---
+
+## [Recruitment (R)]{style="background: #4a1035ff; color: #bebe56ff"}
+
+**Recruitment:** -- The addition of new fish to the population through reproduction and settlement of larvae/juveniles
+
+**Recruitment process:**
+
+```
+Adult fish spawn → Eggs released → 
+Eggs hatch → Larvae drift → Settlement → 
+Juveniles enter fishery
+```
+
+## [Recruitment (R)...]{style="background: #4a1035ff; color: #bebe56ff"}
+ 
+::: {.columns}
+::: {.column}
+
+ **Key Characteristics:**
+
+- Highly variable year-to-year
+- Depends on spawner abundance
+- Environmental conditions critical
+- Early life-stage survival crucial
+
+:::
+::: {.column}
+
+ **Why Recruitment is hard to predict?:**
+
+- Millions of eggs produced
+- Few survive to catchable size
+- Environmental variation huge
+- Density-dependent effects
+
+:::
+::: 
+
+---
+
+## [Growth (G)]{style="background: #4a1035ff; color: #bebe56ff"}
+
+**Growth:** -- The increase in size and weight of individual fish as they age
+
+**Growth Pattern:**
+
+- Fastest when young (more energy to growth)
+- Slows with age (more energy to reproduction)
+- Asymptotic (approaches maximum) 
+- Affected by environment and density
+
+
+## [Growth (G)...]{style="background: #4a1035ff; color: #bebe56ff"}
+
+**Von Bertalanffy Growth Model:**
+
+$$L_t = L_\infty(1 - e^{-K(t-t_0)})$$
+
+Where:
+
+- $L_t$ = Length at age t (what we are trying to predict)
+- $L_\infty$ = Length at infinity -- Asymptotic length (maximum length fish can theoretically reach)
+- $K$ = Growth rate coefficient (how fast fish approach maximum length)
+- $t = Age$
+- $t_0$ = Theoretical age at zero length (usually close to 0)
+
+---
+
+## [Logic Behind Von Bertalanffy Model]{style="background: #4a1035ff; color: #bebe56ff"}
+
+**The Biology:**
+
+1. **Fish grow fastest when young** - At age 0, the term $(1 - e^{-K(t-t_0)})$ is close to 0, so length is small
+1. **Growth slows with age** - As fish get older, they approach $L_\infty$ asymptotically (get closer to the maximum length but never quite reach it)
+1. **Approaches a maximum** - No matter how old the fish gets, it cannot exceed $L_\infty$
+1. **Growth rate controlled by K** - A larger $K$ = fish reach maximum size faster; smaller $K$ = slower growth
+
+## [Why Von Bertalanffy Model realistic?]{style="background: #4a1035ff; color: #bebe56ff"}
+
+- Fish actually **DO** grow quickly early and slow down with age
+- Energy allocation shifts from growth to reproduction
+- Food becomes limiting relative to body size
+
+---
+
+## [Real-World Example: Atlantic Cod]{style="background: #4a1035ff; color: #bebe56ff"}
+
+**Growth Parameters for Atlantic Cod:**
+
+- $L_\infty = 120$ cm (maximum size)
+- $K = 0.1$ per year (growth rate)
+- $t_0 ≈ 0$ (age at zero length)
+
+**Predicted Lengths at Different Ages:**
+
+- **Age 5:** $L_5 = 120(1 - e^{-0.1(5)}) ≈ 47$ cm
+- **Age 10:** $L_{10} = 120(1 - e^{-0.1(10)}) ≈ 76$ cm
+- **Age 20:** $L_{20} = 120(1 - e^{-0.1(20)}) ≈ 104$ cm
+- **Age 50:** $L_{50} = 120(1 - e^{-0.1(50)}) ≈ 119$ cm (approaches maximum)
+
+## [Real-World Example: Atlantic Cod...]{style="background: #4a1035ff; color: #bebe56ff"}
+
+**Management insight:**
+
+- Young cod (age 5-10) grow rapidly and can be caught sustainably
+- Old cod (age 20+) are larger and valuable but grow slowly
+- Overfishing young fish removes future large fish
+
+---
+
+## [Real-World Example: Nile Perch in Lake Victoria]{style="background: #4a1035ff; color: #bebe56ff"}
+
+**Growth Parameters for Nile Perch (*Lates niloticus*):**
+
+- $L_\infty = 200$ cm (maximum size - can reach very large)
+- $K = 0.08$ per year (relatively slow growth rate)
+- $t_0 ≈ 0$ (age at zero length)
+
+**Predicted Lengths at Different Ages:**
+
+- **Age 5:** $L_5 = 200(1 - e^{-0.08(5)}) ≈ 66$ cm
+- **Age 10:** $L_{10} = 200(1 - e^{-0.08(10)}) ≈ 110$ cm
+- **Age 15:** $L_{15} = 200(1 - e^{-0.08(15)}) ≈ 140$ cm
+- **Age 20:** $L_{20} = 200(1 - e^{-0.08(20)}) ≈ 160$ cm
+- **Age 30:** $L_{30} = 200(1 - e^{-0.08(30)}) ≈ 182$ cm
+
+---
+
+## [Nile Perch: Management Implications]{style="background: #4a1035ff; color: #bebe56ff"}
+
+**Lake Victoria Fishery Context:**
+
+- **Young Nile Perch (5-10 years)** - 60-107 cm, increasingly valuable for export market
+- **Prime fish (15-20 years)** - 140-165 cm, **highest commercial value**, very slow growth
+- **Old fish (30+ years)** - Over 185 cm, **rare due to fishing pressure**
+
+## [Nile Perch: Management Implications...]{style="background: #4a1035ff; color: #bebe56ff"}
+
+**Growth Trade-off Problem:**
+
+- Takes **15+ years** to reach prime commercial size
+- Takes **25+ years** to reach maximum size
+- Slow growth rate ($K = 0.08$) means population recovery is slow
+
+**Stock Collapse Risk:**
+
+- If fishing pressure targets large valuable fish, population structure becomes skewed to small fish
+- Loss of old fish eliminates spawners with highest fecundity
+- Overfishing compounds slow growth → stock cannot recover quickly
+- Lake Victoria Nile Perch catch has been declining since 1990s
+
+## [Nile Perch: Management Implications...]{style="background: #4a1035ff; color: #bebe56ff"}
+
+**Lesson:**
+
+Slow-growing species like Nile Perch are more vulnerable to overfishing and take longer to recover than fast-growing species
+
+---
+
+## [Growth Curve Example]{style="background: #4a1035ff; color: #bebe56ff"}
+
+::: {.columns}
+::: {.column width="60%"}
+
+```{=html}
+<svg width="500" height="350" style="margin: 0 auto; display: block;">
+  <!-- Background -->
+  <rect width="500" height="350" fill="#f0f0f0"/>
+  
+  <!-- Axes -->
+  <line x1="60" y1="300" x2="480" y2="300" stroke="#000" stroke-width="2"/>
+  <line x1="60" y1="300" x2="60" y2="50" stroke="#000" stroke-width="2"/>
+  
+  <!-- Labels -->
+  <text x="270" y="340" font-size="20" text-anchor="middle" fill="#000">Age (years)</text>
+  <text x="20" y="175" font-size="20" text-anchor="middle" fill="#000" transform="rotate(-90, 20, 175)">Length (cm)</text>
+  
+  <!-- Gridlines -->
+  <line x1="60" y1="250" x2="480" y2="250" stroke="#ccc" stroke-width="1" stroke-dasharray="5,5"/>
+  <line x1="60" y1="200" x2="480" y2="200" stroke="#ccc" stroke-width="1" stroke-dasharray="5,5"/>
+  <line x1="60" y1="150" x2="480" y2="150" stroke="#ccc" stroke-width="1" stroke-dasharray="5,5"/>
+  <line x1="60" y1="100" x2="480" y2="100" stroke="#ccc" stroke-width="1" stroke-dasharray="5,5"/>
+  
+  <!-- Scale labels (Y-axis) -->
+  <text x="55" y="305" font-size="18" text-anchor="end" fill="#000">0</text>
+  <text x="55" y="255" font-size="18" text-anchor="end" fill="#000">20</text>
+  <text x="55" y="205" font-size="18" text-anchor="end" fill="#000">40</text>
+  <text x="55" y="155" font-size="18" text-anchor="end" fill="#000">60</text>
+  <text x="55" y="105" font-size="18" text-anchor="end" fill="#000">80</text>
+  
+  <!-- Scale labels (X-axis) -->
+  <text x="60" y="320" font-size="18" text-anchor="middle" fill="#000">0</text>
+  <text x="155" y="320" font-size="18" text-anchor="middle" fill="#000">5</text>
+  <text x="250" y="320" font-size="18" text-anchor="middle" fill="#000">10</text>
+  <text x="345" y="320" font-size="18" text-anchor="middle" fill="#000">15</text>
+  <text x="440" y="320" font-size="18" text-anchor="middle" fill="#000">20</text>
+  
+  <!-- Growth curve (smooth)-->
+  <path d="M 60 290 Q 150 260 250 160 Q 350 110 480 80" 
+        stroke="#e74c3c" stroke-width="4" fill="none"/>
+  
+  <!-- Annotations -->
+  <text x="150" y="280" font-size="18" fill="#e74c3c" font-weight="bold">Fast growth</text>
+  <text x="380" y="110" font-size="18" fill="#e74c3c" font-weight="bold">Asymptotic</text>
+  
+  <!-- Arrow showing L∞ -->
+  <line x1="480" y1="80" x2="480" y2="50" stroke="#27ae60" stroke-width="2"/>
+  <text x="450" y="70" font-size="18" fill="#27ae60" font-weight="bold">L∞</text>
+</svg>
+```
+:::
+::: {.column width="40%"}
+
+**Key Features:**
+
+- Rapid growth early
+- Slowing growth with age
+- Approaches maximum length
+:::
+:::
+
+
+

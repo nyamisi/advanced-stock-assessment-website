@@ -1,0 +1,950 @@
+---
+title: "AQ 232: Fish Population Dynamics and Stock Assessment"
+subtitle: "Fish Population Dynamics"
+date: "2025-12-15"
+author: "Nyamisi Peter"
+format: 
+    revealjs:
+      standalone: true
+      embed-resources: true
+      reference-location: document
+      theme: serif
+      highlight-style: ayu-mirage
+execute: 
+  echo: false
+  warning: false
+  message: false
+  comment: ""
+
+slide-number: true
+theme: "journal"
+code-fold: false
+scrollable: true
+code-line-numbers: true
+css: ../style.css
+---
+
+## [Mortality (M)]{style="background: #4a1035ff; color: #bebe56ff"}
+
+**Mortality (M):**-- The deaths in the population from all causes (natural mortality like disease/predation, plus fishing mortality)
+
+**Types of Mortality:**
+
+1. **Natural mortality (M)** - Disease, predation, starvation, old age
+1. **Fishing mortality (F)** - Deaths from fishing
+1. **Total mortality (Z)** - Sum of natural and fishing mortality
+
+    Z = M + F
+
+## [Mortality (M)...]{style="background: #4a1035ff; color: #bebe56ff"}
+
+**Mortality characteristics:**
+
+- Often higher at young ages
+- May increase with old age
+- Fishing mortality controllable, natural not
+- Varies by season and location
+
+
+## [Mortality Illustration]{style="background: #4a1035ff; color: #bebe56ff"}
+
+```{mermaid}
+graph TD
+    A["Starting Population<br/>1000 fish"] --> B["Natural Mortality<br/>50 fish die"]
+    A --> C["Fishing Mortality<br/>200 fish caught"]
+    B --> D["Survivors<br/>750 fish"]
+    C --> D
+    D --> E["Total Mortality = 25%"]
+```
+
+
+## [Population Models]{style="background: #4a1035ff; color: #bebe56ff"}
+
+### [Mathematical Tools for Prediction]{style="background: #453d42ff; color: #f6773cff"}
+
+
+## [Model Basics]{style="background: #4a1035ff; color: #bebe56ff"}
+
+**What is a Population Model?**
+
+- Mathematical representation of how population changes
+- Uses vital rates (recruitment, growth, mortality)
+- Predicts future population size
+- Basis for harvest decisions
+
+## [Model Basics...]{style="background: #4a1035ff; color: #bebe56ff"}
+
+**Simple Population Equation:**
+
+$$N_{t+1} = N_t + R_t - M_t - C_t$$
+
+Where:
+
+- $N_t$ = population at time t
+- $R_t$ = recruitment
+- $M_t$ = natural mortality
+- $C_t$ = catch
+
+
+## [Exponential Growth Model]{style="background: #4a1035ff; color: #bebe56ff"}
+
+- The **Exponential Growth Model** describes population growth when there are no resource limitations. 
+- It assumes that the population grows at a constant rate, leading to exponential increase over time.
+
+**Formula:**
+
+$$N_t = N_0 e^{rt}$$
+
+Or equivalently:
+
+$$N_t = N_0 \lambda^t$$
+
+
+::: {.columns}
+::: {.column}
+
+**Where:**
+
+- $N_t$ = population size at time t
+- $N_0$ = initial population size
+- $r$ = intrinsic rate of increase (growth rate)
+- $\lambda$ = population growth rate
+- $t$ = time
+
+:::
+::: {.column}
+
+**What it means:**
+
+- If $r > 0$: population grows exponentially
+- If $r = 0$: population stable
+- If $r < 0$: population declines or shrink
+
+:::
+::: 
+
+## [Exponential Growth Model]{style="background: #4a1035ff; color: #bebe56ff"}
+
+::: {.columns}
+::: {.column}
+
+**Assumption:** 
+
+***1. Unlimited resources***
+
+  + Food is always available
+  + Space is not limiting
+  + No environmental constraints
+  + Habitat quality doesn't change
+:::
+::: {.column}
+
+***Exponential growth curve:***
+
+```{=html}
+<svg width="500" height="350" style="margin: 0 auto; display: block;">
+  <!-- Background -->
+  <rect width="500" height="350" fill="#f0f0f0"/>
+  
+  <!-- Axes -->
+
+  <line x1="60" y1="300" x2="480" y2="300" stroke="#000" stroke-width="2"/>
+  <line x1="60" y1="300" x2="60" y2="50" stroke="#000" stroke-width="2"/>
+  
+  <!-- Labels -->
+  <text x="270" y="330" font-size="20" text-anchor="middle" fill="#000">Time</text>
+  <text x="20" y="175" font-size="20" text-anchor="middle" fill="#000" transform="rotate(-90, 20, 175)">Population</text>
+  
+  <!-- Exponential curve (fast growth) -->
+  <path d="M 60 280 Q 150 260 250 150 Q 350 50 480 30" 
+        stroke="#e74c3c" stroke-width="3" fill="none"/>
+  <text x="380" y="60" font-size="20" fill="#e74c3c" font-weight="bold">Exponential</text>
+  </svg>
+```
+:::
+::: 
+
+## [Exponential Growth Model]{style="background: #4a1035ff; color: #bebe56ff"}
+
+::: {.columns}
+::: {.column}
+
+**Assumption:**
+
+***2. Constant Growth Rate (r)***
+
+  + Growth rate doesn't change over time
+  + Same regardless of population size
+  + Environmental conditions stable
+  + No density-dependent effects
+
+:::
+::: {.column}
+
+  ***Exponential growth curve:***
+
+```{=html}
+<svg width="500" height="350" style="margin: 0 auto; display: block;">
+  <!-- Background -->
+  <rect width="500" height="350" fill="#f0f0f0"/>
+  
+  <!-- Axes -->
+
+  <line x1="60" y1="300" x2="480" y2="300" stroke="#000" stroke-width="2"/>
+  <line x1="60" y1="300" x2="60" y2="50" stroke="#000" stroke-width="2"/>
+  
+  <!-- Labels -->
+  <text x="270" y="330" font-size="20" text-anchor="middle" fill="#000">Time</text>
+  <text x="20" y="175" font-size="20" text-anchor="middle" fill="#000" transform="rotate(-90, 20, 175)">Population</text>
+  
+  <!-- Exponential curve (fast growth) -->
+  <path d="M 60 280 Q 150 260 250 150 Q 350 50 480 30" 
+        stroke="#e74c3c" stroke-width="3" fill="none"/>
+  <text x="380" y="60" font-size="20" fill="#e74c3c" font-weight="bold">Exponential</text>
+  </svg>
+```
+:::
+::: 
+
+## [Exponential Growth Model]{style="background: #4a1035ff; color: #bebe56ff"}
+
+::: {.columns}
+::: {.column}
+
+
+**Assumption:** 
+
+***3. No Density Dependence***
+
+  + Population size doesn't affect vital rates
+  + Birth rate stays constant regardless of how many fish there are
+  + Death rate stays constant
+  + Competition doesn't increase with density
+
+:::
+::: {.column}
+  ***Exponential growth curve:***
+
+```{=html}
+<svg width="500" height="350" style="margin: 0 auto; display: block;">
+  <!-- Background -->
+  <rect width="500" height="350" fill="#f0f0f0"/>
+  
+  <!-- Axes -->
+
+  <line x1="60" y1="300" x2="480" y2="300" stroke="#000" stroke-width="2"/>
+  <line x1="60" y1="300" x2="60" y2="50" stroke="#000" stroke-width="2"/>
+  
+  <!-- Labels -->
+  <text x="270" y="330" font-size="20" text-anchor="middle" fill="#000">Time</text>
+  <text x="20" y="175" font-size="20" text-anchor="middle" fill="#000" transform="rotate(-90, 20, 175)">Population</text>
+  
+  <!-- Exponential curve (fast growth) -->
+  <path d="M 60 280 Q 150 260 250 150 Q 350 50 480 30" 
+        stroke="#e74c3c" stroke-width="3" fill="none"/>
+  <text x="380" y="60" font-size="20" fill="#e74c3c" font-weight="bold">Exponential</text>
+  </svg>
+```
+:::
+::: 
+
+## [Exponential Growth Model]{style="background: #4a1035ff; color: #bebe56ff"}
+
+::: {.columns}
+::: {.column}
+
+**Assumption:**
+
+***4. Closed Population***
+
+  + No immigration (fish moving in)
+  + No emigration (fish moving out)
+  + All changes come from births and deaths only
+
+:::
+::: {.column}
+
+***Exponential growth curve:***
+
+```{=html}
+<svg width="500" height="350" style="margin: 0 auto; display: block;">
+  <!-- Background -->
+  <rect width="500" height="350" fill="#f0f0f0"/>
+  
+  <!-- Axes -->
+
+  <line x1="60" y1="300" x2="480" y2="300" stroke="#000" stroke-width="2"/>
+  <line x1="60" y1="300" x2="60" y2="50" stroke="#000" stroke-width="2"/>
+  
+  <!-- Labels -->
+  <text x="270" y="330" font-size="20" text-anchor="middle" fill="#000">Time</text>
+  <text x="20" y="175" font-size="20" text-anchor="middle" fill="#000" transform="rotate(-90, 20, 175)">Population</text>
+  
+  <!-- Exponential curve (fast growth) -->
+  <path d="M 60 280 Q 150 260 250 150 Q 350 50 480 30" 
+        stroke="#e74c3c" stroke-width="3" fill="none"/>
+  <text x="380" y="60" font-size="20" fill="#e74c3c" font-weight="bold">Exponential</text>
+  </svg>
+```
+:::
+::: 
+
+## [Exponential Growth Model]{style="background: #4a1035ff; color: #bebe56ff"}
+
+::: {.columns}
+::: {.column}
+
+**Assumption:** 
+
+***5. Continuous Population***
+
+  + Applies to every individual equally
+  + No age/size structure effects
+  + Simplified view of population
+
+:::
+::: {.column}
+
+***Exponential growth curve:***
+
+```{=html}
+<svg width="500" height="350" style="margin: 0 auto; display: block;">
+  <!-- Background -->
+  <rect width="500" height="350" fill="#f0f0f0"/>
+  
+  <!-- Axes -->
+
+  <line x1="60" y1="300" x2="480" y2="300" stroke="#000" stroke-width="2"/>
+  <line x1="60" y1="300" x2="60" y2="50" stroke="#000" stroke-width="2"/>
+  
+  <!-- Labels -->
+  <text x="270" y="330" font-size="20" text-anchor="middle" fill="#000">Time</text>
+  <text x="20" y="175" font-size="20" text-anchor="middle" fill="#000" transform="rotate(-90, 20, 175)">Population</text>
+  
+  <!-- Exponential curve (fast growth) -->
+  <path d="M 60 280 Q 150 260 250 150 Q 350 50 480 30" 
+        stroke="#e74c3c" stroke-width="3" fill="none"/>
+  <text x="380" y="60" font-size="20" fill="#e74c3c" font-weight="bold">Exponential</text>
+  </svg>
+```
+:::
+::: 
+
+## [Exponential Growth Model]{style="background: #4a1035ff; color: #bebe56ff"}
+
+::: {.columns}
+::: {.column}
+
+**Assumption:**
+
+***6. No Fishing or External Removal***
+
+  + All removals are natural deaths only
+  + Assumes no harvesting
+:::
+::: {.column}
+
+***Exponential growth curve:***
+
+```{=html}
+<svg width="500" height="350" style="margin: 0 auto; display: block;">
+  <!-- Background -->
+  <rect width="500" height="350" fill="#f0f0f0"/>
+  
+  <!-- Axes -->
+
+  <line x1="60" y1="300" x2="480" y2="300" stroke="#000" stroke-width="2"/>
+  <line x1="60" y1="300" x2="60" y2="50" stroke="#000" stroke-width="2"/>
+  
+  <!-- Labels -->
+  <text x="270" y="330" font-size="20" text-anchor="middle" fill="#000">Time</text>
+  <text x="20" y="175" font-size="20" text-anchor="middle" fill="#000" transform="rotate(-90, 20, 175)">Population</text>
+  
+  <!-- Exponential curve (fast growth) -->
+  <path d="M 60 280 Q 150 260 250 150 Q 350 50 480 30" 
+        stroke="#e74c3c" stroke-width="3" fill="none"/>
+  <text x="380" y="60" font-size="20" fill="#e74c3c" font-weight="bold">Exponential</text>
+  </svg>
+```
+:::
+::: 
+
+
+# [Why these assumptions are unrealistic?]{style="color: #bebe56ff"}
+
+## [Problem with Exponential Model]{style="background: #4a1035ff; color: #bebe56ff"}
+
+- Ignores resource limits
+
+  + Fish DO have limits (food, space, oxygen)
+    
+- Predicts infinite growth
+
+  + Growth rates **DO** change with density
+  + Competition **DOES** increase when crowded
+  + Real populations have age/size structure
+
+- Unrealistic
+
+  + Fisheries involve harvesting
+
+
+## [Logistic Growth Model]{style="background: #4a1035ff; color: #bebe56ff"}
+
+::: {.columns}
+::: {.column}
+
+- Logistic growth model is more realistic for fish populations than the exponential growth model.
+- It incorporates the concept of carrying capacity (K), which represents the maximum population size that the environment can sustain indefinitely  and density-dependent effects.
+
+:::
+::: {.column}
+
+```{=html}
+<svg width="500" height="350" style="margin: 0 auto; display: block;">
+  <!-- Background -->
+  <rect width="500" height="350" fill="#f0f0f0"/>
+  
+  <!-- Title -->
+  <text x="250" y="25" font-size="16" font-weight="bold" text-anchor="middle" fill="#000">Logistic Growth</text>
+  
+  <!-- Axes -->
+  <line x1="60" y1="300" x2="480" y2="300" stroke="#000" stroke-width="2"/>
+  <line x1="60" y1="300" x2="60" y2="50" stroke="#000" stroke-width="2"/>
+  
+  <!-- Labels -->
+  <text x="270" y="330" font-size="12" text-anchor="middle" fill="#000">Time</text>
+  <text x="20" y="175" font-size="12" text-anchor="middle" fill="#000" transform="rotate(-90, 20, 175)">Population</text>
+   
+  <!-- Logistic curve (slowing growth) -->
+  <path d="M 60 280 Q 150 240 250 180 Q 350 140 480 130" 
+        stroke="#27ae60" stroke-width="3" fill="none"/>
+  <text x="350" y="150" font-size="12" fill="#27ae60" font-weight="bold">Logistic (K)</text>
+  
+  <!-- Carrying capacity line -->
+  <line x1="60" y1="130" x2="480" y2="130" stroke="#f20c0cff" stroke-width="2" stroke-dasharray="5,5"/>
+</svg>
+```
+:::
+:::
+
+
+## [Logistic Growth Model...]{style="background: #4a1035ff; color: #bebe56ff"}
+
+**Assumption:** Growth limited by carrying capacity (K)
+
+**Formula:**
+
+$$\frac{dN}{dt} = rN\left(1 - \frac{N}{K}\right)$$
+
+Or in discrete form:
+
+$$N_{t+1} = N_t + rN_t\left(1 - \frac{N_t}{K}\right)$$
+
+Where:
+
+- $r$ = intrinsic rate of increase
+- $K$ = carrying capacity (maximum population)
+- $(1 - N_t/K)$ = density-dependent factor
+
+## [Logistic Growth Model...]{style="background: #4a1035ff; color: #bebe56ff"}
+
+::: {.columns}
+::: {.column}
+
+**What it means:**
+
+- Growth slows as population approaches K
+- Equilibrium at K
+- More realistic for real populations
+
+:::
+::: {.column}
+
+```{=html}
+<svg width="500" height="350" style="margin: 0 auto; display: block;">
+  <!-- Background -->
+  <rect width="500" height="350" fill="#f0f0f0"/>
+  
+  <!-- Title -->
+  <text x="250" y="25" font-size="16" font-weight="bold" text-anchor="middle" fill="#000">Logistic Growth</text>
+  
+  <!-- Axes -->
+  <line x1="60" y1="300" x2="480" y2="300" stroke="#000" stroke-width="2"/>
+  <line x1="60" y1="300" x2="60" y2="50" stroke="#000" stroke-width="2"/>
+  
+  <!-- Labels -->
+  <text x="270" y="330" font-size="12" text-anchor="middle" fill="#000">Time</text>
+  <text x="20" y="175" font-size="12" text-anchor="middle" fill="#000" transform="rotate(-90, 20, 175)">Population</text>
+   
+  <!-- Logistic curve (slowing growth) -->
+  <path d="M 60 280 Q 150 240 250 180 Q 350 140 480 130" 
+        stroke="#27ae60" stroke-width="3" fill="none"/>
+  <text x="350" y="150" font-size="12" fill="#27ae60" font-weight="bold">Logistic (K)</text>
+  
+  <!-- Carrying capacity line -->
+  <line x1="60" y1="130" x2="480" y2="130" stroke="#f20c0cff" stroke-width="2" stroke-dasharray="5,5"/>
+</svg>
+```
+:::
+::: 
+
+
+
+## Logistic Growth Dynamics
+
+::: {.columns}
+::: {.column}
+**At different population levels:**
+
+- **When N < K:** Population grows rapidly
+- **When N = K/2:** Population growth is fastest
+- **When N approaches K:** Population growth slows dramatically
+- **When N = K:** Population is stable (if no fishing)
+
+**For Fisheries:**
+
+- MSY often achieved near K/2
+- Overfishing reduces population below optimal levels
+
+:::
+::: {.column}
+```{=html}
+<svg width="500" height="350" style="margin: 0 auto; display: block;">
+  <!-- Background -->
+  <rect width="500" height="350" fill="#f0f0f0"/>
+  
+  <!-- Title -->
+  <text x="250" y="25" font-size="16" font-weight="bold" text-anchor="middle" fill="#000">Logistic Growth</text>
+  
+  <!-- Axes -->
+  <line x1="60" y1="300" x2="480" y2="300" stroke="#000" stroke-width="2"/>
+  <line x1="60" y1="300" x2="60" y2="50" stroke="#000" stroke-width="2"/>
+  
+  <!-- Labels -->
+  <text x="270" y="330" font-size="12" text-anchor="middle" fill="#000">Time</text>
+  <text x="20" y="175" font-size="12" text-anchor="middle" fill="#000" transform="rotate(-90, 20, 175)">Population</text>
+   
+  <!-- Logistic curve (slowing growth) -->
+  <path d="M 60 280 Q 150 240 250 180 Q 350 140 480 130" 
+        stroke="#27ae60" stroke-width="3" fill="none"/>
+  <text x="350" y="150" font-size="12" fill="#27ae60" font-weight="bold">Logistic (K)</text>
+  
+  <!-- Carrying capacity line -->
+  <line x1="60" y1="130" x2="480" y2="130" stroke="#f20c0cff" stroke-width="2" stroke-dasharray="5,5"/>
+</svg>
+```
+
+:::
+::: 
+
+
+
+## [Exponential Growth curve Vs Logistic Growth]{style="background: #4a1035ff; color: #bebe56ff"}
+
+
+```{=html}
+<svg width="500" height="350" style="margin: 0 auto; display: block;">
+  <!-- Background -->
+  <rect width="500" height="350" fill="#f0f0f0"/>
+  
+  <!-- Title -->
+  <text x="250" y="25" font-size="16" font-weight="bold" text-anchor="middle" fill="#000">Exponential Growth vs. Logistic Growth</text>
+  
+  <!-- Axes -->
+  <line x1="60" y1="300" x2="480" y2="300" stroke="#000" stroke-width="2"/>
+  <line x1="60" y1="300" x2="60" y2="50" stroke="#000" stroke-width="2"/>
+  
+  <!-- Labels -->
+  <text x="270" y="330" font-size="12" text-anchor="middle" fill="#000">Time</text>
+  <text x="20" y="175" font-size="12" text-anchor="middle" fill="#000" transform="rotate(-90, 20, 175)">Population</text>
+  
+  <!-- Exponential curve (fast growth) -->
+  <path d="M 60 280 Q 150 260 250 150 Q 350 50 480 30" 
+        stroke="#e74c3c" stroke-width="3" fill="none"/>
+  <text x="380" y="60" font-size="12" fill="#e74c3c" font-weight="bold">Exponential</text>
+  
+  <!-- Logistic curve (slowing growth) -->
+  <path d="M 60 280 Q 150 240 250 180 Q 350 140 480 130" 
+        stroke="#27ae60" stroke-width="3" fill="none"/>
+  <text x="350" y="150" font-size="12" fill="#27ae60" font-weight="bold">Logistic (K)</text>
+  
+  <!-- Carrying capacity line -->
+  <line x1="60" y1="130" x2="480" y2="130" stroke="#27ae60" stroke-width="2" stroke-dasharray="5,5"/>
+</svg>
+```
+
+## [Stock-Recruitment Relationships]{style="background: #4a1035ff; color: #bebe56ff"}
+
+### [Connecting Spawners to Offspring]{style="background: #4a1035ff; color: #bebe56ff"}
+
+
+## [What is Stock-Recruitment?]{style="background: #4a1035ff; color: #bebe56ff"}
+
+**Definition:** The relationship between spawning stock size and recruitment (number of young fish produced)
+
+**Key Idea:**
+
+- More spawners = more eggs
+- But relationship may not be linear
+- Environmental variation matters
+- Density-dependent effects
+
+
+## [Beverton-Holt Model]{style="background: #4a1035ff; color: #bebe56ff"}
+
+- The Beverton-Holt model is a commonly used stock-recruitment relationship in fisheries science.
+
+**Formula:**
+
+$$R_t = \frac{aS_t}{1 + bS_t}$$
+
+Where:
+
+- $R_t$ = recruitment at time t
+- $S_t$ = spawning stock size
+- $a$ = productivity parameter (maximum recruitment potential)
+- $b$ = density-dependent parameter (strength of density dependence)
+
+## [Beverton-Holt Model...]{style="background: #4a1035ff; color: #bebe56ff"}
+
+::: {.columns}
+::: {.column}
+
+**Characteristics:** 
+
+- Recruitment increases with spawners
+- Recruitment plateaus at high spawning stock (asymptotic)
+- Maximum recruitment = $a/b$
+- Good for species with strong density-dependent effects
+:::
+::: {.column}
+
+```{=html}
+<svg width="600" height="400" style="margin: 0 auto; display: block;">
+  <!-- Background -->
+  <rect width="600" height="400" fill="#f0f0f0"/>
+  
+  <!-- Title -->
+  <text x="300" y="25" font-size="18" font-weight="bold" text-anchor="middle" fill="#000">Beverton-Holt Stock-Recruitment Model</text>
+  
+  <!-- Axes -->
+  <line x1="80" y1="320" x2="550" y2="320" stroke="#000" stroke-width="2"/>
+  <line x1="80" y1="320" x2="80" y2="50" stroke="#000" stroke-width="2"/>
+  
+  <!-- Axis labels -->
+  <text x="315" y="360" font-size="14" text-anchor="middle" fill="#000" font-weight="bold">Spawning Stock Size (S_t)</text>
+  <text x="25" y="185" font-size="14" text-anchor="middle" fill="#000" font-weight="bold" transform="rotate(-90, 25, 185)">Recruitment (R_t)</text>
+  
+  <!-- Gridlines -->
+  <line x1="80" y1="240" x2="550" y2="240" stroke="#ddd" stroke-width="1" stroke-dasharray="3,3"/>
+  <line x1="80" y1="160" x2="550" y2="160" stroke="#ddd" stroke-width="1" stroke-dasharray="3,3"/>
+  <line x1="200" y1="50" x2="200" y2="320" stroke="#ddd" stroke-width="1" stroke-dasharray="3,3"/>
+  <line x1="320" y1="50" x2="320" y2="320" stroke="#ddd" stroke-width="1" stroke-dasharray="3,3"/>
+  <line x1="440" y1="50" x2="440" y2="320" stroke="#ddd" stroke-width="1" stroke-dasharray="3,3"/>
+  
+  <!-- Beverton-Holt curve (asymptotic) -->
+  <path d="M 80 310 Q 150 280 220 220 Q 280 160 340 120 Q 400 90 450 75 Q 500 65 550 60" 
+        stroke="#e74c3c" stroke-width="4" fill="none"/>
+  
+  <!-- Maximum recruitment line (asymptote) -->
+  <line x1="80" y1="55" x2="550" y2="55" stroke="#27ae60" stroke-width="2" stroke-dasharray="5,5"/>
+  <text x="560" y="60" font-size="12" fill="#27ae60" font-weight="bold">Max R = a/b</text>
+  
+  <!-- Origin point -->
+  <circle cx="80" cy="320" r="4" fill="#000"/>
+  
+  <!-- Annotations -->
+  <text x="120" y="340" font-size="11" fill="#000">0</text>
+  <text x="200" y="340" font-size="11" fill="#000">S₁</text>
+  <text x="320" y="340" font-size="11" fill="#000">S₂</text>
+  <text x="440" y="340" font-size="11" fill="#000">S₃</text>
+  
+  <text x="65" y="325" font-size="11" fill="#000">0</text>
+  <text x="65" y="245" font-size="11" fill="#000">R₁</text>
+  <text x="65" y="165" font-size="11" fill="#000">R₂</text>
+  <text x="65" y="85" font-size="11" fill="#000">R_max</text>
+  
+  <!-- Arrow annotations -->
+  <text x="150" y="200" font-size="13" fill="#e74c3c" font-weight="bold">Steep increase</text>
+  <text x="380" y="90" font-size="13" fill="#e74c3c" font-weight="bold">Plateaus</text>
+  
+  <!-- Key features -->
+  <rect x="370" y="150" width="180" height="140" fill="white" stroke="#999" stroke-width="1" rx="5"/>
+  <text x="460" y="170" font-size="12" font-weight="bold" text-anchor="middle" fill="#000">Key Features:</text>
+  <text x="375" y="190" font-size="11" fill="#000">• Low S: rapid recruitment</text>
+  <text x="375" y="208" font-size="11" fill="#000">• High S: recruitment slows</text>
+  <text x="375" y="226" font-size="11" fill="#000">• Asymptotic approach</text>
+  <text x="375" y="244" font-size="11" fill="#000">• Never exceeds a/b</text>
+  <text x="375" y="262" font-size="11" fill="#000">• Density-dependent</text>
+  <text x="375" y="280" font-size="11" fill="#000">• Realistic for many</text>
+  <text x="375" y="298" font-size="11" fill="#000">  tropical species</text>
+</svg>
+```
+:::
+::: 
+
+
+## [How Beverton-Holt Works]{style="background: #4a1035ff; color: #bebe56ff"}
+
+::: {.columns}
+::: {.column}
+
+**At low spawning stock (S_t small):**
+
+- Recruitment increases nearly linearly with spawners
+- Few density-dependent effects
+- Each new spawner adds substantially to recruitment
+:::
+::: {.column}
+
+**At high spawning stock (S_t large):**
+
+- Recruitment plateaus (approaches maximum)
+- Density-dependent effects dominate
+- Competition for food/space reduces per-capita recruitment
+- Additional spawners add little to total recruitment
+:::
+::: 
+
+
+
+
+## [Mathematical insight of Beverton-Holt model]{style="background: #4a1035ff; color: #bebe56ff"}
+
+::: {.columns}
+::: {.column}
+
+**Formula:**
+
+$$R_t = \frac{aS_t}{1 + bS_t}$$
+
+:::
+::: {.column}
+
+- When $S_t = 0$: $R_t = 0$ (no spawners = no recruitment)
+- When $S_t$ → ∞: $R_t$ → $a/b$ (maximum recruitment)
+
+:::
+::: 
+
+
+## [Ricker Model]{style="background: #4a1035ff; color: #bebe56ff"}
+
+**Formula:**
+
+$$R_t = aS_t e^{-bS_t}$$
+
+Where:
+
+- $a$ = productivity parameter
+- $b$ = density-dependent parameter
+
+## [Ricker Model...]{style="background: #4a1035ff; color: #bebe56ff"}
+
+**Characteristics:**
+
+- Recruitment increases then decreases
+- Peak recruitment at intermediate spawning stock
+- Decline at very high spawner numbers
+- Good for species (salmon) with cannibalism or crowding effects
+
+
+## [Beverton-Holt vs. Ricker]{style="background: #4a1035ff; color: #bebe56ff"}
+
+```{=html}
+<svg width="500" height="350" style="margin: 0 auto; display: block;">
+  <!-- Background -->
+  <rect width="500" height="350" fill="#f0f0f0"/>
+  
+  <!-- Title -->
+  <text x="250" y="25" font-size="16" font-weight="bold" text-anchor="middle" fill="#000">Stock-Recruitment Models</text>
+  
+  <!-- Axes -->
+  <line x1="60" y1="300" x2="480" y2="300" stroke="#000" stroke-width="2"/>
+  <line x1="60" y1="300" x2="60" y2="50" stroke="#000" stroke-width="2"/>
+  
+  <!-- Labels -->
+  <text x="270" y="330" font-size="12" text-anchor="middle" fill="#000">Spawning Stock Size</text>
+  <text x="20" y="175" font-size="12" text-anchor="middle" fill="#000" transform="rotate(-90, 20, 175)">Recruitment</text>
+  
+  <!-- Left side: Beverton-Holt -->
+  <path d="M 60 280 Q 180 150 280 80" 
+        stroke="#e74c3c" stroke-width="3" fill="none"/>
+  <text x="120" y="180" font-size="12" fill="#e74c3c" font-weight="bold">Beverton-Holt</text>
+  <text x="120" y="200" font-size="10" fill="#c0392b">(Asymptotic)</text>
+  
+  <!-- Right side: Ricker -->
+  <path d="M 300 280 Q 360 120 440 80" 
+        stroke="#27ae60" stroke-width="3" fill="none"/>
+  <path d="M 440 80 Q 470 90 480 120" 
+        stroke="#27ae60" stroke-width="3" fill="none"/>
+  <text x="370" y="150" font-size="12" fill="#27ae60" font-weight="bold">Ricker</text>
+  <text x="370" y="170" font-size="10" fill="#1e8449">(Hump-shaped)</text>
+  
+  <!-- Vertical line dividing -->
+  <line x1="270" y1="300" x2="270" y2="50" stroke="#999" stroke-width="1" stroke-dasharray="5,5"/>
+</svg>
+```
+
+**Key Difference:**
+
+- **Beverton-Holt:** More spawners = more recruitment (asymptotic)
+- **Ricker:** Too many spawners can reduce recruitment (hump-shaped)
+
+## Variability in Recruitment
+
+```{mermaid}
+graph TD
+    A["Spawning Stock Size"] --> B["Environmental<br/>Variation"]
+    A --> C["Larval Food<br/>Availability"]
+    A --> D["Temperature<br/>& Currents"]
+    A --> E["Predation<br/>Pressure"]
+    B --> F["Recruitment<br/>Uncertainty"]
+    C --> F
+    D --> F
+    E --> F
+```
+
+**Practical Implication:**
+
+- Can't predict recruitment precisely
+- Must account for uncertainty
+- Risk of recruitment failure
+
+
+## [Density-Dependent Effects]{style="background: #4a1035ff; color: #bebe56ff"}
+
+### [How Population Density Matters]{style="background: #4a1035ff; color: #bebe56ff"}
+
+
+## [What is Density Dependence?]{style="background: #4a1035ff; color: #bebe56ff"}
+
+**Density Dependence:**-- When vital rates (growth, survival, reproduction) depend on population density
+
+**How it works:**
+
+- High density → increased competition
+- Competition for food, space, mates
+- Reduced growth and survival
+- Lower recruitment
+
+## [Density Dependence...]{style="background: #4a1035ff; color: #bebe56ff"}
+
+**Equation:**
+
+$$\text{Vital Rate} = f(\text{Population Size})$$
+
+**Meaning**: Vital Rate is a function of Population Size
+
+- The vital rate changes depends on how many fish are in the population
+- It is a mathematical function where population size is the input
+
+## [Density Dependence...]{style="background: #4a1035ff; color: #bebe56ff"}
+
+**Example 1: Growth Rate**
+
+$$Growth~Rate = f(Population~Size)$$
+
+- **Small population**: Fish have plenty of food → Fast growth
+- **Large population**: Competition for food → Slow growth
+- Same species, different growth rate based on population density
+
+## [Density Dependence...]{style="background: #4a1035ff; color: #bebe56ff"}
+
+**Example 2: Survival Rate**
+
+$$Survival~Rate = f(Population~Size)$$
+
+- **Small population**: Low mortality (abundant resources) → High survival
+- **Large population**: High mortality (starvation, disease) → Low survival
+
+## [Density Dependence...]{style="background: #4a1035ff; color: #bebe56ff"}
+
+**Example 3: Reproduction Rate**
+
+$$Reproduction~Rate = f(Population~Size)$$
+
+- **Small population**: Fish produce many eggs → High recruitment
+* **Large population**: Fish produce fewer eggs → Low recruitment
+
+## [Density Dependence...]{style="background: #4a1035ff; color: #bebe56ff"}
+
+**In contrast, WITHOUT density dependence:**
+
+$$Vital~Rate = constant$$
+
+- Vital Rate does not change with population size
+
+## [Summary of Density Dependence]{style="background: #4a1035ff; color: #bebe56ff"}
+
+**Growth:**
+
+- Dense populations grow slower
+- Limited food per fish
+- Smaller fish at same age
+
+**Survival:**
+
+- Dense populations have higher mortality
+- Starvation increases
+- Disease spreads easier
+
+**Reproduction:**
+
+- Dense populations produce fewer recruits
+- Smaller eggs
+- Lower reproductive success
+
+## [Density Dependence in Logistic Growth]{style="background: #4a1035ff; color: #bebe56ff"}
+
+```{=html}
+<svg width="500" height="350" style="margin: 0 auto; display: block;">
+  <!-- Background -->
+  <rect width="500" height="350" fill="#f0f0f0"/>
+  
+  <!-- Title -->
+  <text x="250" y="25" font-size="16" font-weight="bold" text-anchor="middle" fill="#000">Density-Dependent Growth Rate</text>
+  
+  <!-- Axes -->
+  <line x1="60" y1="300" x2="480" y2="300" stroke="#000" stroke-width="2"/>
+  <line x1="60" y1="300" x2="60" y2="50" stroke="#000" stroke-width="2"/>
+  
+  <!-- Labels -->
+  <text x="270" y="330" font-size="12" text-anchor="middle" fill="#000">Population Size (N/K)</text>
+  <text x="20" y="175" font-size="12" text-anchor="middle" fill="#000" transform="rotate(-90, 20, 175)">Growth Rate</text>
+  
+  <!-- Gridlines -->
+  <line x1="60" y1="175" x2="480" y2="175" stroke="#ccc" stroke-width="1" stroke-dasharray="5,5"/>
+  
+  <!-- Zero line (growth rate = 0) -->
+  <line x1="60" y1="175" x2="480" y2="175" stroke="#666" stroke-width="2"/>
+  
+  <!-- Curve (parabola shape) -->
+  <path d="M 60 175 Q 270 75 480 175" 
+        stroke="#e74c3c" stroke-width="3" fill="none"/>
+  
+  <!-- Annotations -->
+  <text x="270" y="70" font-size="12" fill="#e74c3c" font-weight="bold">Maximum at K/2</text>
+  
+  <!-- K/2 marker -->
+  <line x1="270" y1="175" x2="270" y2="185" stroke="#000" stroke-width="2"/>
+  <text x="270" y="205" font-size="11" text-anchor="middle" fill="#000">K/2</text>
+  
+  <!-- Equilibrium at K -->
+  <line x1="480" y1="175" x2="480" y2="185" stroke="#000" stroke-width="2"/>
+  <text x="480" y="205" font-size="11" text-anchor="middle" fill="#000">K</text>
+</svg>
+```
+
+**Key insight:**
+
+- Growth rate = 0 at K (equilibrium)
+- Maximum growth rate at K/2
+- This is where MSY occurs in logistic model
+
+## 
+
+Thank you!
+
+**Questions?**

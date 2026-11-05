@@ -1,0 +1,289 @@
+---
+title: "AQ 232: Fish Population Dynamics and Stock Assessment"
+subtitle: "Length-Weight Relationship in Fish"
+date: "2026-02-18"
+author: "Nyamisi Peter"
+format: 
+    revealjs:
+      standalone: true
+      embed-resources: true
+      reference-location: document
+      theme: serif
+      highlight-style: ayu-mirage
+execute: 
+  echo: false
+  warning: false
+  message: false
+  comment: ""
+
+slide-number: true
+theme: "journal"
+code-fold: false
+scrollable: true
+code-line-numbers: true
+css: ../style.css
+---
+
+## [What is Length-Weight Relationship?]{style="background: #4a1035ff; color: #bebe56ff"}
+
++ The mathematical relationship between fish body length and body weight
+- Different species have different relationships
+
+**Key idea:**
+
+- Longer fish are generally heavier
+- But the relationship is NOT linear
+- Weight increases with the **cube** of length (cubic relationship) -- ***Cube Law***
+$$W \propto L^3$$
+
+$$W = aL^3$$
+
+## [Weakness of Cube Law]{style="background: #4a1035ff; color: #bebe56ff"}
+
++ Not all fish grow isometrically (b=3)
++ Some species get heavier (b>3) or lighter (b<3) as they grow
++ Body shape and condition affect weight gain
++ Environmental factors (food, habitat) also influence growth patterns
+
+## [Allometry]{style="background: #4a1035ff; color: #bebe56ff"}
+
+- Allometry describes how body proportions change with size
+- In fish, allometric growth means weight does not increase exactly with cube of length
+- The general formula is:
+$$W = aL^b$$   
+
+Where:   
+
+- $W$ = weight
+- $L$ = length
+- $a$ = intercept
+- $b$ = slope
+
+
+## [Logarithmic Form for allometric equation]{style="background: #4a1035ff; color: #bebe56ff"}
+
+**Logarithmic form(linear regression):**
+
++ $$W = aL^b$$
+
++ Taking log of both sides gives:
+
+$$\log(W) = \log(a) + b \cdot \log(L)$$
+
+
+## [What does 'a' mean?]{style="background: #453d42ff; color: #f6773cff"}
+
+- **Scale factor** or **intercept**
+
+- Species-specific (different species have different values)
+- Related to fish **condition** and **body shape**
+- Heavier fish species have larger 'a' values
+
+**Example:**
+
+- Nile Perch: $a ≈ 0.0098$ (robust body)
+- Cichlid: $a ≈ 0.005$ (slender body)
+- Same length, different weight due to different 'a'
+
+
+## [What does 'b' mean?]{style="background: #453d42ff; color: #f6773cff"}
+
+- **Exponent** or **slope**
+- Determines how **weight scales with length**
+- Typical range: **2.5 to 3.5**
+
+**Interpretation:**
+
+| b value | Meaning |
+|---------|---------|
+| b = 3 | **Isometric growth** - Perfect cubic relationship |
+| b > 3 | **Allometric growth (positive)** - Fish gets proportionally heavier as it grows |
+| b < 3 | **Allometric growth (negative)** - Fish gets proportionally lighter as it grows |
+
+
+## [Graphical Representation]{style="background: #4a1035ff; color: #bebe56ff"}
+
+```{=html}
+<svg width="600" height="400" style="margin: 0 auto; display: block;">
+  <!-- Background -->
+  <rect width="600" height="400" fill="#f0f0f0"/>
+  
+  <!-- Title -->
+  <text x="300" y="25" font-size="18" font-weight="bold" text-anchor="middle" fill="#000">Length-Weight Relationship</text>
+  
+  <!-- Axes -->
+  <line x1="80" y1="320" x2="550" y2="320" stroke="#000" stroke-width="2"/>
+  <line x1="80" y1="320" x2="80" y2="50" stroke="#000" stroke-width="2"/>
+  
+  <!-- Axis labels -->
+  <text x="315" y="360" font-size="14" text-anchor="middle" fill="#000" font-weight="bold">Length (cm)</text>
+  <text x="25" y="185" font-size="14" text-anchor="middle" fill="#000" font-weight="bold" transform="rotate(-90, 25, 185)">Weight (g)</text>
+  
+  <!-- Gridlines -->
+  <line x1="80" y1="240" x2="550" y2="240" stroke="#ddd" stroke-width="1" stroke-dasharray="3,3"/>
+  <line x1="80" y1="160" x2="550" y2="160" stroke="#ddd" stroke-width="1" stroke-dasharray="3,3"/>
+  <line x1="200" y1="50" x2="200" y2="320" stroke="#ddd" stroke-width="1" stroke-dasharray="3,3"/>
+  <line x1="320" y1="50" x2="320" y2="320" stroke="#ddd" stroke-width="1" stroke-dasharray="3,3"/>
+  <line x1="440" y1="50" x2="440" y2="320" stroke="#ddd" stroke-width="1" stroke-dasharray="3,3"/>
+  
+  <!-- Curve (cubic relationship) -->
+  <path d="M 80 310 Q 150 280 220 220 Q 280 150 340 100 Q 400 60 450 50 Q 500 45 550 42" 
+        stroke="#e74c3c" stroke-width="4" fill="none"/>
+  
+  <!-- Data points -->
+  <circle cx="150" cy="280" r="3" fill="#3498db"/>
+  <circle cx="200" cy="235" r="3" fill="#3498db"/>
+  <circle cx="250" cy="180" r="3" fill="#3498db"/>
+  <circle cx="300" cy="130" r="3" fill="#3498db"/>
+  <circle cx="350" cy="85" r="3" fill="#3498db"/>
+  <circle cx="400" cy="60" r="3" fill="#3498db"/>
+  <circle cx="450" cy="48" r="3" fill="#3498db"/>
+  
+  <!-- Annotations -->
+  <text x="120" y="340" font-size="11" fill="#000">10</text>
+  <text x="200" y="340" font-size="11" fill="#000">20</text>
+  <text x="320" y="340" font-size="11" fill="#000">40</text>
+  <text x="440" y="340" font-size="11" fill="#000">60</text>
+  
+  <text x="65" y="325" font-size="11" fill="#000">0</text>
+  <text x="65" y="245" font-size="11" fill="#000">50</text>
+  <text x="65" y="165" font-size="11" fill="#000">100</text>
+  <text x="65" y="85" font-size="11" fill="#000">150</text>
+  
+  <!-- Equation box -->
+  <rect x="360" y="200" width="170" height="100" fill="white" stroke="#999" stroke-width="1" rx="5"/>
+  <text x="445" y="220" font-size="13" font-weight="bold" text-anchor="middle" fill="#000">W = aL^b</text>
+  <text x="365" y="245" font-size="11" fill="#000">Example: Nile Perch</text>
+  <text x="365" y="265" font-size="11" fill="#000">a = 0.0098</text>
+  <text x="365" y="283" font-size="11" fill="#000">b = 3.06</text>
+  <text x="365" y="301" font-size="10" fill="#666">(Isometric)</text>
+  
+  <!-- Curved line note -->
+  <text x="150" y="150" font-size="12" fill="#e74c3c" font-weight="bold">Non-linear</text>
+  <text x="150" y="165" font-size="12" fill="#e74c3c" font-weight="bold">cubic curve</text>
+</svg>
+```
+
+**Key Features:**
+
+- **Curved relationship** (not straight line)
+- **Accelerating weight gain** with increasing length
+- Small fish weight gain slower than large fish
+- Data points follow smooth curve
+
+
+## [Applications in Fisheries]{style="background: #4a1035ff; color: #bebe56ff"}
+
++ Converting Length to Biomass; we measure lengths from catches, but need biomass for assessment
++ Stock Assessment from Length Data
+
+   + Length Based Spawning Potential Ratio (LBSPR) and length-based methods need:
+
+      - Growth parameters (from Von Bertalanffy)
+      - Length distribution (from catch samples)
+
++ Length-weight relationship (to convert to biomass); without L-W equation, cannot estimate stock biomass from lengths
+
+## [Fulton's Condition Factors]{style="background: #4a1035ff; color: #bebe56ff"}
+
+**Condition Factor (K):**
+
++ It is expressed as capital (**K**)
+$$
+K = \frac{W}{L^3} * 100
+$$
+
++ It indicates **nutritional status** and **environmental health**
+
+
+## [Factors Affecting Length-Weight Relationship]{style="background: #4a1035ff; color: #bebe56ff"}
+
+::: {.columns}
+::: {.column}
+
+**Biological Factors:**
+
+- **Sex** - Males vs females may differ
+- **Maturity** - Mature fish different body shape
+- **Season** - Weight varies with reproductive cycle
+- **Nutrition** - Well-fed vs starving
+- **Health** - Disease affects weight
+- **Age** - Older fish may have different shape
+
+:::
+::: {.column}
+
+**Environmental Factors:**
+
+- **Water temperature** - Affects metabolism
+- **Food availability** - Impacts growth
+- **Habitat quality** - Influences body condition
+- **Fishing pressure** - Selective harvesting
+- **Population density** - Competition effects
+- **Salinity** - Freshwater vs marine
+
+:::
+:::
+
+## [Management Implication]{style="background: #4a1035ff; color: #bebe56ff"}
+
+- L-W relationship may **change over time**
+- Periodic recalibration recommended
+- Use recent data for accurate estimates
+
+
+## [Data Quality Issues]{style="background: #4a1035ff; color: #bebe56ff"}
+
+::: {.columns}
+::: {.column}
+
+**Common Problems:**
+
+1. **Measurement errors**
+
+   - Inconsistent length measurement
+   - Different length types (total vs standard)
+   - Rounding errors
+
+2. **Weighing issues**
+
+   - Scale calibration errors
+   - Wet vs. dry weight confusion
+   - Internal organ removal
+
+3. **Sample Bias**
+
+   - Only large fish measured
+   - Sex or maturity bias
+   - Seasonal collection
+
+:::
+::: {.column}
+
+## [Quality Control measures]{style="background: #4a1035ff; color: #bebe56ff"}
+
+✓ Use consistent measurement methods
+✓ Calibrate scales regularly
+✓ Document measurement procedures
+✓ Sample across size ranges
+✓ Check for outliers
+✓ Plot data visually
+✓ Report R² and sample size
+✓ Use multiple specimens
+
+:::
+:::
+
+Thank you!
+
+**Questions?**
+
+---
+
+*AQ 232: Fish Population Dynamics and Stock Assessment*
+
+*Module: Length-Weight Relationship*
+
+*Nyamisi Peter*
+
+*January 2026*

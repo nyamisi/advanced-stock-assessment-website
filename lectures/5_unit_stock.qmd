@@ -1,0 +1,390 @@
+---
+title: "AQ 232 -- Fish Population Dynamics and Stock Assessment"
+subtitle: "The Unit Stock"
+author: "Nyamisi Peter"
+date: "2026-01-21"
+format: 
+    revealjs:
+      standalone: true
+      embed-resources: true
+      reference-location: document
+      theme: serif
+      highlight-style: ayu-mirage
+execute: 
+  echo: false
+  warning: false
+  message: false
+  comment: ""
+slide-number: true
+theme: "journal"
+code-fold: false
+scrollable: true
+code-line-numbers: true
+css: ../style.css
+---
+
+## [Introduction]{style="background: #4a1035ff; color: #bebe56ff"}
+
+- Fish stock assessment was developed in the temperate regions where there are very few species of fish.
+- It was based on a single species
+- However, such a consideration is not very applicable for tropical fisheries where we have multi-species fisheries because;
+
+  + Different species are mixed up
+  + There is very high interaction among species
+
+- In such situation, fish populations are divided into **stocks (unit stock)** for management and assessment purposes
+- Understanding the distribution, abundance, and methods for estimating stock parameters is important for effective stock assessment and sustainable fisheries management.
+
+## [Unit Stock]{style="background: #4a1035ff; color: #bebe56ff"}
+
+- **A unit stock** is a population of fish, either of a single or different species, grouped together for assessment purposes which may or may not include all the fish in a stock. 
+- A unit stock is a group of fish that:
+
+  - **Share a common gene pool** -- can interbreed
+  - **Occupy a defined geographical area** -- have a specific distribution
+  - **Exhibit similar life history traits** -- growth, reproduction, mortality
+  - **Are subject to similar fishing pressures** -- exploited by the same fisheries
+  - **Are managed as a single entity** -- for conservation and exploitation, -- Can be managed independently from other stocks
+
+## [Determination of a Unit Stock]{style="background: #4a1035ff; color: #bebe56ff"}
+
+- Unit stocks can be determined through various biological and ecological characteristics, including:
+
+  - Distribution patterns -- Where unit stocks are located
+  - Spawning behavior -- Different stocks spawn in different areas
+  - Population parameters -- Recruitment, growth and mortality rates, morphometric differences
+  - Physiological traits -- Temperature at hatching, vertebrae structure, scale decorations, parasite types
+
+
+## [Distribution and Abundance]{style="background: #4a1035ff; color: #bebe56ff"}
+
+### [Geographic Distribution]{style="background: #4a1035ff; color: #bebe56ff"}
+
+- **Geographic distribution** refers to the spatial area where a fish stock is found, including the boundaries of its range.
+
+**Key concepts:**
+
+- Fish populations are not uniformly distributed across all suitable habitats
+- Distribution patterns change seasonally (spawning, feeding, wintering areas)
+- Some species have discrete distributions while others have overlapping ranges
+- Distribution limits are determined by temperature, salinity, bathymetry, and food availability
+
+## [Geographic Distribution]{style="background: #4a1035ff; color: #bebe56ff"}
+
+**Examples:**
+
+- Migratory species (salmon) move between coastal and riverine habitats
+- Demersal species (bottom-dwelling) have specific depth distributions
+- Pelagic species distribute widely in open water
+
+**Management implications:**
+
+- Fishing effort should target areas of highest concentration
+- Seasonal closures may protect aggregations during vulnerable periods
+- International boundaries may complicate management of stocks crossing borders
+
+## [Spatial and Temporal Variation in Abundance]{style="background: #4a1035ff; color: #bebe56ff"}
+
+**Temporal Variation:**
+
+- **Seasonal changes** - Abundance fluctuates with feeding, spawning, and migration cycles
+- **Interannual variation** - Year-to-year changes in recruitment and survival
+- **Long-term trends** - Decadal-scale changes related to fishing pressure or environmental conditions
+
+## [Spatial and Temporal Variation...]{style="background: #4a1035ff; color: #bebe56ff"}
+
+**Spatial Variation:**
+
+- **Patchiness** - Fish concentrate in certain areas (spawning grounds, feeding areas)
+- **Gradients** - Density changes across depth, latitude, or habitat types
+- **Hotspots** - Areas of consistently high abundance
+
+## [Spatial and Temporal Variation...]{style="background: #4a1035ff; color: #bebe56ff"}
+
+**Measurement challenges:**
+
+- Detecting aggregations requires spatially intensive sampling
+- Small-scale variability requires high sampling effort to quantify accurately
+- Temporal dynamics require time series of observations
+
+
+## [Habitat Requirements and Factors Affecting Distribution]{style="background: #4a1035ff; color: #bebe56ff"}
+
+**Abiotic Factors:**
+
+- **Temperature** - Most critical factor; thermal preferences vary by species
+- **Salinity** - Freshwater, brackish, or marine preferences
+- **Dissolved oxygen** - Required for respiration; anaerobic zones are avoided
+- **Bathymetry** - Depth preferences related to light and pressure tolerance
+- **Substrate type** - Bottom type affects benthic food availability
+
+## [Habitat Requirements...]{style="background: #4a1035ff; color: #bebe56ff"}
+
+**Biotic Factors:**
+
+- **Food availability** - Distribution follows food resources
+- **Predation risk** - Avoidance of predator-rich areas
+- **Competition** - Space partitioning with other species
+- **Reproductive habitat** - Essential for spawning and nursery grounds
+
+## [Habitat Requirements...]{style="background: #4a1035ff; color: #bebe56ff"}
+
+**Habitat Quality:**
+
+- Optimal habitat supports higher population densities
+- Marginal habitat may be temporarily occupied but has lower reproductive success
+- Loss or degradation of critical habitat can limit population size
+
+## [Environmental Influences on Stock Distribution]{style="background: #4a1035ff; color: #bebe56ff"}
+
+**Physical Oceanography:**
+
+- Ocean currents transport larvae and affect distribution
+- Upwelling events create productive feeding areas
+- Coastal current patterns structure population distributions
+
+## [Environmental Influences...]{style="background: #4a1035ff; color: #bebe56ff"}
+
+**Climate and Weather:**
+
+- Climate change shifts suitable habitat ranges
+- Seasonal weather events (storms, cold snaps) cause temporary distribution changes
+- Long-term climate trends alter distribution boundaries
+
+## [Straddling stock and highly migratory fish stock]{style="background: #4a1035ff; color: #bebe56ff"}
+
+- With 1982's United Nations Convention on the Law of the Sea (UNCLOS), coastal nations were given the right to manage fisheries within their Exclusive Economic Zones (EEZ)
+- But of course, fish don't adhere to imaginary lines in the ocean.
+- The management of two groups -- **straddling and highly migratory fish stocks** became problem after the 1982 Convention.
+
+## [Straddling stock]{style="background: #4a1035ff; color: #bebe56ff"}
+
+- **Straddling stocks** are fish stocks that migrate across more than one Exclusive Economic Exclusion Zone (EEZ) and the high seas
+- - **Straddling stocks** is the stocks of fish which migrate between, or occur in both, the EEZ of one or more states and the high seas
+- Fish stocks that migrate through, or occur in more than one exclusive economic zone.
+- They include species such as swordfish and marlin.
+
+## [Highly migratory fishes]{style="background: #4a1035ff; color: #bebe56ff"}
+
+- **Highly migratory fishes** are the ones that travel long distances across international waters
+- These include tuna and tuna-like species such as yellowfin tuna, bigeye tuna, and skipjack.
+
+
+## [Management of Straddling stock and Highly migratory fishes]{style="background: #4a1035ff; color: #bebe56ff"}
+
+- Management of the straddling stock and highly migratory fishes is a shared responsibility between coastal states and the international community.
+- The 1995 United Nations Fish Stocks Agreement (UNFSA), an international treaty designed to further implement provisions of the 1982 Convention which;
+
+  - ***Ensure the long-term conservation and sustainable use of straddling fish stocks and highly migratory fish stocks***
+  
+
+## [Management...]{style="background: #4a1035ff; color: #bebe56ff"}
+
+- Sovereign responsibility must be worked out in collaboration with neighboring coastal states and fishing entities.
+- Regional Fisheries Management Organizations (RFMOs) are established to manage these stocks collaboratively.
+- **Transboundary stock** range in the EEZs of at least two countries. 
+- A stock can be both transboundary and straddling.
+
+# [Examples from Tanzania Marine Waters]{style="background: #4a1035ff; color: #bebe56ff"}
+
+## [Tanzanian Exclusive Economic Zone (EEZ)]{style="background: #4a1035ff; color: #bebe56ff"}
+
+::: {.columns}
+::: {.column}
+- Tanzania has an EEZ of approximately **220,000 km²**
+- Extends 200 nautical miles from the coastline
+- Bordered by Kenya (north), Mozambique (south)
+- Manages several important fish stocks
+- Home to both regional and international fisheries
+:::
+::: {.column}
+
+![Tanzania marine zones](graphics/marine_zones.png){width=400px}
+:::
+:::
+
+
+## [1: Yellowfin Tuna (Highly Migratory)]{style="background: #4a1035ff; color: #bebe56ff"}
+
+::: {.columns}
+::: {.column width="70%"}
+
+**Species:** Yellowfin tuna (*Thunnus albacares*)
+
+**Distribution:**
+
+- Found throughout Indian Ocean
+- Migrates across multiple EEZs (Tanzania, Kenya, Mozambique, Seychelles)
+- Extends beyond EEZs into high seas
+- Seasonal movements following monsoon patterns
+
+:::
+::: {.column width="30%"}
+![*Thunnus albacares*](graphics/yellow_fin.jpg)
+:::
+::: 
+
+## [Yellowfin Tuna (Highly Migratory)]{style="background: #4a1035ff; color: #bebe56ff"}
+
+::: {.columns}
+::: {.column width="70%"}
+**Management:**
+
+- **Managed by IOTC** (Indian Ocean Tuna Commission)
+- Tanzania is member state of IOTC
+- IOTC sets total allowable catch (TAC) for entire Indian Ocean
+- Allocates quota to member countries
+- Tanzania receives annual catch quota
+
+:::
+::: {.column width="30%"}
+
+![*Thunnus albacares*](graphics/yellow_fin.jpg)
+
+:::
+::: 
+
+
+## [2: Bigeye Tuna]{style="background: #4a1035ff; color: #bebe56ff"}
+
+::: {.columns}
+::: {.column width="60%"}
+
+**Species:** Bigeye tuna (*Thunnus obesus*)
+
+**Distribution:**
+
+- Found in tropical/subtropical Indian Ocean waters
+- Deep-diving species (300-400 m daytime depth)
+- Migratory across multiple EEZs
+- Year-round presence in productive upwelling zones
+:::
+::: {.column width="40%"}
+
+![*Thunnus obesus*](graphics/bigeye_tuna.jpg)
+:::
+:::
+
+## [Bigeye Tuna]{style="background: #4a1035ff; color: #bebe56ff"}
+
+::: {.columns}
+::: {.column}
+
+**Fishery:**
+
+- Caught by longlining (deep hooks target night feeders)
+- Tanzania vessels and foreign fleets participate
+- Increasing fishing pressure in recent decade
+:::
+::: {.column}
+![*Thunnus obesus*](graphics/bigeye_tuna.jpg)
+
+:::
+:::
+
+## [Priority Fisheries in Tanzania]{style="background: #4a1035ff; color: #bebe56ff"}
+
+Tanzania's fisheries are strategically important for food security, employment, and economic development. Priority ranking considers:
+
+- Economic value (export revenue)
+- Food security contribution (protein supply)
+- Employment (fisher livelihoods)
+- Management feasibility (data availability)
+
+## [Priority Fisheries in Tanzania]{style="background: #4a1035ff; color: #bebe56ff"}
+
+- Major priority fishery in Tanzania:
+
+::: {.columns}
+::: {.column}
+
+**Marine**
+
+1. Tuna and Tuna-like species (Yellowfin, Bigeye, Skipjack)
+1. Small Pelagics (Sardines, Anchovies)
+1. Octopus fisheries
+
+:::
+::: {.column}
+
+**Freshwater**
+
+***Lake Victoria***
+
+1. Nile Perch (*Lates niloticus*)
+1. Dagaa (*Rastriger argentea*)
+
+***Lake Tanganyika***
+
+1. **Cichlids** (*Lates stappersii*), 
+1. **Sardines** (*Stolothrissa tanganicae, Limnothrissa miodon*)
+:::
+::: 
+
+
+## [Mixed stock]{style="background: #4a1035ff; color: #bebe56ff"} 
+
+- A **mixed stock** occurs when individuals from two or more genetically distinct populations are found together in the same geographic area
+- Fish from **multiple spawning populations** intermingle during feeding, migration, or overwintering
+- Cannot be easily distinguished visually but are genetically or demographically separate
+
+## [Common Scenarios for Mixed Stock]{style="background: #4a1035ff; color: #bebe56ff"}
+
+**1. Feeding Aggregations**
+
+- Fish from different spawning stocks congregate in productive feeding grounds
+- Example: Salmon from multiple rivers feeding together in the ocean
+
+**2. Migratory Overlap**
+
+- Different populations share migration routes
+- Example: Tuna stocks from different ocean regions mixing along migration corridors
+
+**3. Seasonal Mixing**
+
+- Populations separate for spawning but mix at other times
+- Example: Herring from different spawning grounds overwintering together
+
+## [Mixed Stock: Management Challenges]{style="background: #4a1035ff; color: #bebe56ff"}
+
+| Challenge | Implication |
+|-----------|-------------|
+| **Identification** | Difficult to assign individuals to source populations |
+| **Harvest allocation** | Risk of overfishing weaker stocks while targeting abundant ones |
+| **Stock assessment** | Complex models needed to account for mixing rates |
+| **Weak stock concern** | Less productive stocks may be depleted if managed as one unit |
+
+## [Mixed Stock: Identification Methods]{style="background: #4a1035ff; color: #bebe56ff"}
+
+Methods to identify and separate mixed stocks:
+
+- **Genetic markers** (microsatellites)
+- **Otolith microchemistry** (trace elements indicate natal origin)
+- **Parasite tags** (different parasites in different regions)
+- **Morphometric analysis** (body shape differences)
+- **Tagging studies** (track individual movements)
+
+## [Mixed Stock: Example from East Africa]{style="background: #4a1035ff; color: #bebe56ff"}
+
+**Lake Victoria Dagaa** (*Rastrelliger argentea*)
+
+- The dagaa fishery may include mixed stocks from different lake regions
+- Fish aggregate in certain areas for feeding
+- Different populations have varying productivity levels
+- Requires careful management to avoid depleting localized populations
+
+**Indian Ocean Yellowfin Tuna**
+
+- Mixing of stocks from Western and Eastern Indian Ocean
+- Genetic studies show population structure across the ocean basin
+- IOTC manages as a single stock but monitors regional differences
+
+## References and Further Reading
+
+- Quinn, T. J., & Deriso, R. B. (1999). Quantitative Fish Dynamics. Oxford University Press.
+- Hilborn, R., & Walters, C. J. (1992). Quantitative Fisheries Stock Assessment. Chapman & Hall.
+- Petitgas, P. (1998). Geostatistics in fisheries survey design and stock assessment. FAO Fisheries Technical Paper 368.
+
+---
+
+*Last updated: January 2026*

@@ -1,0 +1,457 @@
+---
+title: "AQ 232: Fish Population Dynamics and Stock Assessment"
+subtitle: "Contemporary Course Outline"
+author: "Nyamisi Peter"
+format: html
+date: "today"
+execute: 
+  echo: false
+  warning: false
+  message: false
+  comment: ""
+code-fold: false
+code-line-numbers: true
+css: ../style.css
+toc: true
+toc-depth: 2
+---
+
+## Course Overview
+
+This course provides a comprehensive advanced fish population dynamics and stock assessment methods in the context of modern global fisheries challenges. Students will learn to assess fish populations using contemporary scientific approaches while considering ecosystem, social, and climate dimensions of sustainable fisheries management.
+
+---
+
+## MODULE 1: Introduction & Context
+
+### Topics
+- Historical perspective: From single-species to ecosystem-based management
+- Global fisheries crisis: Current state of world fish stocks
+- Sustainable Development Goals (SDG 14): Life Below Water
+- Key definitions: Stock, recruitment, sustainability, overfishing
+- Career pathways in fisheries science
+
+### Learning Objectives
+- Understand the evolution of fisheries science and management
+- Recognize global challenges in sustaining fish stocks
+- Define fundamental concepts and terminology
+- Explore career opportunities in fisheries
+
+---
+
+## MODULE 2: Fundamentals of Fish Population Dynamics
+
+### Topics
+- **Population structure:** Age, size, sex ratios
+- **Vital rates:** Birth (recruitment), death (natural & fishing mortality), growth
+- **Population models:**
+  - Exponential and logistic growth
+  - Beverton-Holt and Ricker stock-recruitment models
+  - Age-structured population models
+  - Size-structured models (relevant for data-limited stocks)
+- **Equilibrium vs. dynamic concepts**
+- **Density-dependent processes**
+
+### Key Equations
+
+**Exponential growth:**
+$$N_t = N_0 e^{rt}$$
+
+**Logistic growth:**
+$$\frac{dN}{dt} = rN\left(1 - \frac{N}{K}\right)$$
+
+**Beverton-Holt recruitment:**
+$$R_t = \frac{aS_t}{1 + bS_t}$$
+
+**Ricker recruitment:**
+$$R_t = aS_t e^{-bS_t}$$
+
+### Learning Objectives
+- Understand population structure and vital rates
+- Apply growth models to fish populations
+- Interpret stock-recruitment relationships
+- Recognize density-dependent effects in fish populations
+
+---
+
+## MODULE 3: The Unit Stock
+
+### Topics
+- **Defining management units** in the modern context
+- **Distribution patterns:**
+  - Geographic distribution and boundaries
+  - Seasonal migrations and habitat use
+  - Climate change impacts on range shifts
+- **Abundance estimation methods:**
+  - Survey design (trawls, acoustic, visual)
+  - CPUE standardization (commercial data)
+  - Mark-recapture and tagging
+  - Emerging technologies (eDNA, environmental DNA monitoring)
+  - Autonomous platforms (drones, gliders)
+
+### Key Concepts
+- A unit stock is the fundamental management unit in fisheries
+- Delineation depends on biological, physical, and political factors
+- Distribution is dynamic and changing with climate
+- Multiple methods provide complementary information on abundance
+
+### Learning Objectives
+- Define and delineate appropriate unit stocks
+- Design surveys to estimate stock abundance
+- Evaluate advantages and limitations of different methods
+- Integrate multiple data sources for robust estimates
+
+---
+
+## MODULE 4: Data Collection & Quality
+
+### Topics
+- **Types of data:**
+  - Fishery-dependent (commercial catch, effort, size/age composition)
+  - Fishery-independent (research surveys, ecosystem monitoring)
+  - Biological data (maturity, fecundity, diet, parasite load)
+  - Environmental data (temperature, oxygen, currents, ecosystem indicators)
+- **Data-limited approaches:** Tools for developing nations/underfunded fisheries
+- **Data quality assurance:** Bias detection and correction
+- **Real-time monitoring:** Vessel monitoring systems (VMS), electronic logbooks
+- **Big Data in fisheries:** Machine learning for pattern recognition
+
+### Best Practices
+- Establish standardized protocols for data collection
+- Implement quality control measures
+- Document data collection metadata
+- Balance cost with data precision requirements
+- Engage with stakeholders in data collection planning
+
+### Learning Objectives
+- Design data collection programs appropriate to context
+- Assess data quality and identify biases
+- Understand advantages of different data types
+- Apply data-limited approaches when necessary
+- Use modern technology for monitoring
+
+---
+
+## MODULE 5: Stock Assessment Methods
+
+### Topics
+- **Traditional approaches:**
+  - Virtual Population Analysis (VPA)
+  - Surplus production models (Schaefer, Fox)
+  - Age-structured models (Stock Synthesis, CASAL2)
+- **Modern integrated approaches:**
+  - Bayesian methods and uncertainty quantification
+  - State-space models
+  - Multi-species and ecosystem models
+- **Data-limited methods:**
+  - Length-based spawning potential ratio (LB-SPR)
+  - Catch-only models
+  - Life-history-based approaches
+- **Model selection and validation**
+- **Uncertainty in assessment:** Propagation and communication
+
+### Schaefer Surplus Production Model
+
+$$C_t = q \cdot E_t \cdot B_t$$
+
+$$B_{t+1} = B_t + rB_t\left(1 - \frac{B_t}{K}\right) - C_t$$
+
+Where:
+- $C_t$ = catch at time t
+- $q$ = catchability coefficient
+- $E_t$ = fishing effort
+- $B_t$ = biomass
+- $r$ = intrinsic rate of increase
+- $K$ = carrying capacity
+
+### Learning Objectives
+- Select appropriate assessment methods for different contexts
+- Understand assumptions underlying each method
+- Implement and interpret assessment models
+- Communicate uncertainty appropriately
+- Validate model outputs
+
+---
+
+## MODULE 6: Key Biological Parameters
+
+### Topics
+- **Growth:** Von Bertalanffy models, environmental effects
+- **Recruitment:** Spawner-recruit relationships, recruitment variability
+  - Climate drivers of recruitment (oceanographic indices)
+  - Early life-stage survival
+- **Mortality:**
+  - Natural mortality estimation
+  - Fishing mortality and selectivity
+  - Estimating discard mortality
+- **Reproductive biology:** Maturity schedules, fecundity, sex ratios
+- **Genetic population structure:** Implications for management boundaries
+
+### Von Bertalanffy Growth Model
+
+$$L_t = L_\infty(1 - e^{-K(t - t_0)})$$
+
+Where:
+- $L_t$ = length at age t
+- $L_\infty$ = asymptotic length
+- $K$ = growth rate coefficient
+- $t_0$ = theoretical age at zero length
+
+### Learning Objectives
+- Estimate biological parameters from data
+- Understand environmental effects on biological rates
+- Apply parameter estimates to population models
+- Recognize importance of genetic structure
+
+---
+
+## MODULE 7: Environmental & Climate Drivers
+
+### Topics
+- **Climate change impacts on fish stocks:**
+  - Range shifts and redistribution
+  - Phenological changes (timing of spawning, migration)
+  - Ocean acidification effects
+- **Oxygen minimum zones:** Habitat compression
+- **Ecosystem changes:** Regime shifts, regime indicators
+- **Incorporating environmental covariates** in assessment models
+- **Forecasting under climate scenarios**
+
+### Key Considerations
+- Climate impacts are already observable in many stocks
+- Habitat availability is a key constraint under climate change
+- Environmental variables can improve recruitment predictions
+- Adaptation requires flexible management frameworks
+
+### Learning Objectives
+- Understand climate impacts on fish populations
+- Incorporate environmental data into assessments
+- Forecast population responses to climate change
+- Develop adaptive management strategies
+
+---
+
+## MODULE 8: Reference Points & Harvest Control Rules
+
+### Topics
+- **Biological reference points:**
+  - MSY (Maximum Sustainable Yield) and implications
+  - Proxy reference points (F₀.₁, B₃₅%, etc.)
+  - Ecosystem-based reference points
+- **Harvest control rules (HCR):** Logic and application
+- **Risk assessment:** Probability of meeting management objectives
+- **Rebuilding plans:** Recovering overfished stocks
+- **Precautionary approach:** Decision-making under uncertainty
+
+### Harvest Control Rule Example
+
+If $B < B_{lim}$: fishing is prohibited
+
+If $B_{lim} < B < B_{target}$: fishing mortality decreases linearly with biomass
+
+If $B > B_{target}$: fishing mortality set at $F_{target}$
+
+### Learning Objectives
+- Define appropriate reference points
+- Develop harvest control rules
+- Assess risk and probability of meeting objectives
+- Design rebuilding strategies
+- Apply precautionary approach
+
+---
+
+## MODULE 9: Management Strategy Evaluation (MSE)
+
+### Topics
+- **Framework:** Simulation of future outcomes under different strategies
+- **Operating models:** Representation of reality
+- **Estimation models:** Assessment methods tested
+- **Management procedures:** Decision rules
+- **Performance evaluation:** Trade-offs between objectives
+- **Robustness testing:** Sensitivity to model assumptions
+
+### MSE Components
+
+```
+Operating Model (True System)
+        ↓
+Simulated Data
+        ↓
+Estimation Model (Assessment)
+        ↓
+Management Procedure (HCR)
+        ↓
+Management Action (Harvest Level)
+        ↓
+Population Update
+```
+
+### Learning Objectives
+- Design and implement MSE frameworks
+- Evaluate management procedure performance
+- Assess robustness to uncertainty
+- Compare trade-offs between objectives
+- Support decision-making with simulation results
+
+---
+
+## MODULE 10: Ecosystem & Social Dimensions
+
+### Topics
+- **Multispecies interactions:**
+  - Predator-prey relationships
+  - Bycatch and discards
+  - Mixed-stock fisheries
+- **Ecosystem services:** Food security, livelihoods, biodiversity
+- **Small-scale fisheries:** Challenges and assessment approaches
+- **Equity and inclusion:** Women in fisheries, indigenous knowledge
+- **Trade-offs:** Balancing conservation, economics, and social goals
+- **Stakeholder engagement:** Participatory assessment processes
+
+### Key Principles
+- Fish stocks exist within ecosystems
+- Sustainability requires considering social and economic dimensions
+- Inclusive decision-making improves outcomes
+- Local knowledge complements scientific assessment
+- Equity is a sustainability requirement
+
+### Learning Objectives
+- Understand ecosystem context of single-stock assessments
+- Address social dimensions of fisheries
+- Engage stakeholders in assessment and management
+- Evaluate trade-offs between objectives
+- Incorporate indigenous and local knowledge
+
+---
+
+## MODULE 11: Emerging Technologies & Future Directions
+
+### Topics
+- **Genomic tools:** Population genetics, parentage analysis, eDNA
+- **Machine learning:** Pattern recognition, species identification, abundance prediction
+- **Remote sensing:** Satellite data for habitat and biomass estimation
+- **Integrated observing systems:** Real-time ecosystem monitoring
+- **Citizen science:** Community-based monitoring programs
+- **Open data platforms:** Transparency and reproducibility
+
+### Emerging Opportunities
+- eDNA provides non-invasive population monitoring
+- Machine learning identifies patterns in complex datasets
+- Remote sensing expands monitoring to remote areas
+- Autonomous platforms reduce survey costs
+- Open science improves reproducibility and collaboration
+
+### Learning Objectives
+- Understand capabilities and limitations of new technologies
+- Evaluate appropriateness for different contexts
+- Implement emerging tools in assessment workflows
+- Stay current with rapid technological change
+
+---
+
+## MODULE 12: Case Studies & Applications
+
+### Topics
+- **Regional assessments:** Contrasting examples (developed vs. developing countries)
+- **High-value species:** Tuna, salmon, cod assessments
+- **Data-limited stocks:** Tropical and small-scale fisheries
+- **Rebuilding successes and failures:** Learning from experience
+- **Emerging challenges:** IUU fishing, marine plastics, coral ecosystem collapse
+
+### Case Study Examples
+- Atlantic cod collapse and recovery efforts
+- Tuna stock assessments across ocean basins
+- Small pelagic fisheries (anchoveta) in Peru
+- Data-limited tropical reef fisheries
+- Endangered salmon populations in the Pacific Northwest
+
+### Learning Objectives
+- Apply assessment methods to real-world situations
+- Learn from successes and failures
+- Develop context-appropriate solutions
+- Communicate scientific findings to managers and public
+
+---
+
+## Course Learning Outcomes
+
+By the end of this course, students will be able to:
+
+1. **Understand and apply** population dynamics principles to fish stocks
+2. **Design and implement** data collection programs appropriate to context
+3. **Conduct stock assessments** using appropriate methods for available data
+4. **Interpret results and communicate** uncertainty effectively
+5. **Evaluate management strategies** using Management Strategy Evaluation
+6. **Consider ecosystem and social** impacts of fishing decisions
+7. **Address climate change impacts** on fisheries and adaptation strategies
+8. **Apply modern tools** (eDNA, remote sensing, machine learning)
+9. **Work with diverse stakeholders** in assessment and management
+10. **Contribute to sustainable** fisheries management globally
+
+---
+
+## Course Structure & Delivery
+
+### Learning Activities
+- **Lectures:** Concept presentations and discussions
+- **Practical exercises:** Hands-on data analysis and modeling
+- **Case studies:** Real-world application examples
+- **Group projects:** Collaborative assessment and problem-solving
+- **Stakeholder engagement:** Interaction with fisheries professionals
+- **Field components:** Where possible, observations of fisheries
+
+### Assessment
+- **Participation:** Engagement in discussions and activities
+- **Assignments:** Problem sets and data analysis exercises
+- **Project work:** Development of assessment framework
+- **Final examination:** Comprehensive understanding assessment
+
+---
+
+## Recommended Textbooks & References
+
+### Primary References
+- Quinn, T. J., & Deriso, R. B. (1999). *Quantitative Fish Dynamics*. Oxford University Press.
+- Hilborn, R., & Walters, C. J. (1992). *Quantitative Fisheries Stock Assessment*. Chapman & Hall.
+- Maunder, M. N., & Punt, A. E. (2004). Standardizing catch and effort data: a review of recent approaches. Fisheries Research, 70(2-3), 141-159.
+
+### Supplementary Resources
+- Petitgas, P. (1998). Geostatistics in fisheries survey design and stock assessment. FAO Fisheries Technical Paper 368.
+- FAO (2023). Fisheries and Aquaculture Global Practice - Stock Assessment.
+- NOAA Fisheries Stock Assessment Workshop (SAWG) documents
+- International Council for the Exploration of the Sea (ICES) guidelines
+
+### Open Access Resources
+- FishBase (www.fishbase.org)
+- SeaLifeBase (www.sealifebase.org)
+- ICES Stock Assessment WG reports
+- UN FAO Fisheries Statistics
+
+---
+
+## Prerequisites
+
+- Basic statistics (hypothesis testing, regression)
+- Introduction to biology and ecology
+- Quantitative reasoning skills
+- Familiarity with spreadsheets or programming (R/Python beneficial)
+
+---
+
+## Course Information
+
+**Instructor:** Nyamisi Peter
+
+**Duration:** One semester
+
+**Credits:** [Variable by institution]
+
+**Meeting Times:** [To be scheduled]
+
+**Office Hours:** [To be scheduled]
+
+**Contact:** [Email to be provided]
+
+---
+
+*Last updated: December 2025*

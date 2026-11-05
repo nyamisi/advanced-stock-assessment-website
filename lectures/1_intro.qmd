@@ -1,0 +1,320 @@
+---
+title: "AF 603 -- Fish population dynamics and stock assessment"
+subtitle: "Course Introduction"
+author: "Nyamisi Peter"
+date: "2026-11-04"
+format: 
+    revealjs:
+      standalone: true
+      embed-resources: true
+      html-math-method: mathml
+      reference-location: document
+      theme: serif
+      highlight-style: ayu-mirage
+      footer: '[⬇ Download full lecture (PDF)](../downloads/AF603_L1_Course_Introduction.pdf){download="AF603_L1_Course_Introduction.pdf"} &nbsp;|&nbsp; [All downloads](downloads.html)'
+execute: 
+  echo: false
+  warning: false
+  message: false
+  comment: ""
+
+slide-number: true
+theme: "journal"
+code-fold: false
+scrollable: true
+code-line-numbers: true
+css: ../style.css
+---
+
+```{r}
+require(sf)
+require(tidyverse)
+require(sizeMat)
+require(gt)
+require(tidyplots)
+require(patchwork)
+require(leaflet)
+```
+
+## [Course Introduction]{style="background: #1c1c3aff; color: #e8ecf4ff"}
+
+:::: {.columns}
+::: {.column width="50%"}
+### Learning Objectives
+- Understand core stock assessment principles
+- Identify different data types used in assessments
+- Apply concepts to real Tanzania fisheries data
+- Build foundation for advanced methods
+:::
+
+::: {.column width="50%"}
+### Why This is Important?
+- Essential for evidence-based management
+- Reinforces foundational knowledge
+- Prepares for data-limited methods
+- Supports sustainable fisheries
+:::
+::::
+
+---
+
+
+## [Stock Assessment Fundamentals & Concepts]{style="background: #1c1c3aff; color: #e8ecf4ff"}
+
+- Stock assessment is the process of evaluating the status of a fish population using available data and scientific methods to inform management decisions.
+- Stock assessment is the **scientific process** of estimating the status and productivity of fish populations to inform management decisions.
+- Is examination of development of fish stock using mathematical and statistical models to make quantitative predictions in order to address fisheries management issues.
+
+##
+
+- **Stock assessment** is the process of collecting and analyzing demographic information about fish populations in order to describe the conditions or status of fish stock
+
+- Stock assessment describe a range of life history characteristics for a given species
+    + It includes age, growth, natural mortality, sexual maturity and reproduction, stock boundaries, diet preferences, habitat characteristics, species interactions, and environmental factors that may affect the species
+
+- Assessment also include descriptions of the fishery for a species, using information from both scientists and fishermen
+
+## [Aim of stock assessment]{style="background: #4a1035ff; color: #bebe56ff"}
+
+- Assessment of the current state of stock
+- Assessment of the past stock situation
+- Predictions to the future stock based on management choices
+- An estimation of the rate at which it is being removed due to harvesting etc.
+
+
+## [Key questions it answers]{style="background: #1c1c3aff; color: #e8ecf4ff"}
+
+- How many fish are in the stock?
+- Are we fishing sustainably?
+- What catch level can we maintain indefinitely?
+- Is the stock recovering or declining?
+- Why stock assessment matters for management
+- Assessment approaches (data-rich vs. data-limited)
+- Success factors in assessment
+
+
+## [Key Components of Stock Assessment]{style="background: #1c1c3aff; color: #e8ecf4ff"}
+
+::: {.incremental}
+- **Population Dynamics**: How fish populations change over time
+- **Catch Data**: What we remove from the stock
+- **Biological Data**: Growth, reproduction, mortality
+- **Environmental Context**: Habitat and external factors
+:::
+
+---
+
+## [The Assessment Cycle]{style="background: #1c1c3aff; color: #e8ecf4ff"}
+
+
+```{r}
+#| echo: false
+#| fig-align: center
+
+tibble(
+  step = c("1. Data\nCollection", "2. Analysis", "3. Stock\nStatus", "4. Advice", "5. Management"),
+  x = c(1, 2, 3, 4, 5),
+  y = c(1, 1.5, 1, 0.5, 1)
+) |>
+  ggplot(aes(x = x, y = y)) +
+  geom_point(size = 8, color = '#1976D2', alpha = 0.8) +
+  geom_path(color = '#666666', size = 1.2, arrow = arrow(type = 'closed', length = unit(0.3, 'cm'))) +
+  geom_text(aes(label = step), nudge_y = 0.25, size = 3.5, fontface = 'bold') +
+  ylim(0, 2) +
+  xlim(0.5, 5.5) +
+  theme_minimal() +
+  theme(
+    axis.text = element_blank(),
+    axis.title = element_blank(),
+    panel.grid = element_blank()
+  )
+```
+
+
+## [Key Biological Parameters]{style="background: #1c1c3aff; color: #e8ecf4ff"}
+
+- These includes:
+
+- **Growth:** von Bertalanffy growth curves, length-weight relationships
+- **Mortality:** Natural mortality, fishing mortality, total mortality
+- **Recruitment:** Recruitment variations, stock-recruitment relationships
+- **Maturity:** Age/size at maturity, fecundity (egg production)
+
+
+##  [Introduction to population dynamics]{style="background: #1c1c3aff; color: #e8ecf4ff"}
+
+
+**What is population?**
+
+- A population is a group of individuals of the same species that live together in a particular area
+- A fish population is a group of fish of the same species that live in a particular area.
+
+
+##  [Introduction to population dynamics]{style="background: #1c1c3aff; color: #e8ecf4ff"}
+
+- **Fish population dynamics** describes the ways in which a given fishery population grows and shrinks over time, as controlled by **birth**, **death**, and **migration**
+
+- It is a basis for understanding changes of fishery patterns and issues such as **habitat destruction**, **predation** and **optimal harvesting rates**
+
+- The population dynamics of fisheries is used by fisheries scientists to determine sustainable yields.
+
+
+##  [Introduction to population dynamics]{style="background: #4a1035ff; color: #bebe56ff"}
+
++ Population dynamics is a branch of life science dealing with the short and long-term changes in the size and age composition of populations, and the biological and environmental processes influencing those changes.
+
+- It deals with the way populations are affected by *birth* and *death rates*, and by *immigration and emmigration*.
+
+
+## [Definition of key terms]{style="background: #4a1035ff; color: #bebe56ff"}
+
++ **Fish Catch** is the total number or weight of fish captured from an area over a period of time. 
+- This includes fish that are caught but released or discarded instead of being landed.
++ **Carrying Capacity** is amount of fish that a specific habitat can support.
+
++ **Bycatch** is the harvest of fish or animals other than the species for which the fishing gear was intended
+
+
+## [Definition of key terms...]{style="background: #4a1035ff; color: #bebe56ff"}
+
+- **Catch Per Unit Effort (CPUE)** is the quantity of fish caught (in number or in weight) with one standard unit of fishing effort.
+- Effort can be number of fishing gear or vessel, length of time used during fishing, number of fishermen etc.
+
+- e.g. number of fish taken per 1000 hooks per day or weight of fish taken per hour of trawling. 
+
+- CPUE is often considered as an index of fish biomass (or abundance).
+
+- CPUE is also referred to as **catch rate**
+
+
+
+## [Definition of key terms...]{style="background: #4a1035ff; color: #bebe56ff"}
+
+- **Effort** is the amount of time and fishing power used to harvest fish. 
+
+- Fishing power includes gear size, boat size, and horsepower.
+
+- **Fish Density** is the number of fish per unit area.
+
+- **Spawning** the number of eggs and sperm released into water by fish.
+
+- **Spawning rate** is the number of eggs and sperm released per unit time
+
+
+## [Definition of key terms...]{style="background: #4a1035ff; color: #bebe56ff"}
+
+- **Cohort** is a group of fish spawned during a given period, usually within a year
+
+- **Recruitment** the number of new young fish that enter a population in a given year.
+
+- **Morphometrics** these are measurements which characterize the form, shape and appearance of a fish. 
+
+- Difference in morphometrics, such as colouration, can be used to distinguish different stocks of the same species.
+
+
+
+## [Definition of key terms...]{style="background: #4a1035ff; color: #bebe56ff"}
+
+- **Maximum sustainable yield (MSY)** is theoretical harvest of a fish species that can be taken over an indefinite period. 
+
+- **MSY** theoretically aims to maintain the population size at the point of maximum growth rate by harvesting the individuals that would normally be added to the population. 
+
+- **MSY** has been widely criticized and has led to the collapse of many fisheries, as it ignores size, age, reproductive capacity, and fishing effort.
+
+
+## [Definition of key terms...]{style="background: #4a1035ff; color: #bebe56ff"}
+
+
+- **Fish mortality** is a parameter that account for the loss of fish in a fish stock through death. 
+
+- The mortality can be divided into two types;
+
+  - **Natural mortality** -- the removal of fish from stock due to causes not associated with fishing.
+  
+  - Such causes can include disease, competition, cannibalism, old age, predation, pollution or any other natural factor that causes the death of fish.
+  
+  - In fisheries models natural mortality is denoted by (M)
+
+  
+## [Definition of key terms...]{style="background: #4a1035ff; color: #bebe56ff"}
+
+
+- **Fishing mortality** -- the removal of fish from stock due to fishing activities using any fishing gear.
+
+- It is denoted by (F) in fisheries models.
+
+- **Mortality rate** or **death rate** is a measure of the number of deaths in a particular population per unit time. 
+
+- Mortality rate is the rate at which fish die, typically shown as a percentage. 
+
+- **Survival rate** is a measure of number of alive fishes in a particular population per unit time
+
+
+
+## [Definition of key terms...]{style="background: #4a1035ff; color: #bebe56ff"}
+
+
+- If 1,000 fish are alive at the beginning of the year and 200 fish die, leaving 800 at the end of the year
+
+  $$
+  Mortality~rate = \frac{Number~of~fishes~that~died}{Initial~number~of~fishes}*100\%
+  $$
+
+  
+  $$
+  Mortality~rate = \frac{200}{1000}*100\%
+  $$
+  $$
+  Annual~mortality~rate=20\%
+  $$
+
+
+## [Definition of key terms...]{style="background: #4a1035ff; color: #bebe56ff"}
+
+$$
+Survival~rate=\frac{Number~of~alive~fishes}{Initial~number~of~fishes}*100\%
+$$
+  
+  $$
+  Survival~rate=\frac{800}{1000}*100\%
+  $$
+  
+  $$
+  Annual~survival~rate=80\%
+  $$
+
+
+
+## [Definition of key terms...]{style="background: #4a1035ff; color: #bebe56ff"}
+
+
+- **Fecundity** is the number of eggs or offsprings produced by fish during the spawning season.
+
+- The number of eggs produced by a fish differs in different species, and depends on the size and age of the fish. 
+
+- It is a measure of the reproductive capacity of a female fish
+
+## [Definition of key terms...]{style="background: #4a1035ff; color: #bebe56ff"}
+
+- **Gonadosomatic index (GSI)** is a metric that represents the relative weight of the gonad to the fish weight.
+
+- GSI has been widely used to evaluate reproduction timing (Lowerre-Barbieri et al., 2011) 
+
+- Changes in GSI are mostly determined by variations in yolk concentration during different oocyte stages
+
+- Therefore, it provides information about maturation and seasonal patterns in gonad development
+
+
+## [Definition of key terms...]{style="background: #4a1035ff; color: #bebe56ff"}
+
+
+$$
+Gonadosomatic~index~(GSI)=\frac{Weight~of~gonads}{Weight~fish}*100\%
+$$
+
+- GSI of the fish increases with maturation of the fish;
+
+  - It is **maximum** during the **peak period of maturity** and
+  
+  - It **decline** abruptly **after spawning**
+

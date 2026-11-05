@@ -1,0 +1,27 @@
+---
+title: "Download Slides"
+subtitle: "AF 603 -- Fish Population Dynamics and Stock Assessment"
+author: "Nyamisi Peter"
+format: html
+toc: false
+css: ../style.css
+---
+
+Download the **complete lecture slides** (every slide of each lecture) for offline use.
+
+[⬇ Download ALL lectures (ZIP)](../downloads/AF603_All_Lecture_Slides.zip){.download-btn download="AF603_All_Lecture_Slides.zip"}
+
+<br>
+
+| # | Lecture | View online | Full slides – PDF | Full slides – HTML |
+|:-:|:--------|:-----------:|:-----------------:|:------------------:|
+| 1 | Course introduction | [Open](1_intro.html) | [⬇ PDF](../downloads/AF603_L1_Course_Introduction.pdf){.download-btn download="AF603_L1_Course_Introduction.pdf"} | [⬇ HTML](../downloads/AF603_L1_Course_Introduction.html){.download-btn download="AF603_L1_Course_Introduction.html"} |
+| 2 | Fish population dynamics | [Open](2_popl_dynamics.html) | [⬇ PDF](../downloads/AF603_L2_Fish_Population_Dynamics.pdf){.download-btn download="AF603_L2_Fish_Population_Dynamics.pdf"} | [⬇ HTML](../downloads/AF603_L2_Fish_Population_Dynamics.html){.download-btn download="AF603_L2_Fish_Population_Dynamics.html"} |
+
+## Which format should I choose?
+
+- **PDF** – every slide on its own page. Best for printing, note-taking and reading on a phone or tablet.
+- **HTML** – the interactive slide show in a single file. Open it in any browser (no internet needed) and
+  move through the slides with the **arrow keys**; press **F** for full screen and **Esc** for an overview
+  of all slides.
+- **ZIP** – both formats for every lecture in one download. Right-click it and choose **Extract All**.

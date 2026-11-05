@@ -1,0 +1,74 @@
+---
+title: "AF 603 - Fish Population Dynamics and Stock Assessment"
+subtitle: "Course synopsis"
+author: "Nyamisi Peter"
+date: "2026-11-04"
+format: 
+    revealjs:
+      standalone: true
+      embed-resources: true
+      reference-location: document
+      theme: serif
+      highlight-style: ayu-mirage
+execute: 
+  echo: false
+  warning: false
+  message: false
+  comment: ""
+
+slide-number: true
+theme: "journal"
+code-fold: false
+scrollable: true
+code-line-numbers: true
+css: ../style.css
+---
+
+## [Course Synopsis/contents]{style="background: #4a1035ff; color: #bebe56ff"}
+
+- Module 1: Course Introduction  
+    - Assessment frameworks and population dynamics
+- Module 2: Data used in stock assessment
+    - Sampling design
+    - Data quality
+- Module 3: The Unit stock
+    - Distribution  and abundance
+    - Methods of estimating fish stock abundance
+- Module 4: Growth and life history estimation
+    - Key Biological Parameters
+        - Fish population Growth
+        - Fish  recruitment
+        - Fish Mortality
+- Module 5: Catchability selectivity and multiple gears
+- Module 6: Statistical estimation and model diagnostics
+- Module 7: Biomass and age structured assessment
+- Module 8: Per recruit analysis and reference points
+- Module 9: Length based assessment for data poor fisheries
+- Module 10: Uncertainty and assessment robustness
+- Module 11: Management advice projections and strategy evaluation
+
+## [Course Objectives]{style="background: #4a1035ff; color: #bebe56ff"}
+
+To equip students with advanced theoretical knowledge, quantitative skills, and critical judgement for assessing fish stocks and developing management advice, particularly where reliable age data, long catch time series, or abundance indices are limited.
+
+## [Learning Outcomes]{style="background: #4a1035ff; color: #bebe56ff"}
+
+Upon completing this course, students should:
+
+- ✓ Conduct stock assessments using limited and available data
+- ✓ Interpret assessment results and communicate findings to decision-makers
+- ✓ Support evidence-based fisheries management at regional and national levels
+- ✓ Apply international assessment standards in East African contexts
+
+
+## [Contact hours]{style="background: #4a1035ff; color: #bebe56ff"}	
+
+- 75 hours: 30 lectures, 45 practicals
+
+## Assessment Methods
+
+- CA 50 marks (Test, assignment, practicals)
+- UE 50 marks
+
+
+

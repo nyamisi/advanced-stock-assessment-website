@@ -1,0 +1,118 @@
+---
+title: "Practical on Length-weight measurements"
+format: html
+date: "2026-01-06"
+author: "Nyamisi Peter"
+---
+
+## Overview
+
+The length-weight relationship (LWR) remains a fundamental tool in fisheries science for estimating biomass, assessing fish health, and understanding growth patterns. This relationship is mathematically defined by the power law equation:
+
+$$
+W = a \times L^b
+$$
+
+Where:
+
+- \ W \ = weight of the fish (in grams),
+- \ L \ = length of the fish (in centimeters),
+- \ a \ = intercept (a coefficient related to the condition factor of the fish),
+- \ b \ = slope (an exponent indicating the type of growth).
+
+For easier statistical analysis, the equation is typically converted to a linear form using logarithms:
+
+$$
+Log(W) = Log(a) + b \times Log(L)
+$$
+
+## Growth Patterns Based on the Exponent 'b'
+
+The exponent **b** in the length-weight relationship provides insights into the growth patterns of fish. 
+
+The value of **b** typically ranges between 2.5 and 3.5 in natural environments.
+
+- **Isometric Growth (b=3):** The fish maintains its shape as it grows, with weight increasing in proportion to the cube of its length.
+
+- **Positive Allometric Growth (b>3):** The fish becomes "plumper" or heavier as it increases in length.
+
+- **Negative Allometric Growth (b<3):** The fish becomes "slimmer" or more elongated as it grows.
+
+## Group work
+
+Students should be divided into groups of 7-8 members. Each group will perform length and weight measurements of fish specimens provided. Each group will have different species of fish to work with. Every group should record their measurements and observations in a their own document. After this exercise, each group will present their findings to the class.
+
+## Measurement of length and weight of fish
+
+1. Each group will receive a fish specimens.
+1. Using a measuring tape or ruler, measure the total length of the fish from the tip of the snout to the end of the tail fin. Record the measurement in centimeters (cm).
+1. Using a digital scale, weigh the fish specimen. Record the weight in grams (g).
+1. Repeat the measurements for all fish specimens provided to your group.
+1. Record the length and weight of each individual fish provided in microsoft excel format and present the results as indicated below:
+
+| Fish ID | Length (cm) | Weight (g) |
+|---------|--------------|------------|
+| 1       |              |            |
+| 2       |              |            |
+| 3       |              |            |
+| 4       |              |            | 
+| 5       |              |            |
+
+## Data Analysis
+
+1. Using any computer programme, plot a scatter plot of Length (cm) on the x-axis and Weight (g) on the y-axis using the recorded data.
+1. Use a best line to fit to the data and determine the relationship between length and weight.
+1. Use the length-weight relationship equation provided below to estimate the values of ***a*** and ***b*** for your fish specimens:  $$ W = a * L^b $$
+1. Discuss the biological significance of the length-weight relationship observed in your fish specimens.
+1. Compare the length-weight relationship of your fish species with other species in the class. Discuss any differences or similarities observed.
+
+## Estimation of Fulton's Condition Factor (K)
+
+The Condition Factor (K) is a measure of the 'plumpness' or 'well-being' of fish. It is calculated using the formula:
+
+$$
+K = \frac{W}{L^3} * 100
+$$
+
+Where:
+
+- K = Condition Factor,
+- W = weight of the fish (in grams),
+- L = length of the fish (in centimeters).
+
+1. Calculate the Condition Factor (K) for each fish specimen using the recorded length and weight data and present your results in a table as shown below:
+
+| Fish ID | Length (cm) | Weight (g) | Condition Factor (K) |
+|---------|--------------|------------|----------------------|
+| 1       |              |            |                      |
+| 2       |              |            |                      |
+| 3       |              |            |                      |
+| 4       |              |            |                      |
+| 5       |              |            |                      |
+
+
+2. Using the length and weight data provided, calculate the mean length and weight for your fish specimens.
+3. Use the mean length and weight data to calculate the Condition Factor (K) for the fish species.
+4. Discuss the implications of the Condition Factor (K) values obtained in terms of their health and well-being of the fish for the individual fish specimen recorded in the table and the mean values calculated.
+5. Compare the Condition Factor (K) value of your fish species and the value of the intercept (***a***) obtained from the length-weight relationship. Discuss any similarities or differences observed.
+6. Present your findings to the class, highlighting the length-weight relationship, the values of **a** and **b** and Condition Factor (K) for your fish species.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

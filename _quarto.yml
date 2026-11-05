@@ -1,0 +1,86 @@
+project:
+  type: website
+  output-dir: docs
+  resources:
+    - downloads/
+
+website:
+  title: "Advanced Fish Stock Assessment Course"
+  navbar:
+    title: "AF 603"
+    search: true
+    left:
+      - text: "Home"
+        href: index.qmd
+      - text: "Presentations"
+
+        menu:
+          - text: "Course introduction"
+            href: lectures/1_intro.qmd
+          - text: "Fish population dynamics"
+            href: lectures/2_popl_dynamics.qmd
+          - text: "---"
+          - text: "⬇ Download slides (offline)"
+            href: lectures/downloads.qmd
+          # - text: "Data used in stock assessment"
+          #   href: lectures/3_data_used.qmd
+          # - text: "Mortality population models"
+          #   href: lectures/4_mortality_pop_models.qmd
+          # - text: "The unit stock"
+          #   href: lectures/5_unit_stock.qmd
+          # - text: "Methods for estimating stock abundance"
+          #   href: lectures/6_methods_stock_abundance.qmd
+          # - text: "Methods for estimating stock abundance part2"
+          #   href: lectures/7_methods_stock_abundance2.qmd
+          # - text: "Length-weight relationships"
+          #   href: lectures/8_length_weight_relationship.qmd
+          
+
+      - text: "Practicals"
+        menu:
+          - text: "Length-Weight Relationships"
+          #   href: practical/length_weight_practical.qmd
+          # - text: "Length-Weight Relationships (Using R)"
+          #   href: practical/length_weight_isometric.qmd
+
+
+      - text: "Resources"
+        menu:
+          - text: "Data"
+          #   href: resources/data.qmd
+          # - text: "Glossary"
+          #   href: resources/glossary.qmd
+    right:
+      - icon: github
+        href: https://github.com/nyamisi
+        aria-label: GitHub
+
+  sidebar:
+    - title: "Course Modules"
+      contents:
+        - index.qmd
+        - section: "Course synopsis"
+          contents: 
+            - lectures/synopsis.qmd
+        # - section: "Module 1: Introduction"
+        #   contents:
+        #     - lectures/lecture1.qmd
+        # - section: "Module 2: Data Collection"
+        #   contents:
+        #     - lectures/lecture1.qmd
+        #     - lectures/lecture2.qmd
+
+  page-footer:
+    left: "Fish Stock Assessment Course | AF 603"
+    right: "© 2026/2027 Nyamisi Peter"
+
+format:
+  html:
+    theme: yeti
+    css: style.css
+    toc: true
+    toc-depth: 3
+    code-fold: false
+    code-tools: false
+    
+

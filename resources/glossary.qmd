@@ -1,0 +1,219 @@
+---
+title: "Glossary"
+---
+
+## Stock Assessment Terms
+
+### A
+
+**Abundance Index**
+A relative measure of population size derived from survey data or fishery catch-per-unit-effort. Does not provide absolute population size but indicates trends over time.
+
+**Age Determination**
+The process of estimating fish age through methods such as otolith reading, scale reading, or vertebral section examination.
+
+**Age-Structured Model**
+A stock assessment model that divides the population into age classes and projects each class forward through time, accounting for growth, mortality, and reproduction.
+
+---
+
+### B
+
+**Bycatch**
+Fish species or individuals caught incidentally while targeting other species. Often discarded or of lower commercial value.
+
+**Biomass**
+Total weight of all fish in a population or stock at a given time.
+
+---
+
+### C
+
+**Catchability (q)**
+The proportion of the population in an area that is caught per unit of fishing effort. Ranges from 0 to 1.
+
+**Catch-per-Unit-Effort (CPUE)**
+Total catch divided by total fishing effort. Used as an index of fish abundance (CPUE = q × Abundance).
+
+**Catch Assessment Survey (CAS)**
+A systematic survey designed to estimate total catch from a fishery based on sampling landing sites or fishing effort and using raising factors.
+
+**Coefficient of Variation (CV)**
+Standard deviation expressed as a percentage of the mean. Used to measure relative variability in estimates.
+
+---
+
+### D
+
+**Discard**
+Fish that are caught but returned to the sea, either dead or alive. Often occurs when catch regulations are exceeded or fish have low market value.
+
+**Discardability**
+The proportion of catch that is discarded.
+
+---
+
+### E
+
+**Effort**
+A measure of fishing intensity, including number of vessels, fishing time, gear quantity, or other measures of fishing activity.
+
+**Exclusive Economic Zone (EEZ)**
+A zone extending 200 nautical miles from a country's coastline where the country has exclusive rights to exploit natural resources.
+
+---
+
+### F
+
+**Fishery-Dependent Data**
+Data collected directly from the fishing process itself, including landing records, onboard observer data, and fisher reports.
+
+**Fishery-Independent Data**
+Data collected through research activities independent of the fishing process, such as research surveys and tagging experiments.
+
+**Fecundity**
+The number of eggs produced by a female fish, often related to body size.
+
+**Frame Survey**
+A census-based survey that collects data on all fishing vessels, gear, and landing sites to establish a sampling frame and generate raising factors.
+
+---
+
+### G
+
+**Gear Selectivity**
+The property of fishing gear to catch fish of certain sizes more readily than others. Typically expressed as a selectivity curve.
+
+**Gonad**
+The reproductive organ in fish. Examination of gonad development determines maturity status.
+
+---
+
+### H
+
+**Harvest Rate**
+The proportion of the population removed by fishing in a given time period (usually annually).
+
+---
+
+### L
+
+**Landing Records**
+Official records of fish catch that are landed and sold at ports. The most common source of fishery-dependent data.
+
+**Length-Weight Relationship**
+A mathematical relationship between fish length and weight, typically expressed as W = aL^b.
+
+---
+
+### M
+
+**Maturity Staging**
+Classification of fish gonad development (immature, maturing, mature, spent) to determine reproductive status.
+
+**Mortality**
+The rate at which fish are lost from a population. Includes natural mortality, fishing mortality, and other causes.
+
+---
+
+### O
+
+**Onboard Observer**
+A government personnel who rides aboard fishing vessels to collect catch, bycatch, discard, and other data.
+
+**Otolith**
+The ear bone of fish used for age determination. Growth rings (annuli) indicate age similar to tree rings.
+
+---
+
+### P
+
+**Portside Sampling**
+Collection of biological data (length, age, sex, maturity) from a sample of catch at landing sites.
+
+**Population Parameter**
+A characteristic of the population such as abundance, growth rate, mortality rate, or reproduction rate.
+
+---
+
+### R
+
+**Raising Factor**
+A multiplier used to expand sample data to population estimates. Calculated as the ratio of population size to sample size.
+
+**Recruitment**
+The addition of new, juvenile fish to the exploitable population through reproduction and growth.
+
+**Reference Point**
+A target or limit value for a population parameter (e.g., biomass, harvest rate) used in fisheries management.
+
+---
+
+### S
+
+**Sampling Frame**
+A complete listing of all units (e.g., vessels, landing sites) in a population from which a sample is drawn.
+
+**Selectivity Curve**
+A mathematical function describing how gear selectivity varies with fish size.
+
+**Sexual Maturity**
+The developmental stage when fish become capable of reproduction.
+
+**Standardization**
+A statistical process to adjust catch-per-unit-effort data for effects of non-biological factors (vessel characteristics, season, environmental conditions) to obtain a more accurate abundance index.
+
+**Stock**
+A population of fish of the same species in a geographic area that shares similar ecological characteristics and is managed as a unit.
+
+**Stock Assessment**
+An evaluation of the current status and trends of a fish stock using collected data and mathematical models.
+
+**Surplus Production**
+The amount of biomass growth available for sustainable harvest from a population.
+
+---
+
+### V
+
+**Vessel Monitoring System (VMS)**
+Electronic device that automatically records and transmits the location of a fishing vessel, used for monitoring fishing effort and spatial distribution.
+
+**Von Bertalanffy Growth Equation**
+The standard mathematical model for describing fish growth: L(t) = L∞(1 - e^(-K(t-t0)))
+
+---
+
+### Y
+
+**Year Class**
+All fish born during the same breeding season or calendar year.
+
+---
+
+## Symbols and Abbreviations
+
+| Symbol/Abbreviation | Definition |
+|---|---|
+| **B** | Biomass |
+| **BMU** | Beach Management Unit |
+| **CAS** | Catch Assessment Survey |
+| **CPUE** | Catch Per Unit Effort |
+| **CV** | Coefficient of Variation |
+| **EEZ** | Exclusive Economic Zone |
+| **F** | Fishing Mortality Rate |
+| **FAO** | Food and Agriculture Organization of the UN |
+| **FSA** | Fish Stock Assessment |
+| **GLM** | General Linear Model |
+| **K** | Brody's growth coefficient (von Bertalanffy) |
+| **L∞** | Asymptotic maximum length (von Bertalanffy) |
+| **M** | Natural Mortality Rate |
+| **N** | Population abundance (number of fish) |
+| **q** | Catchability coefficient |
+| **RF** | Raising Factor |
+| **VMS** | Vessel Monitoring System |
+| **W** | Weight |
+
+---
+
+*Last updated: December 2025*

@@ -1,0 +1,90 @@
+---
+title: "References and Further Reading"
+---
+
+## Key References
+
+### Foundational Texts
+
+1. **Caddy, J.F. and Mahon, R.** (1995). Reference points for fisheries management. ICES Journal of Marine Science, 52(3-4), 577-580.
+
+2. **Hilborn, R. and Walters, C.J.** (1992). Quantitative Fisheries Stock Assessment: Choice, Dynamics and Uncertainty. Chapman and Hall, New York.
+
+3. **Quinn II, T.J. and Deriso, R.B.** (1999). Quantitative Fish Dynamics. Oxford University Press, New York.
+
+### Data Collection Methods
+
+4. **Sparre, P. and Venema, S.C.** (1998). Introduction to tropical fish stock assessment. Part 1 - Manual. FAO Fisheries Technical Paper No. 306/1 Rev. 2.
+
+5. **FAO.** (2020). A handbook for the economic analysis of fishery management measures. FAO Fisheries and Aquaculture Circular. Rome.
+
+### Stock Assessment Methods
+
+6. **Haddon, M.** (2011). Modelling and quantitative methods in fisheries. Chapman and Hall/CRC, Boca Raton, FL.
+
+7. **Melnychuk, M.C., Peterson, E., Christensen, V., and Branch, T.A.** (2012). Fisheries management impacts on target species status. Proceedings of the National Academy of Sciences, 109(1), 97-102.
+
+### Data Quality and Validation
+
+8. **Cochran, W.G.** (1977). Sampling Techniques. John Wiley & Sons, New York.
+
+9. **Kell, L.T., Minto, C., and Gerritsen, H.D.** (2016). Evaluation of the RBF4 CPUE standardization approach. Fisheries Research, 183, 220-228.
+
+---
+
+## Online Resources
+
+### FAO Fisheries Resources
+
+- [FAO Fisheries and Aquaculture](http://www.fao.org/fishery/)
+- [IUCN Stock Status Reports](https://www.fishbase.org/)
+
+### Stock Assessment Software
+
+- [FLR (Fisheries Library in R)](http://www.flr-project.org/)
+- [Stock Synthesis](https://vlab.noaa.gov/web/stock-synthesis/)
+- [A-SCALA](http://www.fao.org/3/ca4918en/CA4918EN.pdf)
+
+### Data Resources
+
+- [FishBase](https://www.fishbase.org/) - Species and fishery information
+- [SeaLifeBase](https://www.sealifebase.ca/) - Marine species database
+- [Global Fishing Watch](https://globalfishingwatch.org/) - Fishing activity tracking
+
+---
+
+## Glossary References
+
+For definitions of stock assessment terms, see the [Glossary](glossary.qmd).
+
+---
+
+## Suggested Reading Order
+
+**For Beginners:**
+1. Start with Lecture 1: Introduction to Stock Assessment Data
+2. Read Sparre & Venema (1998) - Chapters 1-3
+3. Complete Lecture 2: Advanced Data Topics
+4. Explore FishBase for species examples
+
+**For Advanced Study:**
+1. Hilborn & Walters (1992) - Chapters 1-4
+2. Haddon (2011) - Part I and II
+3. Recent journal articles on specific assessment methods
+4. FLR documentation for software applications
+
+---
+
+## Citation Format
+
+If using materials from this course in academic work:
+
+**Course Materials:**
+Peter, N. (2025). Fish Stock Assessment Course (AQ 232) - Lecture Notes. University of [Institution].
+
+**Specific Lecture:**
+Peter, N. (2025). Fish Stock Assessment Data. In Fish Stock Assessment Course (AQ 232). Lecture 1. [Date Accessed].
+
+---
+
+*Last updated: December 2025*

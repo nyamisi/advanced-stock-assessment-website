@@ -1,0 +1,184 @@
+---
+title: "AQ 232 -- Fish Population Dynamics and Stock Assessment"
+subtitle: "Fish Population Structure"
+author: "Nyamisi Peter"
+date: "today"
+format: 
+    revealjs:
+      standalone: true
+      embed-resources: true
+      reference-location: document
+      theme: serif
+      highlight-style: ayu-mirage
+execute: 
+  echo: false
+  warning: false
+  message: false
+  comment: ""
+slide-number: true
+theme: "journal"
+code-fold: false
+scrollable: true
+code-line-numbers: true
+css: ../style.css
+---
+
+## [Fish Population Structure in Stock Assessment]{style="background: #4a1035ff; color: #bebe56ff"}
+
+**Definition:**
+
+Population structure refers to the composition of the stock in terms of age, size, sex, and spatial distribution.
+
+**Key Components:**
+
+- **Age structure** — proportion of fish in each age class (recruits, juveniles, adults, old fish)
+- **Size distribution** — length or weight frequency of individuals
+- **Sex ratio** — proportion of males vs. females
+- **Spatial structure** — distribution across fishing grounds and habitats
+- **Spawning groups** — location and timing of reproductive aggregations
+
+
+## [Why Population Structure Matters]{style="background: #4a1035ff; color: #bebe56ff"}
+
+**Recruitment Assessment**
+
+- Young age classes indicate strong recent recruitment
+- Absence of recruits signals poor spawning success
+- Tracks recovery or decline in population regeneration
+
+**Fishing Impact Detection**
+
+- Depleted age structure (few old fish) indicates overfishing
+- Skewed toward juveniles may indicate selective harvest of adults
+- Size-selective fishing distorts natural length distribution
+
+**Productivity Prediction**
+
+- Abundant reproductive-age fish = high reproductive output potential
+- Few spawners = reduced recruitment capacity and stock fragility
+- Age/size diversity = resilience to environmental variation
+
+
+## [Population Structure and Abundance Estimates]{style="background: #4a1035ff; color: #bebe56ff"}
+
+**Total Abundance vs. Exploitable Abundance**
+
+- **Total abundance** = count of all fish (recruits + juveniles + adults)
+- **Exploitable stock** = fish large enough to be caught legally
+- Population structure determines what fraction is harvestable
+
+**Example:**
+
+- Total stock: 1 million fish
+- Age structure: 40% recruits (age 0), 35% juveniles (age 1–2), 25% adults (age 3+)
+- If only fish age 3+ are legally harvestable → Exploitable stock = 250,000 fish
+
+**Management implication:** Total abundance alone is insufficient; must know age structure to estimate harvestable surplus
+
+
+## [Population Structure Drives Reference Points]{style="background: #4a1035ff; color: #bebe56ff"}
+
+**Stock Status Indicators**
+
+- **Recruitment** — abundance of young fish; indicates future stock potential
+- **Spawning stock biomass (SSB)** — total weight of reproductive fish; drivers of recruitment
+- **Fishing mortality by age** — which age classes are being removed most heavily
+
+**Biological Reference Points**
+
+- **Maximum Sustainable Yield (MSY)** — age/size structure at equilibrium where catch is maximized
+- **Limit reference points** — minimum acceptable population structure to avoid collapse
+- **Target reference points** — desired age structure for long-term productivity
+
+**Without age/size data, these reference points cannot be calculated or monitored**
+
+
+## [Population Structure Methods and Data]{style="background: #4a1035ff; color: #bebe56ff"}
+
+**How to Measure Population Structure**
+
+- **Port sampling** — collect length measurements and age-read scales/otoliths from landed fish
+- **Research surveys** — trawl or acoustic surveys collect size/age data from catches
+- **Scale analysis** — count growth rings (annuli) to determine age
+- **Otolith analysis** — read ear bones (more accurate for older fish)
+- **Length-frequency distribution** — estimate age from length using growth models
+
+
+## [Population Structure Indicators]{style="background: #4a1035ff; color: #bebe56ff"}
+
+**Healthy Population Structure**
+
+- Multiple age classes present (age 1–10+ depending on species)
+- Recruitment pulses visible (strong cohorts traceable as they age)
+- Abundant reproductive-age fish (age at maturity to older ages)
+- Size distribution follows growth model predictions
+
+**Warning Signs of Population Stress**
+
+- **Few or no recruits** — poor reproduction or high juvenile mortality
+- **Missing middle age classes** — past years of poor recruitment or selective fishing
+- **Very old fish rare** — fishing removes before natural lifespan completed
+- **Stunted size distribution** — indicates overcrowding or poor nutrition
+
+
+## [Age Structure and Selective Fishing]{style="background: #4a1035ff; color: #bebe56ff"}
+
+**Size-Selective Fishing Distorts Age Structure**
+
+- **Selective harvest of large fish** → Population skews young; reproductive potential declines
+- **Selective harvest of small fish** → Reduces recruitment survival; fewer juveniles mature
+- **Non-selective fishing** → More balanced removal across age classes
+
+**Example (Snappers):**
+
+- Unmanaged: Fishers harvest large, old fish preferentially (higher value)
+- Result: Population age structure becomes dominated by young, immature fish
+- Consequence: Recruitment crashes; stock cannot replace itself
+
+**Management response:** Size/age restrictions (e.g., minimum/maximum landing size) restore age structure
+
+
+## [Population Structure and Ecosystem Effects]{style="background: #4a1035ff; color: #bebe56ff"}
+
+**Food Web Implications**
+
+- Juvenile fish: primary consumers, high mortality, feed on zooplankton
+- Intermediate fish: piscivorous, control juvenile populations
+- Large adult fish: apex predators, energy transfer efficiency
+
+**Loss of older fish:**
+
+- Eliminates large predators → mesopredators increase → energy flow disrupted
+- Shifts diet composition (fewer large fish predate on smaller competitors)
+- Trophic cascades alter ecosystem structure
+
+**Rebuilding requires restoring age/size structure, not just total abundance**
+
+
+## [Population Structure for Data-Limited Fisheries]{style="background: #4a1035ff; color: #bebe56ff"}
+
+**When Resources are Limited:**
+
+- Even simple length sampling at landing sites provides population structure
+- Length-frequency analysis can estimate trends in recruitment and fishing pressure
+- No age-reading required; length alone often sufficient for preliminary assessment
+
+**Example Application:**
+
+- Monthly length samples from 100 fish at one landing site
+- Plot length-frequency distribution
+- Compare to previous years to track recruitment strength and fishing selectivity
+
+
+## [Key Takeaway: Abundance + Structure = Complete Assessment]{style="background: #4a1035ff; color: #bebe56ff"}
+
+**Why Population Structure is Essential:**
+
+1. **Total abundance** tells you how many fish; structure tells you if they can reproduce
+2. **Trends in recruitment** indicate future stock health; can't see without age data
+3. **Fishing selectivity** invisible in total abundance; obvious in age structure
+4. **Reference points** and harvest rules depend on knowing stock structure
+5. **Ecosystem impacts** depend on preserving diversity of age/size classes
+6. **Stock rebuilding** requires restoration of age structure, not just numbers
+
+**Bottom line:** Assessing only total abundance without understanding population structure is like checking body weight without measuring vital signs—you may miss critical health problems until it's too late.

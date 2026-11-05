@@ -1,0 +1,83 @@
+---
+title: "Course Modules"
+subtitle: "AF 603 -- Fish Population Dynamics and Stock Assessment"
+author: "Nyamisi Peter"
+format: html
+date: "2026-11-01"
+execute: 
+  echo: false
+  warning: false
+  message: false
+  comment: ""
+code-fold: false
+code-line-numbers: true
+css: style.css
+---
+
+## Welcome to AF 603
+
+This course covers the advanced methods used in fish stock assessments, including population dynamics, data collection, and analytical approaches for sustainable fisheries management.
+
+
+## Course Modules
+
+### Module 1: Course Introduction  
+- Introduction to population dynamics
+- Introduction to stock assessment
+- Aim of stock assessment
+- Definition of key terms
+
+### Module 2: Fish Population Structure
+- Key Biological Parameters
+
+  [] Fish population Growth
+  [] Fish  recruitment
+  [] Fish Mortality
+
+### Module 3: Data Used in Stock Assessment
+- Types of data used in stock assessment
+- Fishery-Dependent Data
+- Fishery-Independent Data
+- Data Requirements for Stock Assessments
+- Data Quality and Uncertainty
+- Sampling design
+
+### Module 4: The Unit Stock
+- Distribution  and abundance
+- Methods of estimating fish stock abundance
+
+### Module 5: Catchability Selectivity and Multiple Gears
+### Module 6: Statistical estimation and model diagnostics
+###  Module 7: Biomass and age structured assessment
+### Module 8: Per recruit analysis and reference points
+### Module 9: Length based assessment for data poor fisheries
+### Module 10: Uncertainty and assessment robustness
+### Module 11: Management advice projections and strategy evaluation
+
+
+## Learning Outcomes
+
+By the end of this course, you will be able to:
+
+- Understand the principles of fish population dynamics
+- Identify appropriate data collection methods for stock assessments
+- Apply statistical methods to analyze fishery data
+- Evaluate stock status and provide management recommendations
+- Consider ecosystem and social dimensions of fisheries management
+
+## Course Materials
+
+All lecture materials are available in this course website. Each lecture includes:
+
+- Slide presentations (HTML format)
+- Key concepts and definitions
+- Data examples and case studies
+- References and further reading
+
+## Getting Started
+
+Select a module above to begin exploring the course content. Each lecture is self-contained but builds on previous material.
+
+---
+
+*Last updated: November 2026*

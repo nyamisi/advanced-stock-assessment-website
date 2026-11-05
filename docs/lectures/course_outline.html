@@ -1,0 +1,1208 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Nyamisi Peter">
+<meta name="dcterms.date" content="2026-11-05">
+
+<title>AQ 232: Fish Population Dynamics and Stock Assessment – Advanced Fish Stock Assessment Course</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-97cbdf4c33b0c1d59c3c8504f205f74a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">AF 603</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-presentations" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Presentations</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-presentations">    
+        <li>
+    <a class="dropdown-item" href="../lectures/1_intro.html">
+ <span class="dropdown-text">Course introduction</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../lectures/2_popl_dynamics.html">
+ <span class="dropdown-text">Fish population dynamics</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../lectures/downloads.html">
+ <span class="dropdown-text">⬇ Download slides (offline)</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-practicals" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Practicals</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-practicals">    
+        <li class="dropdown-header">Length-Weight Relationships</li>
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-resources" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Resources</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-resources">    
+        <li class="dropdown-header">Data</li>
+    </ul>
+  </li>
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/nyamisi"> <i class="bi bi-github" role="img" aria-label="GitHub">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul class="collapse">
+  <li><a href="#course-overview" id="toc-course-overview" class="nav-link active" data-scroll-target="#course-overview">Course Overview</a></li>
+  <li><a href="#module-1-introduction-context" id="toc-module-1-introduction-context" class="nav-link" data-scroll-target="#module-1-introduction-context">MODULE 1: Introduction &amp; Context</a></li>
+  <li><a href="#module-2-fundamentals-of-fish-population-dynamics" id="toc-module-2-fundamentals-of-fish-population-dynamics" class="nav-link" data-scroll-target="#module-2-fundamentals-of-fish-population-dynamics">MODULE 2: Fundamentals of Fish Population Dynamics</a></li>
+  <li><a href="#module-3-the-unit-stock" id="toc-module-3-the-unit-stock" class="nav-link" data-scroll-target="#module-3-the-unit-stock">MODULE 3: The Unit Stock</a></li>
+  <li><a href="#module-4-data-collection-quality" id="toc-module-4-data-collection-quality" class="nav-link" data-scroll-target="#module-4-data-collection-quality">MODULE 4: Data Collection &amp; Quality</a></li>
+  <li><a href="#module-5-stock-assessment-methods" id="toc-module-5-stock-assessment-methods" class="nav-link" data-scroll-target="#module-5-stock-assessment-methods">MODULE 5: Stock Assessment Methods</a></li>
+  <li><a href="#module-6-key-biological-parameters" id="toc-module-6-key-biological-parameters" class="nav-link" data-scroll-target="#module-6-key-biological-parameters">MODULE 6: Key Biological Parameters</a></li>
+  <li><a href="#module-7-environmental-climate-drivers" id="toc-module-7-environmental-climate-drivers" class="nav-link" data-scroll-target="#module-7-environmental-climate-drivers">MODULE 7: Environmental &amp; Climate Drivers</a></li>
+  <li><a href="#module-8-reference-points-harvest-control-rules" id="toc-module-8-reference-points-harvest-control-rules" class="nav-link" data-scroll-target="#module-8-reference-points-harvest-control-rules">MODULE 8: Reference Points &amp; Harvest Control Rules</a></li>
+  <li><a href="#module-9-management-strategy-evaluation-mse" id="toc-module-9-management-strategy-evaluation-mse" class="nav-link" data-scroll-target="#module-9-management-strategy-evaluation-mse">MODULE 9: Management Strategy Evaluation (MSE)</a></li>
+  <li><a href="#module-10-ecosystem-social-dimensions" id="toc-module-10-ecosystem-social-dimensions" class="nav-link" data-scroll-target="#module-10-ecosystem-social-dimensions">MODULE 10: Ecosystem &amp; Social Dimensions</a></li>
+  <li><a href="#module-11-emerging-technologies-future-directions" id="toc-module-11-emerging-technologies-future-directions" class="nav-link" data-scroll-target="#module-11-emerging-technologies-future-directions">MODULE 11: Emerging Technologies &amp; Future Directions</a></li>
+  <li><a href="#module-12-case-studies-applications" id="toc-module-12-case-studies-applications" class="nav-link" data-scroll-target="#module-12-case-studies-applications">MODULE 12: Case Studies &amp; Applications</a></li>
+  <li><a href="#course-learning-outcomes" id="toc-course-learning-outcomes" class="nav-link" data-scroll-target="#course-learning-outcomes">Course Learning Outcomes</a></li>
+  <li><a href="#course-structure-delivery" id="toc-course-structure-delivery" class="nav-link" data-scroll-target="#course-structure-delivery">Course Structure &amp; Delivery</a></li>
+  <li><a href="#recommended-textbooks-references" id="toc-recommended-textbooks-references" class="nav-link" data-scroll-target="#recommended-textbooks-references">Recommended Textbooks &amp; References</a></li>
+  <li><a href="#prerequisites" id="toc-prerequisites" class="nav-link" data-scroll-target="#prerequisites">Prerequisites</a></li>
+  <li><a href="#course-information" id="toc-course-information" class="nav-link" data-scroll-target="#course-information">Course Information</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">AQ 232: Fish Population Dynamics and Stock Assessment</h1>
+<p class="subtitle lead">Contemporary Course Outline</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Nyamisi Peter </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">November 5, 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="course-overview" class="level2">
+<h2 class="anchored" data-anchor-id="course-overview">Course Overview</h2>
+<p>This course provides a comprehensive advanced fish population dynamics and stock assessment methods in the context of modern global fisheries challenges. Students will learn to assess fish populations using contemporary scientific approaches while considering ecosystem, social, and climate dimensions of sustainable fisheries management.</p>
+<hr>
+</section>
+<section id="module-1-introduction-context" class="level2">
+<h2 class="anchored" data-anchor-id="module-1-introduction-context">MODULE 1: Introduction &amp; Context</h2>
+<section id="topics" class="level3">
+<h3 class="anchored" data-anchor-id="topics">Topics</h3>
+<ul>
+<li>Historical perspective: From single-species to ecosystem-based management</li>
+<li>Global fisheries crisis: Current state of world fish stocks</li>
+<li>Sustainable Development Goals (SDG 14): Life Below Water</li>
+<li>Key definitions: Stock, recruitment, sustainability, overfishing</li>
+<li>Career pathways in fisheries science</li>
+</ul>
+</section>
+<section id="learning-objectives" class="level3">
+<h3 class="anchored" data-anchor-id="learning-objectives">Learning Objectives</h3>
+<ul>
+<li>Understand the evolution of fisheries science and management</li>
+<li>Recognize global challenges in sustaining fish stocks</li>
+<li>Define fundamental concepts and terminology</li>
+<li>Explore career opportunities in fisheries</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="module-2-fundamentals-of-fish-population-dynamics" class="level2">
+<h2 class="anchored" data-anchor-id="module-2-fundamentals-of-fish-population-dynamics">MODULE 2: Fundamentals of Fish Population Dynamics</h2>
+<section id="topics-1" class="level3">
+<h3 class="anchored" data-anchor-id="topics-1">Topics</h3>
+<ul>
+<li><strong>Population structure:</strong> Age, size, sex ratios</li>
+<li><strong>Vital rates:</strong> Birth (recruitment), death (natural &amp; fishing mortality), growth</li>
+<li><strong>Population models:</strong>
+<ul>
+<li>Exponential and logistic growth</li>
+<li>Beverton-Holt and Ricker stock-recruitment models</li>
+<li>Age-structured population models</li>
+<li>Size-structured models (relevant for data-limited stocks)</li>
+</ul></li>
+<li><strong>Equilibrium vs.&nbsp;dynamic concepts</strong></li>
+<li><strong>Density-dependent processes</strong></li>
+</ul>
+</section>
+<section id="key-equations" class="level3">
+<h3 class="anchored" data-anchor-id="key-equations">Key Equations</h3>
+<p><strong>Exponential growth:</strong> <span class="math display">\[N_t = N_0 e^{rt}\]</span></p>
+<p><strong>Logistic growth:</strong> <span class="math display">\[\frac{dN}{dt} = rN\left(1 - \frac{N}{K}\right)\]</span></p>
+<p><strong>Beverton-Holt recruitment:</strong> <span class="math display">\[R_t = \frac{aS_t}{1 + bS_t}\]</span></p>
+<p><strong>Ricker recruitment:</strong> <span class="math display">\[R_t = aS_t e^{-bS_t}\]</span></p>
+</section>
+<section id="learning-objectives-1" class="level3">
+<h3 class="anchored" data-anchor-id="learning-objectives-1">Learning Objectives</h3>
+<ul>
+<li>Understand population structure and vital rates</li>
+<li>Apply growth models to fish populations</li>
+<li>Interpret stock-recruitment relationships</li>
+<li>Recognize density-dependent effects in fish populations</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="module-3-the-unit-stock" class="level2">
+<h2 class="anchored" data-anchor-id="module-3-the-unit-stock">MODULE 3: The Unit Stock</h2>
+<section id="topics-2" class="level3">
+<h3 class="anchored" data-anchor-id="topics-2">Topics</h3>
+<ul>
+<li><strong>Defining management units</strong> in the modern context</li>
+<li><strong>Distribution patterns:</strong>
+<ul>
+<li>Geographic distribution and boundaries</li>
+<li>Seasonal migrations and habitat use</li>
+<li>Climate change impacts on range shifts</li>
+</ul></li>
+<li><strong>Abundance estimation methods:</strong>
+<ul>
+<li>Survey design (trawls, acoustic, visual)</li>
+<li>CPUE standardization (commercial data)</li>
+<li>Mark-recapture and tagging</li>
+<li>Emerging technologies (eDNA, environmental DNA monitoring)</li>
+<li>Autonomous platforms (drones, gliders)</li>
+</ul></li>
+</ul>
+</section>
+<section id="key-concepts" class="level3">
+<h3 class="anchored" data-anchor-id="key-concepts">Key Concepts</h3>
+<ul>
+<li>A unit stock is the fundamental management unit in fisheries</li>
+<li>Delineation depends on biological, physical, and political factors</li>
+<li>Distribution is dynamic and changing with climate</li>
+<li>Multiple methods provide complementary information on abundance</li>
+</ul>
+</section>
+<section id="learning-objectives-2" class="level3">
+<h3 class="anchored" data-anchor-id="learning-objectives-2">Learning Objectives</h3>
+<ul>
+<li>Define and delineate appropriate unit stocks</li>
+<li>Design surveys to estimate stock abundance</li>
+<li>Evaluate advantages and limitations of different methods</li>
+<li>Integrate multiple data sources for robust estimates</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="module-4-data-collection-quality" class="level2">
+<h2 class="anchored" data-anchor-id="module-4-data-collection-quality">MODULE 4: Data Collection &amp; Quality</h2>
+<section id="topics-3" class="level3">
+<h3 class="anchored" data-anchor-id="topics-3">Topics</h3>
+<ul>
+<li><strong>Types of data:</strong>
+<ul>
+<li>Fishery-dependent (commercial catch, effort, size/age composition)</li>
+<li>Fishery-independent (research surveys, ecosystem monitoring)</li>
+<li>Biological data (maturity, fecundity, diet, parasite load)</li>
+<li>Environmental data (temperature, oxygen, currents, ecosystem indicators)</li>
+</ul></li>
+<li><strong>Data-limited approaches:</strong> Tools for developing nations/underfunded fisheries</li>
+<li><strong>Data quality assurance:</strong> Bias detection and correction</li>
+<li><strong>Real-time monitoring:</strong> Vessel monitoring systems (VMS), electronic logbooks</li>
+<li><strong>Big Data in fisheries:</strong> Machine learning for pattern recognition</li>
+</ul>
+</section>
+<section id="best-practices" class="level3">
+<h3 class="anchored" data-anchor-id="best-practices">Best Practices</h3>
+<ul>
+<li>Establish standardized protocols for data collection</li>
+<li>Implement quality control measures</li>
+<li>Document data collection metadata</li>
+<li>Balance cost with data precision requirements</li>
+<li>Engage with stakeholders in data collection planning</li>
+</ul>
+</section>
+<section id="learning-objectives-3" class="level3">
+<h3 class="anchored" data-anchor-id="learning-objectives-3">Learning Objectives</h3>
+<ul>
+<li>Design data collection programs appropriate to context</li>
+<li>Assess data quality and identify biases</li>
+<li>Understand advantages of different data types</li>
+<li>Apply data-limited approaches when necessary</li>
+<li>Use modern technology for monitoring</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="module-5-stock-assessment-methods" class="level2">
+<h2 class="anchored" data-anchor-id="module-5-stock-assessment-methods">MODULE 5: Stock Assessment Methods</h2>
+<section id="topics-4" class="level3">
+<h3 class="anchored" data-anchor-id="topics-4">Topics</h3>
+<ul>
+<li><strong>Traditional approaches:</strong>
+<ul>
+<li>Virtual Population Analysis (VPA)</li>
+<li>Surplus production models (Schaefer, Fox)</li>
+<li>Age-structured models (Stock Synthesis, CASAL2)</li>
+</ul></li>
+<li><strong>Modern integrated approaches:</strong>
+<ul>
+<li>Bayesian methods and uncertainty quantification</li>
+<li>State-space models</li>
+<li>Multi-species and ecosystem models</li>
+</ul></li>
+<li><strong>Data-limited methods:</strong>
+<ul>
+<li>Length-based spawning potential ratio (LB-SPR)</li>
+<li>Catch-only models</li>
+<li>Life-history-based approaches</li>
+</ul></li>
+<li><strong>Model selection and validation</strong></li>
+<li><strong>Uncertainty in assessment:</strong> Propagation and communication</li>
+</ul>
+</section>
+<section id="schaefer-surplus-production-model" class="level3">
+<h3 class="anchored" data-anchor-id="schaefer-surplus-production-model">Schaefer Surplus Production Model</h3>
+<p><span class="math display">\[C_t = q \cdot E_t \cdot B_t\]</span></p>
+<p><span class="math display">\[B_{t+1} = B_t + rB_t\left(1 - \frac{B_t}{K}\right) - C_t\]</span></p>
+<p>Where: - <span class="math inline">\(C_t\)</span> = catch at time t - <span class="math inline">\(q\)</span> = catchability coefficient - <span class="math inline">\(E_t\)</span> = fishing effort - <span class="math inline">\(B_t\)</span> = biomass - <span class="math inline">\(r\)</span> = intrinsic rate of increase - <span class="math inline">\(K\)</span> = carrying capacity</p>
+</section>
+<section id="learning-objectives-4" class="level3">
+<h3 class="anchored" data-anchor-id="learning-objectives-4">Learning Objectives</h3>
+<ul>
+<li>Select appropriate assessment methods for different contexts</li>
+<li>Understand assumptions underlying each method</li>
+<li>Implement and interpret assessment models</li>
+<li>Communicate uncertainty appropriately</li>
+<li>Validate model outputs</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="module-6-key-biological-parameters" class="level2">
+<h2 class="anchored" data-anchor-id="module-6-key-biological-parameters">MODULE 6: Key Biological Parameters</h2>
+<section id="topics-5" class="level3">
+<h3 class="anchored" data-anchor-id="topics-5">Topics</h3>
+<ul>
+<li><strong>Growth:</strong> Von Bertalanffy models, environmental effects</li>
+<li><strong>Recruitment:</strong> Spawner-recruit relationships, recruitment variability
+<ul>
+<li>Climate drivers of recruitment (oceanographic indices)</li>
+<li>Early life-stage survival</li>
+</ul></li>
+<li><strong>Mortality:</strong>
+<ul>
+<li>Natural mortality estimation</li>
+<li>Fishing mortality and selectivity</li>
+<li>Estimating discard mortality</li>
+</ul></li>
+<li><strong>Reproductive biology:</strong> Maturity schedules, fecundity, sex ratios</li>
+<li><strong>Genetic population structure:</strong> Implications for management boundaries</li>
+</ul>
+</section>
+<section id="von-bertalanffy-growth-model" class="level3">
+<h3 class="anchored" data-anchor-id="von-bertalanffy-growth-model">Von Bertalanffy Growth Model</h3>
+<p><span class="math display">\[L_t = L_\infty(1 - e^{-K(t - t_0)})\]</span></p>
+<p>Where: - <span class="math inline">\(L_t\)</span> = length at age t - <span class="math inline">\(L_\infty\)</span> = asymptotic length - <span class="math inline">\(K\)</span> = growth rate coefficient - <span class="math inline">\(t_0\)</span> = theoretical age at zero length</p>
+</section>
+<section id="learning-objectives-5" class="level3">
+<h3 class="anchored" data-anchor-id="learning-objectives-5">Learning Objectives</h3>
+<ul>
+<li>Estimate biological parameters from data</li>
+<li>Understand environmental effects on biological rates</li>
+<li>Apply parameter estimates to population models</li>
+<li>Recognize importance of genetic structure</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="module-7-environmental-climate-drivers" class="level2">
+<h2 class="anchored" data-anchor-id="module-7-environmental-climate-drivers">MODULE 7: Environmental &amp; Climate Drivers</h2>
+<section id="topics-6" class="level3">
+<h3 class="anchored" data-anchor-id="topics-6">Topics</h3>
+<ul>
+<li><strong>Climate change impacts on fish stocks:</strong>
+<ul>
+<li>Range shifts and redistribution</li>
+<li>Phenological changes (timing of spawning, migration)</li>
+<li>Ocean acidification effects</li>
+</ul></li>
+<li><strong>Oxygen minimum zones:</strong> Habitat compression</li>
+<li><strong>Ecosystem changes:</strong> Regime shifts, regime indicators</li>
+<li><strong>Incorporating environmental covariates</strong> in assessment models</li>
+<li><strong>Forecasting under climate scenarios</strong></li>
+</ul>
+</section>
+<section id="key-considerations" class="level3">
+<h3 class="anchored" data-anchor-id="key-considerations">Key Considerations</h3>
+<ul>
+<li>Climate impacts are already observable in many stocks</li>
+<li>Habitat availability is a key constraint under climate change</li>
+<li>Environmental variables can improve recruitment predictions</li>
+<li>Adaptation requires flexible management frameworks</li>
+</ul>
+</section>
+<section id="learning-objectives-6" class="level3">
+<h3 class="anchored" data-anchor-id="learning-objectives-6">Learning Objectives</h3>
+<ul>
+<li>Understand climate impacts on fish populations</li>
+<li>Incorporate environmental data into assessments</li>
+<li>Forecast population responses to climate change</li>
+<li>Develop adaptive management strategies</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="module-8-reference-points-harvest-control-rules" class="level2">
+<h2 class="anchored" data-anchor-id="module-8-reference-points-harvest-control-rules">MODULE 8: Reference Points &amp; Harvest Control Rules</h2>
+<section id="topics-7" class="level3">
+<h3 class="anchored" data-anchor-id="topics-7">Topics</h3>
+<ul>
+<li><strong>Biological reference points:</strong>
+<ul>
+<li>MSY (Maximum Sustainable Yield) and implications</li>
+<li>Proxy reference points (F₀.₁, B₃₅%, etc.)</li>
+<li>Ecosystem-based reference points</li>
+</ul></li>
+<li><strong>Harvest control rules (HCR):</strong> Logic and application</li>
+<li><strong>Risk assessment:</strong> Probability of meeting management objectives</li>
+<li><strong>Rebuilding plans:</strong> Recovering overfished stocks</li>
+<li><strong>Precautionary approach:</strong> Decision-making under uncertainty</li>
+</ul>
+</section>
+<section id="harvest-control-rule-example" class="level3">
+<h3 class="anchored" data-anchor-id="harvest-control-rule-example">Harvest Control Rule Example</h3>
+<p>If <span class="math inline">\(B &lt; B_{lim}\)</span>: fishing is prohibited</p>
+<p>If <span class="math inline">\(B_{lim} &lt; B &lt; B_{target}\)</span>: fishing mortality decreases linearly with biomass</p>
+<p>If <span class="math inline">\(B &gt; B_{target}\)</span>: fishing mortality set at <span class="math inline">\(F_{target}\)</span></p>
+</section>
+<section id="learning-objectives-7" class="level3">
+<h3 class="anchored" data-anchor-id="learning-objectives-7">Learning Objectives</h3>
+<ul>
+<li>Define appropriate reference points</li>
+<li>Develop harvest control rules</li>
+<li>Assess risk and probability of meeting objectives</li>
+<li>Design rebuilding strategies</li>
+<li>Apply precautionary approach</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="module-9-management-strategy-evaluation-mse" class="level2">
+<h2 class="anchored" data-anchor-id="module-9-management-strategy-evaluation-mse">MODULE 9: Management Strategy Evaluation (MSE)</h2>
+<section id="topics-8" class="level3">
+<h3 class="anchored" data-anchor-id="topics-8">Topics</h3>
+<ul>
+<li><strong>Framework:</strong> Simulation of future outcomes under different strategies</li>
+<li><strong>Operating models:</strong> Representation of reality</li>
+<li><strong>Estimation models:</strong> Assessment methods tested</li>
+<li><strong>Management procedures:</strong> Decision rules</li>
+<li><strong>Performance evaluation:</strong> Trade-offs between objectives</li>
+<li><strong>Robustness testing:</strong> Sensitivity to model assumptions</li>
+</ul>
+</section>
+<section id="mse-components" class="level3">
+<h3 class="anchored" data-anchor-id="mse-components">MSE Components</h3>
+<pre><code>Operating Model (True System)
+        ↓
+Simulated Data
+        ↓
+Estimation Model (Assessment)
+        ↓
+Management Procedure (HCR)
+        ↓
+Management Action (Harvest Level)
+        ↓
+Population Update</code></pre>
+</section>
+<section id="learning-objectives-8" class="level3">
+<h3 class="anchored" data-anchor-id="learning-objectives-8">Learning Objectives</h3>
+<ul>
+<li>Design and implement MSE frameworks</li>
+<li>Evaluate management procedure performance</li>
+<li>Assess robustness to uncertainty</li>
+<li>Compare trade-offs between objectives</li>
+<li>Support decision-making with simulation results</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="module-10-ecosystem-social-dimensions" class="level2">
+<h2 class="anchored" data-anchor-id="module-10-ecosystem-social-dimensions">MODULE 10: Ecosystem &amp; Social Dimensions</h2>
+<section id="topics-9" class="level3">
+<h3 class="anchored" data-anchor-id="topics-9">Topics</h3>
+<ul>
+<li><strong>Multispecies interactions:</strong>
+<ul>
+<li>Predator-prey relationships</li>
+<li>Bycatch and discards</li>
+<li>Mixed-stock fisheries</li>
+</ul></li>
+<li><strong>Ecosystem services:</strong> Food security, livelihoods, biodiversity</li>
+<li><strong>Small-scale fisheries:</strong> Challenges and assessment approaches</li>
+<li><strong>Equity and inclusion:</strong> Women in fisheries, indigenous knowledge</li>
+<li><strong>Trade-offs:</strong> Balancing conservation, economics, and social goals</li>
+<li><strong>Stakeholder engagement:</strong> Participatory assessment processes</li>
+</ul>
+</section>
+<section id="key-principles" class="level3">
+<h3 class="anchored" data-anchor-id="key-principles">Key Principles</h3>
+<ul>
+<li>Fish stocks exist within ecosystems</li>
+<li>Sustainability requires considering social and economic dimensions</li>
+<li>Inclusive decision-making improves outcomes</li>
+<li>Local knowledge complements scientific assessment</li>
+<li>Equity is a sustainability requirement</li>
+</ul>
+</section>
+<section id="learning-objectives-9" class="level3">
+<h3 class="anchored" data-anchor-id="learning-objectives-9">Learning Objectives</h3>
+<ul>
+<li>Understand ecosystem context of single-stock assessments</li>
+<li>Address social dimensions of fisheries</li>
+<li>Engage stakeholders in assessment and management</li>
+<li>Evaluate trade-offs between objectives</li>
+<li>Incorporate indigenous and local knowledge</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="module-11-emerging-technologies-future-directions" class="level2">
+<h2 class="anchored" data-anchor-id="module-11-emerging-technologies-future-directions">MODULE 11: Emerging Technologies &amp; Future Directions</h2>
+<section id="topics-10" class="level3">
+<h3 class="anchored" data-anchor-id="topics-10">Topics</h3>
+<ul>
+<li><strong>Genomic tools:</strong> Population genetics, parentage analysis, eDNA</li>
+<li><strong>Machine learning:</strong> Pattern recognition, species identification, abundance prediction</li>
+<li><strong>Remote sensing:</strong> Satellite data for habitat and biomass estimation</li>
+<li><strong>Integrated observing systems:</strong> Real-time ecosystem monitoring</li>
+<li><strong>Citizen science:</strong> Community-based monitoring programs</li>
+<li><strong>Open data platforms:</strong> Transparency and reproducibility</li>
+</ul>
+</section>
+<section id="emerging-opportunities" class="level3">
+<h3 class="anchored" data-anchor-id="emerging-opportunities">Emerging Opportunities</h3>
+<ul>
+<li>eDNA provides non-invasive population monitoring</li>
+<li>Machine learning identifies patterns in complex datasets</li>
+<li>Remote sensing expands monitoring to remote areas</li>
+<li>Autonomous platforms reduce survey costs</li>
+<li>Open science improves reproducibility and collaboration</li>
+</ul>
+</section>
+<section id="learning-objectives-10" class="level3">
+<h3 class="anchored" data-anchor-id="learning-objectives-10">Learning Objectives</h3>
+<ul>
+<li>Understand capabilities and limitations of new technologies</li>
+<li>Evaluate appropriateness for different contexts</li>
+<li>Implement emerging tools in assessment workflows</li>
+<li>Stay current with rapid technological change</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="module-12-case-studies-applications" class="level2">
+<h2 class="anchored" data-anchor-id="module-12-case-studies-applications">MODULE 12: Case Studies &amp; Applications</h2>
+<section id="topics-11" class="level3">
+<h3 class="anchored" data-anchor-id="topics-11">Topics</h3>
+<ul>
+<li><strong>Regional assessments:</strong> Contrasting examples (developed vs.&nbsp;developing countries)</li>
+<li><strong>High-value species:</strong> Tuna, salmon, cod assessments</li>
+<li><strong>Data-limited stocks:</strong> Tropical and small-scale fisheries</li>
+<li><strong>Rebuilding successes and failures:</strong> Learning from experience</li>
+<li><strong>Emerging challenges:</strong> IUU fishing, marine plastics, coral ecosystem collapse</li>
+</ul>
+</section>
+<section id="case-study-examples" class="level3">
+<h3 class="anchored" data-anchor-id="case-study-examples">Case Study Examples</h3>
+<ul>
+<li>Atlantic cod collapse and recovery efforts</li>
+<li>Tuna stock assessments across ocean basins</li>
+<li>Small pelagic fisheries (anchoveta) in Peru</li>
+<li>Data-limited tropical reef fisheries</li>
+<li>Endangered salmon populations in the Pacific Northwest</li>
+</ul>
+</section>
+<section id="learning-objectives-11" class="level3">
+<h3 class="anchored" data-anchor-id="learning-objectives-11">Learning Objectives</h3>
+<ul>
+<li>Apply assessment methods to real-world situations</li>
+<li>Learn from successes and failures</li>
+<li>Develop context-appropriate solutions</li>
+<li>Communicate scientific findings to managers and public</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="course-learning-outcomes" class="level2">
+<h2 class="anchored" data-anchor-id="course-learning-outcomes">Course Learning Outcomes</h2>
+<p>By the end of this course, students will be able to:</p>
+<ol type="1">
+<li><strong>Understand and apply</strong> population dynamics principles to fish stocks</li>
+<li><strong>Design and implement</strong> data collection programs appropriate to context</li>
+<li><strong>Conduct stock assessments</strong> using appropriate methods for available data</li>
+<li><strong>Interpret results and communicate</strong> uncertainty effectively</li>
+<li><strong>Evaluate management strategies</strong> using Management Strategy Evaluation</li>
+<li><strong>Consider ecosystem and social</strong> impacts of fishing decisions</li>
+<li><strong>Address climate change impacts</strong> on fisheries and adaptation strategies</li>
+<li><strong>Apply modern tools</strong> (eDNA, remote sensing, machine learning)</li>
+<li><strong>Work with diverse stakeholders</strong> in assessment and management</li>
+<li><strong>Contribute to sustainable</strong> fisheries management globally</li>
+</ol>
+<hr>
+</section>
+<section id="course-structure-delivery" class="level2">
+<h2 class="anchored" data-anchor-id="course-structure-delivery">Course Structure &amp; Delivery</h2>
+<section id="learning-activities" class="level3">
+<h3 class="anchored" data-anchor-id="learning-activities">Learning Activities</h3>
+<ul>
+<li><strong>Lectures:</strong> Concept presentations and discussions</li>
+<li><strong>Practical exercises:</strong> Hands-on data analysis and modeling</li>
+<li><strong>Case studies:</strong> Real-world application examples</li>
+<li><strong>Group projects:</strong> Collaborative assessment and problem-solving</li>
+<li><strong>Stakeholder engagement:</strong> Interaction with fisheries professionals</li>
+<li><strong>Field components:</strong> Where possible, observations of fisheries</li>
+</ul>
+</section>
+<section id="assessment" class="level3">
+<h3 class="anchored" data-anchor-id="assessment">Assessment</h3>
+<ul>
+<li><strong>Participation:</strong> Engagement in discussions and activities</li>
+<li><strong>Assignments:</strong> Problem sets and data analysis exercises</li>
+<li><strong>Project work:</strong> Development of assessment framework</li>
+<li><strong>Final examination:</strong> Comprehensive understanding assessment</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="recommended-textbooks-references" class="level2">
+<h2 class="anchored" data-anchor-id="recommended-textbooks-references">Recommended Textbooks &amp; References</h2>
+<section id="primary-references" class="level3">
+<h3 class="anchored" data-anchor-id="primary-references">Primary References</h3>
+<ul>
+<li>Quinn, T. J., &amp; Deriso, R. B. (1999). <em>Quantitative Fish Dynamics</em>. Oxford University Press.</li>
+<li>Hilborn, R., &amp; Walters, C. J. (1992). <em>Quantitative Fisheries Stock Assessment</em>. Chapman &amp; Hall.</li>
+<li>Maunder, M. N., &amp; Punt, A. E. (2004). Standardizing catch and effort data: a review of recent approaches. Fisheries Research, 70(2-3), 141-159.</li>
+</ul>
+</section>
+<section id="supplementary-resources" class="level3">
+<h3 class="anchored" data-anchor-id="supplementary-resources">Supplementary Resources</h3>
+<ul>
+<li>Petitgas, P. (1998). Geostatistics in fisheries survey design and stock assessment. FAO Fisheries Technical Paper 368.</li>
+<li>FAO (2023). Fisheries and Aquaculture Global Practice - Stock Assessment.</li>
+<li>NOAA Fisheries Stock Assessment Workshop (SAWG) documents</li>
+<li>International Council for the Exploration of the Sea (ICES) guidelines</li>
+</ul>
+</section>
+<section id="open-access-resources" class="level3">
+<h3 class="anchored" data-anchor-id="open-access-resources">Open Access Resources</h3>
+<ul>
+<li>FishBase (www.fishbase.org)</li>
+<li>SeaLifeBase (www.sealifebase.org)</li>
+<li>ICES Stock Assessment WG reports</li>
+<li>UN FAO Fisheries Statistics</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="prerequisites" class="level2">
+<h2 class="anchored" data-anchor-id="prerequisites">Prerequisites</h2>
+<ul>
+<li>Basic statistics (hypothesis testing, regression)</li>
+<li>Introduction to biology and ecology</li>
+<li>Quantitative reasoning skills</li>
+<li>Familiarity with spreadsheets or programming (R/Python beneficial)</li>
+</ul>
+<hr>
+</section>
+<section id="course-information" class="level2">
+<h2 class="anchored" data-anchor-id="course-information">Course Information</h2>
+<p><strong>Instructor:</strong> Nyamisi Peter</p>
+<p><strong>Duration:</strong> One semester</p>
+<p><strong>Credits:</strong> [Variable by institution]</p>
+<p><strong>Meeting Times:</strong> [To be scheduled]</p>
+<p><strong>Office Hours:</strong> [To be scheduled]</p>
+<p><strong>Contact:</strong> [Email to be provided]</p>
+<hr>
+<p><em>Last updated: December 2025</em></p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Fish Stock Assessment Course | AF 603</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p>© 2026/2027 Nyamisi Peter</p>
+</div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
