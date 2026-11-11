@@ -11,7 +11,7 @@ format:
       reference-location: document
       theme: serif
       highlight-style: ayu-mirage
-      footer: '[⬇ Download full lecture (PDF)](../downloads/AF603_L1_Course_Introduction.pdf){download="AF603_L1_Course_Introduction.pdf"} &nbsp;|&nbsp; [All downloads](downloads.html)'
+      footer: '[⬇](../downloads/AF603_L1_Course_Introduction.pdf){download="AF603_L1_Course_Introduction.pdf" title="Download full lecture (PDF)"}'
 execute: 
   echo: false
   warning: false
@@ -56,7 +56,6 @@ require(leaflet)
 :::
 ::::
 
----
 
 
 ## [Stock Assessment Fundamentals & Concepts]{style="background: #1c1c3aff; color: #e8ecf4ff"}
@@ -102,7 +101,6 @@ require(leaflet)
 - **Environmental Context**: Habitat and external factors
 :::
 
----
 
 ## [The Assessment Cycle]{style="background: #1c1c3aff; color: #e8ecf4ff"}
 

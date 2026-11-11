@@ -22,8 +22,8 @@ website:
           - text: "---"
           - text: "⬇ Download slides (offline)"
             href: lectures/downloads.qmd
-          # - text: "Data used in stock assessment"
-          #   href: lectures/3_data_used.qmd
+          - text: "Data used in stock assessment"
+            href: lectures/3_data_used.qmd
           # - text: "Mortality population models"
           #   href: lectures/4_mortality_pop_models.qmd
           # - text: "The unit stock"

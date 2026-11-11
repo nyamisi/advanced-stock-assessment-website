@@ -1078,228 +1078,186 @@
     "text": "References and Further Reading\n\nQuinn, T. J., & Deriso, R. B. (1999). Quantitative Fish Dynamics. Oxford University Press.\nHilborn, R., & Walters, C. J. (1992). Quantitative Fisheries Stock Assessment. Chapman & Hall.\nPetitgas, P. (1998). Geostatistics in fisheries survey design and stock assessment. FAO Fisheries Technical Paper 368."
   },
   {
-    "objectID": "lectures/3_data_used.html#data-used-in-stock-assessments",
-    "href": "lectures/3_data_used.html#data-used-in-stock-assessments",
+    "objectID": "lectures/3_data_used.html#data-used",
+    "href": "lectures/3_data_used.html#data-used",
     "title": "AF 603 – Fish population dynamics and stock assessment",
-    "section": "Data used in stock assessments",
-    "text": "Data used in stock assessments\n\nData for fish stock assessments falls into two main categories:\n\n\nFishery-dependent data\nFishery-independent data"
+    "section": "Data used",
+    "text": "Data used\n\nTwo types of data\n\n\nFishery-dependent\nFishery-independent"
   },
   {
-    "objectID": "lectures/3_data_used.html#fishery-dependent-data",
-    "href": "lectures/3_data_used.html#fishery-dependent-data",
+    "objectID": "lectures/3_data_used.html#three-core-data-requirements",
+    "href": "lectures/3_data_used.html#three-core-data-requirements",
     "title": "AF 603 – Fish population dynamics and stock assessment",
-    "section": "Fishery-Dependent Data",
-    "text": "Fishery-Dependent Data\nFishery-dependent data comes directly from the fishing process itself. Common sources include:\n\nSelf-reporting by fishers\nOnboard observers accompanying fishing vessels\nPortside surveys and sampling\nTelephone surveys\nVessel-monitoring systems"
+    "section": "Three Core Data Requirements",
+    "text": "Three Core Data Requirements\nA successful stock assessment needs three types of data:\n\n\n\n\n\n\n\n\nData type\nQuestion it answers\nTypical examples\n\n\n\n\nCatch data\nHow much is being removed?\nLandings, discards, bycatch\n\n\nRelative abundance data\nIs the stock increasing or decreasing?\nCPUE, survey indices\n\n\nLife history data\nHow does the species grow, mature and die?\nAge, growth, maturity, mortality\n\n\n\n\nBoth fishery-dependent and fishery-independent sources contribute to meeting these requirements."
   },
   {
-    "objectID": "lectures/3_data_used.html#fishery-independent-data",
-    "href": "lectures/3_data_used.html#fishery-independent-data",
+    "objectID": "lectures/3_data_used.html#fishery-dependent-vs.-fishery-independent",
+    "href": "lectures/3_data_used.html#fishery-dependent-vs.-fishery-independent",
     "title": "AF 603 – Fish population dynamics and stock assessment",
-    "section": "Fishery-Independent Data",
-    "text": "Fishery-Independent Data\nFishery-independent data comes from research activities that do not involve harvesting fish. These include:\n\nResearch surveys using standardized gear (trawls, seines, acoustic, video, and side-scan sonar)\nTagging experiments\nAcoustic surveys to detect fish abundance using specialized detectors"
+    "section": "Fishery-Dependent vs. Fishery-Independent",
+    "text": "Fishery-Dependent vs. Fishery-Independent\n\n\n\n\n\n\n\n\n\nFishery-dependent\nFishery-independent\n\n\n\n\nSource\nThe fishing process itself\nScientific research activities\n\n\nWho collects\nFishers, port agents, observers\nScientists with standardized gear\n\n\nCoverage\nContinuous, all fishing grounds\nPeriodic, fixed stations\n\n\nCost\nLow (uses existing operations)\nHigh (vessels, equipment, staff)\n\n\nMain risk\nBiased by fisher behaviour\nShort time series, limited area\n\n\n\n\nWhy both are important: one is continuous and cheap; the other is unbiased and standardized. Together they give robust abundance estimates."
   },
   {
-    "objectID": "lectures/3_data_used.html#data-types-in-stock-assessment",
-    "href": "lectures/3_data_used.html#data-types-in-stock-assessment",
+    "objectID": "lectures/3_data_used.html#what-is-fishery-dependent-data",
+    "href": "lectures/3_data_used.html#what-is-fishery-dependent-data",
     "title": "AF 603 – Fish population dynamics and stock assessment",
-    "section": "Data Types in Stock Assessment",
-    "text": "Data Types in Stock Assessment\nTwo Main Categories:\n\nFishery-Dependent Data — collected from active fishing operations\nFishery-Independent Data — collected from research activities independent of fishing\n\nWhy Both Matter:\n\nFishery-dependent data is continuous and cost-effective\nFishery-independent data is unbiased and standardized\nTogether they provide robust abundance estimates"
+    "section": "What Is Fishery-Dependent Data?",
+    "text": "What Is Fishery-Dependent Data?\nData collected directly from the fishing process. Fishers and fishing operations are the data source.\nCommon sources:\n\nLanding records — catch weights recorded at ports and markets\nPortside sampling — biological samples taken at landing sites\nOnboard observers — scientists or government staff on fishing vessels\nLogbooks and trip reports — fisher-kept records of catch and effort\nVessel monitoring systems (VMS) — electronic tracking of vessel position\nTelephone surveys — recall interviews with fishers"
   },
   {
-    "objectID": "lectures/3_data_used.html#fishery-dependent-data-1",
-    "href": "lectures/3_data_used.html#fishery-dependent-data-1",
+    "objectID": "lectures/3_data_used.html#landing-records-portside-sampling",
+    "href": "lectures/3_data_used.html#landing-records-portside-sampling",
     "title": "AF 603 – Fish population dynamics and stock assessment",
-    "section": "Fishery-Dependent Data",
-    "text": "Fishery-Dependent Data\nWhat is it?\nData collected directly from the fishing process itself. Fishers and fishing operations are the data source.\nCommon Sources:\n\nLanding records — catch weights recorded at ports/markets\nOnboard observers — scientists on fishing vessels\nCatch Assessment Surveys (CAS) — systematic sampling at landing sites\nLogbooks and trip reports — fisher-maintained records of catch and effort\nVessel monitoring systems (VMS) — electronic tracking of vessel location and activity\nPort agents — government staff at landing sites"
-  },
-  {
-    "objectID": "lectures/3_data_used.html#fishery-dependent-data-characteristics",
-    "href": "lectures/3_data_used.html#fishery-dependent-data-characteristics",
-    "title": "AF 603 – Fish population dynamics and stock assessment",
-    "section": "Fishery-Dependent Data: Characteristics",
-    "text": "Fishery-Dependent Data: Characteristics\nAdvantages:\n\nContinuous coverage — data collected every day fishing occurs\nCost-effective — uses existing infrastructure and fishing operations\nLarge spatial scale — covers all fishing grounds\nReal-time updates — data available quickly for management decisions\nLong time series — often 10+ years of historical data\nOperational detail — location, gear type, trip duration recorded\n\nDisadvantages:\n\nBiased estimates — fishers target areas/sizes of abundance; not random sampling\nSelective reporting — catches may be under- or mis-reported\nIncomplete data — informal sector often unrecorded\nTechnical change bias — vessels becoming more efficient over time\nEffort standardization — hard to compare across different vessel types\nCannot measure fish not caught — misses small, juvenile, or rare fish"
-  },
-  {
-    "objectID": "lectures/3_data_used.html#fishery-independent-data-1",
-    "href": "lectures/3_data_used.html#fishery-independent-data-1",
-    "title": "AF 603 – Fish population dynamics and stock assessment",
-    "section": "Fishery-Independent Data",
-    "text": "Fishery-Independent Data\nWhat is it?\nData collected from research activities that do not involve harvesting fish for commercial purposes. Scientists design and conduct the surveys independently.\nCommon Sources:\n\nResearch trawl surveys — standardized bottom and mid-water trawling\nAcoustic surveys — echo sounders to detect and quantify schooling fish\nVisual surveys — underwater divers or submersibles observing fish\nLarval/egg surveys — sampling pelagic eggs and larvae to estimate spawning stock\nMark-recapture studies — tagging and recapturing fish to estimate population size\nRemote sensing — satellite data on chlorophyll, temperature, habitat"
-  },
-  {
-    "objectID": "lectures/3_data_used.html#fishery-independent-data-2",
-    "href": "lectures/3_data_used.html#fishery-independent-data-2",
-    "title": "AF 603 – Fish population dynamics and stock assessment",
-    "section": "Fishery-Independent Data",
-    "text": "Fishery-Independent Data\nAdvantages:\n\nUnbiased sampling — surveys designed to be representative of whole population\nStandardized methodology — consistent protocols across years and regions\nComplete population coverage — samples areas not fished commercially\nMeasures multiple life stages — juveniles, adults, spawners all sampled\nIndependent of fishing — not affected by fisher behavior or selectivity\nDirect abundance measures — surveys provide absolute or relative density estimates"
-  },
-  {
-    "objectID": "lectures/3_data_used.html#fishery-independent-data-3",
-    "href": "lectures/3_data_used.html#fishery-independent-data-3",
-    "title": "AF 603 – Fish population dynamics and stock assessment",
-    "section": "Fishery-Independent Data",
-    "text": "Fishery-Independent Data\nDisadvantages:\n\nHigh cost — requires specialized equipment, vessel, trained staff\nIntermittent data — surveys conducted seasonally or annually, not continuously\nLimited spatial coverage — cannot cover all areas in detail\nSlow turnaround — often 6–12 months before results available\nShort time series — often only 5–10 years of data in many countries\nSpecies selectivity — some surveys miss cryptic, deep, or rare species"
-  },
-  {
-    "objectID": "lectures/3_data_used.html#fishery-dependent-data-examples",
-    "href": "lectures/3_data_used.html#fishery-dependent-data-examples",
-    "title": "AF 603 – Fish population dynamics and stock assessment",
-    "section": "Fishery-Dependent Data Examples",
-    "text": "Fishery-Dependent Data Examples\nLanding Records (Port Sampling)\n\nRecorded at fish landing sites daily\nSpecies identified, catch weight recorded\nSub-samples of fish measured for length/age\nRaises to total catch by species and gear type\n\nOnboard Observers\n\nAccompany fishing vessels\nRecord all catch, bycatch, discards\nCollect biological samples (age, maturity, stomach contents)\nDocument fishing location, gear configuration, depth\n\nCatch Per Unit Effort (CPUE)\n\nCalculated from commercial logbooks: Catch ÷ Effort\nStandardized for vessel type, fishing method, season\nTrended over time as proxy for abundance changes"
-  },
-  {
-    "objectID": "lectures/3_data_used.html#fishery-independent-data-examples-in-practice",
-    "href": "lectures/3_data_used.html#fishery-independent-data-examples-in-practice",
-    "title": "AF 603 – Fish population dynamics and stock assessment",
-    "section": "Fishery-Independent Data Examples in Practice",
-    "text": "Fishery-Independent Data Examples in Practice\nTrawl Survey\n\nAnnual research cruise with standardized trawl\nPre-planned stations sampled on fixed grid\nAll fish counted, measured, ages determined\nProduces absolute or relative abundance index\n\nAcoustic Survey\n\nSpring/summer survey targeting pelagic species (e.g., sardines)\nTransects followed with calibrated echo sounder\nFish backscatter converted to biomass estimate\nResults in total stock biomass for species\n\nVisual Census (Reefs)\n\nDivers swim fixed transects in coral reef habitat\nAll fish observed recorded by species and size\nRepeated annually at same sites\nProvides fish density and size distribution"
-  },
-  {
-    "objectID": "lectures/3_data_used.html#integration-using-both-data-types",
-    "href": "lectures/3_data_used.html#integration-using-both-data-types",
-    "title": "AF 603 – Fish population dynamics and stock assessment",
-    "section": "Integration: Using Both Data Types",
-    "text": "Integration: Using Both Data Types\nWhy Combine?\n\nFishery-dependent data provides long-term trends and broad spatial coverage\nFishery-independent data provides unbiased snapshots and absolute abundance\nTogether they provide robust estimates with quantified uncertainty\n\nCommon Integration Approach:\n\nUse fishery-dependent data (CPUE) as a relative abundance index\nCalibrate with fishery-independent survey (e.g., acoustic survey) to get absolute scale\nApply standardization factors to account for temporal/spatial variation\nFit integrated models combining both data types\nUse ensemble of methods for final stock assessment"
-  },
-  {
-    "objectID": "lectures/3_data_used.html#data-quality-and-bias-correction",
-    "href": "lectures/3_data_used.html#data-quality-and-bias-correction",
-    "title": "AF 603 – Fish population dynamics and stock assessment",
-    "section": "Data Quality and Bias Correction",
-    "text": "Data Quality and Bias Correction\nFishery-Dependent Data Bias Correction\n\nStandardize CPUE for vessel type (power, age, technology)\nAccount for fishing ground shifts over time\nAdjust for reporting compliance and seasonal effort changes\nUse mark-recapture to estimate catchability coefficient\n\nFishery-Independent Data Quality Assurance\n\nCalibrate acoustic equipment before each survey\nTrain observers to consistent identification standards\nRandomize survey locations to avoid systematic bias\nArchive all raw data for independent verification\nPublish methods and make data publicly available"
-  },
-  {
-    "objectID": "lectures/3_data_used.html#data-requirements-for-stock-assessments",
-    "href": "lectures/3_data_used.html#data-requirements-for-stock-assessments",
-    "title": "AF 603 – Fish population dynamics and stock assessment",
-    "section": "Data Requirements for Stock Assessments",
-    "text": "Data Requirements for Stock Assessments\nSuccessful stock assessments require three key types of data:\n\nCatch data – information on harvested fish\nRelative abundance data – indices of stock size\nLife history data – species’s age, growth, and maturity information\n\nBoth fishery-dependent and fishery-independent data sources contribute to meeting these requirements."
-  },
-  {
-    "objectID": "lectures/3_data_used.html#landing-records",
-    "href": "lectures/3_data_used.html#landing-records",
-    "title": "AF 603 – Fish population dynamics and stock assessment",
-    "section": "Landing Records",
-    "text": "Landing Records\nLanding records are among the most common fishery-dependent data sources:\n\nRecords result directly from the sale of caught fish at ports\nTypically provide information on landed catch only\nUsually recorded as total weight rather than number of individual fish\nOften supplemented by port samples for biological information"
-  },
-  {
-    "objectID": "lectures/3_data_used.html#portside-sampling",
-    "href": "lectures/3_data_used.html#portside-sampling",
-    "title": "AF 603 – Fish population dynamics and stock assessment",
-    "section": "Portside Sampling",
-    "text": "Portside Sampling\nDefinition and purpose\nPortside sampling involves collecting biological data from a portion of the catch at landing sites:\n\nConducted by government scientists called portside observers or port agents\nSamples are measured for size and age information\nFor recreational fisheries, this is referred to as a creel survey\n\nData collection methods\n\nFish size is measured directly at the dock\nAge is determined by counting growth rings in fish scales or otoliths (ear bones), similar to counting tree rings"
+    "section": "Landing Records & Portside Sampling",
+    "text": "Landing Records & Portside Sampling\n\n\nLanding Records\n\nResult directly from the sale of fish at ports\nProvide landed catch only\nUsually recorded as total weight, not numbers\nSpecies identified and weighed daily\n\n\nPortside Sampling\n\nDone by port agents / portside observers\nFish measured for size at the dock\nAge from growth rings in scales or otoliths (like tree rings)\nCalled a creel survey in recreational fisheries\nSample is raised to the total catch by species and gear"
   },
   {
     "objectID": "lectures/3_data_used.html#onboard-observers",
     "href": "lectures/3_data_used.html#onboard-observers",
     "title": "AF 603 – Fish population dynamics and stock assessment",
     "section": "Onboard Observers",
-    "text": "Onboard Observers\nPurpose\nOnboard observers are government personnel who accompany commercial fishing vessels to:\n\nMonitor how fishermen interact with target and non-target species\nCollect detailed information about catch composition\n\nData collected\n\nSample catch for size and age information\nEstimate bycatch (incidental catches of non-target species)\nEstimate discards (fish returned to the sea)"
+    "text": "Onboard Observers\n\n\nPurpose\n\nGovernment personnel accompany commercial vessels\nMonitor how fishers interact with target and non-target species\nRecord fishing location, gear configuration and depth\n\n\nData Collected\n\nSize and age of sampled catch\nBycatch — incidental catch of non-target species\nDiscards — fish returned to the sea\nBiological samples: maturity, stomach contents"
   },
   {
-    "objectID": "lectures/3_data_used.html#log-books-and-vessel-trip-reports",
-    "href": "lectures/3_data_used.html#log-books-and-vessel-trip-reports",
+    "objectID": "lectures/3_data_used.html#logbooks-vms-telephone-surveys",
+    "href": "lectures/3_data_used.html#logbooks-vms-telephone-surveys",
     "title": "AF 603 – Fish population dynamics and stock assessment",
-    "section": "Log Books and Vessel Trip Reports",
-    "text": "Log Books and Vessel Trip Reports\nOverview\nFishermen may be required or encouraged to keep their own records:\n\nLog books and vessel trip reports document fishing activities\nMaintained either as mandatory requirement or organized voluntary effort\n\nReliability and applications\n\nLess reliable than landing records and onboard observer data for estimating catch weight and numbers\nValuable for determining spatial distribution of fishing effort\nUseful for tracking fishing effort across seasons and areas\nSome fisheries use vessel monitoring systems (VMS) – electronic devices that automatically record vessel location and movements"
+    "section": "Logbooks, VMS & Telephone Surveys",
+    "text": "Logbooks, VMS & Telephone Surveys\n\n\nLogbooks & Trip Reports\n\nMandatory or voluntary records kept by fishers\nLess reliable than landings and observer data for catch weight and numbers\nValuable for spatial distribution and fishing effort across seasons\nVMS automatically records vessel location and movement\n\n\nTelephone Surveys\n\nPrimary method for recreational fisheries\nWidely used in small-scale fisheries to record catch numbers, location and size\nUseful when on-site sampling is impractical"
   },
   {
-    "objectID": "lectures/3_data_used.html#telephone-surveys",
-    "href": "lectures/3_data_used.html#telephone-surveys",
+    "objectID": "lectures/3_data_used.html#from-logbooks-to-cpue",
+    "href": "lectures/3_data_used.html#from-logbooks-to-cpue",
     "title": "AF 603 – Fish population dynamics and stock assessment",
-    "section": "Telephone Surveys",
-    "text": "Telephone Surveys\n\nPrimary method for collecting data on recreational fisheries\nAlso widely used for small-scale fisheries to record catch numbers, location, and size information\nProvides complementary data when on-site sampling is impractical"
+    "section": "From Logbooks to CPUE",
+    "text": "From Logbooks to CPUE\nCatch Per Unit Effort (CPUE) converts catch and effort records into an abundance index:\nCPUE=CatchEffort\\text{CPUE} = \\frac{\\text{Catch}}{\\text{Effort}}\n\nStandardize for vessel type, fishing method and season\nTrend over time as a proxy for changes in abundance\nEffort may be fishing days, hours trawled, number of hooks, or number of fishers"
+  },
+  {
+    "objectID": "lectures/3_data_used.html#fishery-dependent-data-strengths-weaknesses",
+    "href": "lectures/3_data_used.html#fishery-dependent-data-strengths-weaknesses",
+    "title": "AF 603 – Fish population dynamics and stock assessment",
+    "section": "Fishery-Dependent Data: Strengths & Weaknesses",
+    "text": "Fishery-Dependent Data: Strengths & Weaknesses\n\n\n✅ Advantages\n\nContinuous coverage — every fishing day\nCost-effective — uses existing operations\nLarge spatial scale — all fishing grounds\nTimely — available quickly for decisions\nLong time series — often 10+ years\n\n\n⚠️ Disadvantages\n\nBiased — fishers target abundance, not random sampling\nUnder- or mis-reporting of catches\nInformal sector often unrecorded\nTechnology creep — vessels become more efficient\nMisses small, juvenile or rare fish"
+  },
+  {
+    "objectID": "lectures/3_data_used.html#what-is-fishery-independent-data",
+    "href": "lectures/3_data_used.html#what-is-fishery-independent-data",
+    "title": "AF 603 – Fish population dynamics and stock assessment",
+    "section": "What Is Fishery-Independent Data?",
+    "text": "What Is Fishery-Independent Data?\nData collected from research activities that do not involve commercial harvesting. Scientists design and run the surveys.\nCommon sources:\n\nResearch trawl and seine surveys — standardized gear on a fixed grid\nAcoustic surveys — echo sounders detect and quantify schooling fish\nVisual surveys — divers or submersibles observe fish\nLarval / egg surveys — estimate spawning stock from pelagic eggs and larvae\nMark–recapture (tagging) studies — estimate movement, growth and mortality\nRemote sensing — satellite data on chlorophyll, temperature and habitat"
   },
   {
     "objectID": "lectures/3_data_used.html#research-survey-approaches",
     "href": "lectures/3_data_used.html#research-survey-approaches",
     "title": "AF 603 – Fish population dynamics and stock assessment",
     "section": "Research Survey Approaches",
-    "text": "Research Survey Approaches\n\nResearch surveys provide data independent of fishing activities\nScientists use standardized sampling gear: trawls, seines, hydroacoustics, and video\nSamples are collected throughout the potential range of target fish\n\nSurvey Flexibility\n\nCan target multiple species or focus on a single species\nCan target specific life stages (e.g., juvenile year classes)\n\nData Benefits\n\nProvide abundance indices for stock assessment\nCollect size, age, and maturity information from the stock"
+    "text": "Research Survey Approaches\n\n\nDesign\n\nStandardized gear: trawls, seines, hydroacoustics, video\nSamples collected throughout the range of the target fish\nCan target multiple species or a single species\nCan target life stages (e.g. juvenile year classes)\n\n\nOutputs\n\nAbundance indices for stock assessment\nSize, age and maturity information from the stock\nFish counted, measured and aged on every station\nAbsolute or relative abundance estimates"
+  },
+  {
+    "objectID": "lectures/3_data_used.html#survey-examples-in-practice",
+    "href": "lectures/3_data_used.html#survey-examples-in-practice",
+    "title": "AF 603 – Fish population dynamics and stock assessment",
+    "section": "Survey Examples in Practice",
+    "text": "Survey Examples in Practice\n\n\n\n\n\n\n\n\nSurvey\nHow it works\nWhat it produces\n\n\n\n\nTrawl survey\nAnnual cruise, standardized trawl, fixed station grid\nAbsolute or relative abundance index, length and age data\n\n\nAcoustic survey\nCalibrated echo sounder along transects (e.g. sardines)\nBackscatter converted to stock biomass\n\n\nVisual census\nDivers swim fixed reef transects, repeated yearly\nFish density and size distribution"
   },
   {
     "objectID": "lectures/3_data_used.html#mark-and-recapture-studies",
     "href": "lectures/3_data_used.html#mark-and-recapture-studies",
     "title": "AF 603 – Fish population dynamics and stock assessment",
     "section": "Mark and Recapture Studies",
-    "text": "Mark and Recapture Studies\n\nA specialized research method for estimating population parameters\nProvides estimates of:\n\nFish movement and migration patterns\nGrowth rates\nNatural mortality\nDiscard mortality"
+    "text": "Mark and Recapture Studies\nA specialized research method for estimating population parameters. It provides estimates of:\n\nMovement and migration patterns\nGrowth rates\nNatural mortality\nDiscard mortality\nPopulation size (from the proportion of marked fish recaptured)"
+  },
+  {
+    "objectID": "lectures/3_data_used.html#fishery-independent-data-strengths-weaknesses",
+    "href": "lectures/3_data_used.html#fishery-independent-data-strengths-weaknesses",
+    "title": "AF 603 – Fish population dynamics and stock assessment",
+    "section": "Fishery-Independent Data: Strengths & Weaknesses",
+    "text": "Fishery-Independent Data: Strengths & Weaknesses\n\n\n✅ Advantages\n\nUnbiased — designed to represent the whole population\nStandardized protocols across years\nCovers unfished areas\nAll life stages — juveniles, adults, spawners\nIndependent of fisher behaviour\n\n\n⚠️ Disadvantages\n\nHigh cost — vessel, equipment, trained staff\nIntermittent — seasonal or annual, not continuous\nLimited spatial coverage\nSlow turnaround — often 6–12 months\nShort time series — often only 5–10 years"
+  },
+  {
+    "objectID": "lectures/3_data_used.html#why-do-we-need-them",
+    "href": "lectures/3_data_used.html#why-do-we-need-them",
+    "title": "AF 603 – Fish population dynamics and stock assessment",
+    "section": "Why Do We Need Them?",
+    "text": "Why Do We Need Them?\nIn small-scale fisheries, catch is landed at many scattered sites and is hard to count completely.\nTwo linked surveys solve this problem:\n\nFrame survey — a census of fishing capacity (boats, gear, fishers, sites)\nCatch Assessment Survey (CAS) — a sample of actual catches\n\n\nThe frame survey tells us how big the fishery is; the CAS tells us how much each unit catches. Combined, they give the total catch."
   },
   {
     "objectID": "lectures/3_data_used.html#fisheries-frame-survey",
     "href": "lectures/3_data_used.html#fisheries-frame-survey",
     "title": "AF 603 – Fish population dynamics and stock assessment",
     "section": "Fisheries Frame Survey",
-    "text": "Fisheries Frame Survey\nDefinition\n\nA census-based approach that collects data on all fishing vessels and gear types\nCovers all homeports and fishing sites within the assessment area\n\nSupplementary Information\n\nFishing trip patterns and frequency\nSeasonal patterns of gear use\nSocio-economic information about fishing communities\nDemographic profiles of fishers"
+    "text": "Fisheries Frame Survey\n\n\nDefinition\n\nA census of all fishing vessels and gear types\nCovers all homeports and fishing sites in the assessment area\nProvides a static snapshot of the fishery\n\n\nSupplementary Information\n\nFishing trip patterns and frequency\nSeasonal gear use\nSocio-economic information about fishing communities\nDemographic profile of fishers"
   },
   {
-    "objectID": "lectures/3_data_used.html#frame-survey-data-collection",
-    "href": "lectures/3_data_used.html#frame-survey-data-collection",
+    "objectID": "lectures/3_data_used.html#frame-survey-what-is-collected",
+    "href": "lectures/3_data_used.html#frame-survey-what-is-collected",
     "title": "AF 603 – Fish population dynamics and stock assessment",
-    "section": "Frame Survey Data Collection",
-    "text": "Frame Survey Data Collection\nLanding Site and Fleet Information\n\nNumber of operational fish landing sites\nNumber of active fishers\nNumber and types of fishing crafts\nModes of propulsion (motorized, manual)\n\nFacilities and Services\n\nInfrastructure available at landing sites\nServices provided by fisheries staff\nSupport from Beach Management Units (BMUs)"
+    "section": "Frame Survey: What Is Collected",
+    "text": "Frame Survey: What Is Collected\n\n\nLanding Sites & Fleet\n\nNumber of operational landing sites\nNumber of active fishers\nNumber and type of fishing crafts\nPropulsion (motorized, manual)\n\nFacilities & Services\n\nInfrastructure at landing sites\nServices from fisheries staff and Beach Management Units (BMUs)\n\n\nGear\n\nTypes and sizes of fishing gears\nOperation modes for each gear type\n\nManagement Use\n\nRecommendations for fishery development and management\nRaising factors for scaling up CAS data to total catch"
   },
   {
-    "objectID": "lectures/3_data_used.html#frame-survey-data-collection-continued",
-    "href": "lectures/3_data_used.html#frame-survey-data-collection-continued",
+    "objectID": "lectures/3_data_used.html#frame-survey-planning-quality-assurance",
+    "href": "lectures/3_data_used.html#frame-survey-planning-quality-assurance",
     "title": "AF 603 – Fish population dynamics and stock assessment",
-    "section": "Frame Survey Data Collection (continued)",
-    "text": "Frame Survey Data Collection (continued)\nGear Information\n\nTypes and sizes of fishing gears in use\nOperation modes for different gear types\n\nManagement Applications\n\nRecommendations for fishery development and management\nRaising factors for extrapolating Catch Assessment Survey (CAS) data to total catch estimates"
-  },
-  {
-    "objectID": "lectures/3_data_used.html#frame-survey-implementation",
-    "href": "lectures/3_data_used.html#frame-survey-implementation",
-    "title": "AF 603 – Fish population dynamics and stock assessment",
-    "section": "Frame Survey Implementation",
-    "text": "Frame Survey Implementation\nStaffing Requirements\n\nOften requires many data collectors\nMay employ temporary staff to supplement regular fisheries personnel\n\nTraining and Instructions\n\nData collectors must receive precise, unambiguous instructions\nCritical for ensuring data reliability\nDetailed training on recording forms and their proper use\nClear explanation of each form’s purpose within the overall programme"
-  },
-  {
-    "objectID": "lectures/3_data_used.html#frame-survey-planning-and-quality-assurance",
-    "href": "lectures/3_data_used.html#frame-survey-planning-and-quality-assurance",
-    "title": "AF 603 – Fish population dynamics and stock assessment",
-    "section": "Frame Survey Planning and Quality Assurance",
-    "text": "Frame Survey Planning and Quality Assurance\nSurvey Design\n\nClarify categories for boat and gear types\nDefine sequential vs. concurrent gear use\nIdentify whether new gear types should be included\n\nField Operations\n\nPlan visits to all landing ports\nDevelop protocols for approaching and interviewing fishers and village leaders\nEnsure comprehensive information on vessel and gear numbers\n\nQuality Control\n\nImplement cross-checking procedures for collected data\nEstablish protocols for addressing serious discrepancies"
+    "section": "Frame Survey: Planning & Quality Assurance",
+    "text": "Frame Survey: Planning & Quality Assurance\n\n\nSurvey Design\n\nDefine boat and gear categories\nDecide sequential vs. concurrent gear use\nDecide whether new gear types are included\n\n\nField Operations\n\nPlan visits to all landing ports\nDevelop protocols for interviewing fishers and village leaders\nEnsure complete vessel and gear counts\n\n\nQuality Control\n\nTrain collectors with clear, unambiguous instructions\nExplain each recording form’s purpose\nCross-check data and resolve serious discrepancies"
   },
   {
     "objectID": "lectures/3_data_used.html#limitations-of-frame-surveys",
     "href": "lectures/3_data_used.html#limitations-of-frame-surveys",
     "title": "AF 603 – Fish population dynamics and stock assessment",
     "section": "Limitations of Frame Surveys",
-    "text": "Limitations of Frame Surveys\nTemporal Snapshot\n\nProvide static information valid only at the time of the survey\nRepresent a single snapshot of the fishery\n\nImpact of Changes\n\nRapid changes to the fishery compromise accuracy:\n\nChanges in number of fishing boats\nIntroduction of new fishing gear types\nShifts in fishing effort or patterns\n\nSuch changes make raising factors unreliable for estimating total effort"
+    "text": "Limitations of Frame Surveys\n\n\nStatic Snapshot\n\nValid only at the time of the survey\nRepresents a single point in time\n\n\nImpact of Change\n\nChanges in the number of boats\nNew gear types introduced\nShifts in fishing effort or patterns\n\n\n\n\nRapid change makes raising factors unreliable for estimating total effort, so frame surveys must be repeated regularly."
   },
   {
-    "objectID": "lectures/3_data_used.html#data-integration-in-fish-stock-assessment",
-    "href": "lectures/3_data_used.html#data-integration-in-fish-stock-assessment",
+    "objectID": "lectures/3_data_used.html#catch-assessment-surveys-cas",
+    "href": "lectures/3_data_used.html#catch-assessment-surveys-cas",
     "title": "AF 603 – Fish population dynamics and stock assessment",
-    "section": "Data Integration in Fish Stock Assessment",
-    "text": "Data Integration in Fish Stock Assessment\nKey Data Components\n\nFisheries Statistics – catch and effort data\nFrame Survey Data – fleet and gear information\nBiological Data – from research surveys and port sampling\n\nApplication\n\nThese data are integrated to develop predictive models\nModels assess current stock status under various conditions\nEnable managers to evaluate impacts of different management strategies"
-  },
-  {
-    "objectID": "lectures/3_data_used.html#catch-assessment-surveys",
-    "href": "lectures/3_data_used.html#catch-assessment-surveys",
-    "title": "AF 603 – Fish population dynamics and stock assessment",
-    "section": "Catch Assessment Surveys",
-    "text": "Catch Assessment Surveys\nWhat is a CAS?\n\nSurvey designed to estimate total catch from a fishery\nBased on sampling a portion of landing sites or fishing effort\n\nWhy CAS Matters\n\nBridges gap between complete census (infeasible) and incomplete data\nProvides reliable catch estimates with quantified uncertainty\nEssential for ecosystem-based management\nSupports accurate monitoring of harvest levels"
-  },
-  {
-    "objectID": "lectures/3_data_used.html#cas-vs.-frame-surveys",
-    "href": "lectures/3_data_used.html#cas-vs.-frame-surveys",
-    "title": "AF 603 – Fish population dynamics and stock assessment",
-    "section": "CAS vs. Frame Surveys",
-    "text": "CAS vs. Frame Surveys\nFrame Survey\n\nCensus of all fishing vessels and gear\nProvides information on fishing infrastructure and capacity\n\nCatch Assessment Survey\n\nSampling of catch from selected landing sites or vessels\nCollects biological and quantitative catch data\nUses frame survey raising factors to estimate total catch\n\nIntegration\n\nFrame survey defines population and provides raising factors\nCAS provides representative sample of actual catches\nTogether produce robust total catch estimates\nUses raising factors from frame surveys to scale up sample data to population level\nGenerates raising factors for expansion to total population"
+    "section": "Catch Assessment Surveys (CAS)",
+    "text": "Catch Assessment Surveys (CAS)\n\n\nWhat Is a CAS?\n\nSurvey designed to estimate total catch\nBased on sampling a portion of landing sites or fishing effort\nRecords catch from selected sites or vessels\n\n\nWhy It Matters\n\nBridges the gap between an infeasible census and incomplete data\nGives catch estimates with quantified uncertainty\nSupports accurate monitoring of harvest levels\nEssential for ecosystem-based management"
   },
   {
     "objectID": "lectures/3_data_used.html#cas-data-collection",
     "href": "lectures/3_data_used.html#cas-data-collection",
     "title": "AF 603 – Fish population dynamics and stock assessment",
     "section": "CAS Data Collection",
-    "text": "CAS Data Collection\nInformation Recorded\n\nTotal catch weight by species and gear type\nLength and age composition of catch\nSex and maturity information from samples\nBycatch and discards estimates\nDate, location, and gear type for each sample"
+    "text": "CAS Data Collection\nInformation recorded for each sample:\n\nTotal catch weight by species and gear type\nLength and age composition of the catch\nSex and maturity information\nBycatch and discards estimates\nDate, location and gear type"
   },
   {
-    "objectID": "lectures/3_data_used.html#cas-data-collection-1",
-    "href": "lectures/3_data_used.html#cas-data-collection-1",
+    "objectID": "lectures/3_data_used.html#cas-vs.-frame-survey",
+    "href": "lectures/3_data_used.html#cas-vs.-frame-survey",
     "title": "AF 603 – Fish population dynamics and stock assessment",
-    "section": "CAS Data Collection…",
-    "text": "CAS Data Collection…\nRaising Factor Calculation\nRaising Factor = Total boats/gear from frame survey ÷ Sampled boats/gear\nExample\n\nFrame survey identifies 100 fishing boats at a landing site\nCAS samples 20 boats’ catch\nRaising factor = 100 ÷ 20 = 5\nSample catch × 5 = Estimate of total catch from all boats"
+    "section": "CAS vs. Frame Survey",
+    "text": "CAS vs. Frame Survey\n\n\n\n\n\n\n\n\n\nFrame survey\nCatch assessment survey\n\n\n\n\nApproach\nCensus (all boats and gear)\nSample (selected sites / vessels)\n\n\nTells us\nFishing capacity and infrastructure\nActual catch and biology\n\n\nRole\nDefines the population; supplies raising factors\nSupplies the sample to be raised\n\n\nFrequency\nPeriodic (e.g. every few years)\nContinuous / regular"
+  },
+  {
+    "objectID": "lectures/3_data_used.html#raising-factor-worked-example",
+    "href": "lectures/3_data_used.html#raising-factor-worked-example",
+    "title": "AF 603 – Fish population dynamics and stock assessment",
+    "section": "Raising Factor: Worked Example",
+    "text": "Raising Factor: Worked Example\nRaising factor=Total boats (frame survey)Boats sampled (CAS)\\text{Raising factor} = \\frac{\\text{Total boats (frame survey)}}{\\text{Boats sampled (CAS)}}\n\nFrame survey identifies 100 fishing boats at a landing site\nCAS samples the catch of 20 boats\nRaising factor =100÷20=5= 100 \\div 20 = 5\nTotal catch == sample catch ×\\times 5"
+  },
+  {
+    "objectID": "lectures/3_data_used.html#integrating-the-data",
+    "href": "lectures/3_data_used.html#integrating-the-data",
+    "title": "AF 603 – Fish population dynamics and stock assessment",
+    "section": "Integrating the Data",
+    "text": "Integrating the Data\n\n\nKey Data Components\n\nFisheries statistics — catch and effort\nFrame survey data — fleet and gear\nBiological data — from research surveys and port sampling\n\n\nCommon Approach\n\nUse CPUE as a relative abundance index\nCalibrate with a survey (e.g. acoustic) to get an absolute scale\nStandardize for temporal and spatial variation\nFit integrated models with both data types\nUse an ensemble of methods for the final assessment\n\n\n\nThese integrated models assess current stock status and let managers compare management strategies."
+  },
+  {
+    "objectID": "lectures/3_data_used.html#data-quality-bias-correction",
+    "href": "lectures/3_data_used.html#data-quality-bias-correction",
+    "title": "AF 603 – Fish population dynamics and stock assessment",
+    "section": "Data Quality & Bias Correction",
+    "text": "Data Quality & Bias Correction\n\n\nFishery-Dependent Data\n\nStandardize CPUE for vessel power, age and technology\nAccount for shifts in fishing grounds\nAdjust for reporting compliance and seasonal effort\nUse mark–recapture to estimate catchability\n\n\nFishery-Independent Data\n\nCalibrate equipment before each survey\nTrain observers to consistent identification standards\nRandomize survey locations\nArchive raw data and publish methods"
+  },
+  {
+    "objectID": "lectures/3_data_used.html#key-take-home-messages",
+    "href": "lectures/3_data_used.html#key-take-home-messages",
+    "title": "AF 603 – Fish population dynamics and stock assessment",
+    "section": "Key Take-Home Messages",
+    "text": "Key Take-Home Messages\n\nAssessments need catch, relative abundance and life history data\nFishery-dependent data are continuous and cheap but biased\nFishery-independent data are unbiased and standardized but costly and intermittent\nFrame surveys + CAS convert sampled catches into total catch using raising factors\nCombining data types and applying quality control gives the most reliable assessment\n\n\nNext lecture: Mortality and population models"
   },
   {
     "objectID": "lectures/1_intro.html#course-introduction",

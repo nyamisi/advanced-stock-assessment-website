@@ -1,69 +1,185 @@
 .reveal .title {
-    font-size: 4rem;
-    color: darkblue;
-  }
-  
+  font-size: 4rem;
+  color: darkblue;
+}
+
 .reveal .subtitle {
-    font-size: 3rem;
-    color: maroon;
-  }
-  
+  font-size: 3rem;
+  color: maroon;
+}
+
 .reveal p {
-    font-size: 2.5rem;
-  }
-  
+  font-size: 2.5rem;
+}
+
 .reveal {
-    background-color: #f2f2f2;
-    color: #000000;
-  }
-  
+  background-color: #f2f2f2;
+  color: #000000;
+}
+
 .reveal a {
-    color: #0077cc;
-  }
-  
-.reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
-    color: #2f6e9e;
-  }
-  
-.reveal ul, .reveal ol {
-    color: #000000;
-  }
-  
+  color: #0077cc;
+}
+
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+  color: #2f6e9e;
+}
+
+.reveal ul,
+.reveal ol {
+  color: #000000;
+}
+
 .reveal .footnote {
-    font-size: smaller;
-    color: gray;
-  }
-  
+  font-size: smaller;
+  color: gray;
+}
+
 .logo {
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 10px;
-  }
-  
- .logo img {
-    width: 200px; 
-  }
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px;
+}
+
+.logo img {
+  width: 200px;
+}
 
 
 
 /* Download buttons for offline slides */
 a.download-btn {
-    display: inline-block;
-    padding: 4px 14px;
-    background: #1c1c3a;
-    color: #e8ecf4 !important;
-    border-radius: 4px;
-    text-decoration: none;
-    font-weight: 600;
-  }
+  display: inline-block;
+  padding: 4px 14px;
+  background: #1c1c3a;
+  color: #e8ecf4 !important;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+}
 
 a.download-btn:hover {
-    background: #2f6e9e;
-  }
+  background: #2f6e9e;
+}
 
 /* Small download link in the slide footer */
 .reveal .footer a {
-    color: #2f6e9e;
-    font-size: 0.9em;
+  color: #2f6e9e;
+  font-size: 1.1em;
+  text-decoration: none;
+}
+
+.reveal .footer {
+  bottom: 6px;
+}
+
+.reveal .footer p {
+  margin: 0;
+  font-size: 0.6em;
+}
+
+/* Boxed columns (add .box to a .column) */
+.reveal .columns {
+  gap: 20px;
+  display: flex !important;
+  align-items: stretch !important;
+}
+
+/* Boxed column slides fill the available slide height */
+.reveal .columns:has(> .column.box) {
+  min-height: 450px;
+}
+
+.reveal .column.box {
+  box-sizing: border-box;
+  padding: 12px 18px;
+  border: 2px solid #4a1035;
+  border-top-width: 8px;
+  border-radius: 10px;
+  background: #f7eef4;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
+}
+
+.reveal .column.box:nth-child(2) {
+  border-color: #b8860b;
+  background: #fdf6e3;
+}
+
+.reveal .column.box:nth-child(3) {
+  border-color: #2f6e9e;
+  background: #eaf3fa;
+}
+
+.reveal .column.box h3 {
+  margin: 0 0 6px 0;
+  font-size: 1.05em;
+  line-height: 1.15;
+  color: #4a1035;
+}
+
+.reveal .column.box:nth-child(2) h3 {
+  color: #8a6508;
+}
+
+.reveal .column.box:nth-child(3) h3 {
+  color: #1f4f77;
+}
+
+/* Compact text so a boxed slide fits on one page */
+.reveal .column.box {
+  font-size: 0.66em;
+  line-height: 1.25;
+  align-self: stretch !important;
+  height: auto;
+}
+
+.reveal .column.box>h3 {
+  margin-left: 0 !important;
+  padding-left: 0 !important;
+}
+
+.reveal .column.box ul {
+  margin: 0;
+  padding-left: 1.1em;
+}
+
+.reveal .column.box li {
+  margin: 0 0 0.35em 0;
+}
+
+.reveal .column.box li li {
+  margin-bottom: 0.15em;
+}
+
+.reveal .column.box ul,
+.reveal .column.box ol,
+.reveal .column.box p {
+  font-size: 1em;
+}
+
+/* Slide titles: smaller text and a tighter background box */
+.reveal .slides section h1 {
+    font-size: 1.7em;
+    line-height: 1.15;
+    margin-bottom: 0.4em;
+  }
+
+.reveal .slides section h2 {
+    font-size: 1.25em;
+    line-height: 1.2;
+    margin-bottom: 0.4em;
+  }
+
+.reveal .slides section h1 > span,
+.reveal .slides section h2 > span {
+    display: inline-block;
+    max-width: 100%;
+    padding: 3px 14px;
+    border-radius: 4px;
   }

@@ -508,7 +508,78 @@ background: #2f6e9e;
 
 .reveal .footer a {
 color: #2f6e9e;
-font-size: 0.9em;
+font-size: 2.4em;
+font-weight: 700;
+line-height: 1;
+text-decoration: none;
+}
+.reveal .footer {
+bottom: 6px;
+}
+.reveal .footer p {
+margin: 0;
+font-size: 0.6em;
+}
+
+.reveal .columns {
+gap: 20px;
+display: flex !important;
+align-items: stretch !important;
+}
+
+.reveal .columns:has(> .column.box) {
+min-height: 450px;
+}
+.reveal .column.box {
+box-sizing: border-box;
+padding: 12px 18px;
+border: 2px solid #4a1035;
+border-top-width: 8px;
+border-radius: 10px;
+background: #f7eef4;
+box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
+}
+.reveal .column.box:nth-child(2) {
+border-color: #b8860b;
+background: #fdf6e3;
+}
+.reveal .column.box:nth-child(3) {
+border-color: #2f6e9e;
+background: #eaf3fa;
+}
+.reveal .column.box h3 {
+margin: 0 0 6px 0;
+font-size: 1.05em;
+line-height: 1.15;
+color: #4a1035;
+}
+.reveal .column.box:nth-child(2) h3 { color: #8a6508; }
+.reveal .column.box:nth-child(3) h3 { color: #1f4f77; }
+
+.reveal .column.box {
+font-size: 0.66em;
+line-height: 1.25;
+align-self: stretch !important;
+height: auto;
+}
+.reveal .column.box > h3 {
+margin-left: 0 !important;
+padding-left: 0 !important;
+}
+.reveal .column.box ul {
+margin: 0;
+padding-left: 1.1em;
+}
+.reveal .column.box li {
+margin: 0 0 0.35em 0;
+}
+.reveal .column.box li li {
+margin-bottom: 0.15em;
+}
+.reveal .column.box ul,
+.reveal .column.box ol,
+.reveal .column.box p {
+font-size: 1em;
 }
 </style>
   <style type="text/css">.reveal
@@ -1153,12 +1224,9 @@ Nyamisi Peter
 <li>Particularly important for slow-growing species</li>
 </ul>
 </section>
-<section id="vital-rates" class="slide level2">
+<section id="vital-rates" class="slide level2 scrollable">
 <h2><span style="background: #4a1035ff; color: #bebe56ff">Vital Rates</span></h2>
-<h3 id="birth-growth-and-death"><span style="background: #453d42ff; color: #f6773cff">Birth, Growth, and Death</span></h3>
-</section>
-<section id="what-are-vital-rates" class="slide level2 scrollable">
-<h2><span style="background: #4a1035ff; color: #bebe56ff">What are Vital Rates?</span></h2>
+<h3 id="what-are-vital-rates"><span style="background: #4a1035ff; color: #bebe56ff">What are Vital Rates?</span></h3>
 <div class="columns">
 <div class="column">
 <ul>
@@ -1417,7 +1485,7 @@ Juveniles enter fishery</code></pre>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <div class="footer footer-default">
-<p><a href="2_popl_dynamics.html" download="AF603_L2_Fish_Population_Dynamics.html">⬇ Download slides</a></p>
+<p><a href="../downloads/AF603_L2_Fish_Population_Dynamics.pdf" download="AF603_L2_Fish_Population_Dynamics.pdf" title="Download full lecture (PDF)">⬇</a></p>
 </div>
 </div></div>
 

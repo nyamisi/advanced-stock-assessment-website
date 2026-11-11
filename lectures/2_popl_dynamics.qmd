@@ -11,7 +11,7 @@ format:
       reference-location: document
       theme: serif
       highlight-style: ayu-mirage
-      footer: '[⬇ Download full lecture (PDF)](../downloads/AF603_L2_Fish_Population_Dynamics.pdf){download="AF603_L2_Fish_Population_Dynamics.pdf"} &nbsp;|&nbsp; [All downloads](downloads.html)'
+      footer: '[⬇](../downloads/AF603_L2_Fish_Population_Dynamics.pdf){download="AF603_L2_Fish_Population_Dynamics.pdf" title="Download full lecture (PDF)"}'
 execute: 
   echo: false
   warning: false
@@ -44,7 +44,6 @@ css: ../style.css
   - Growth -- Increase in size/weight of individuals
   - Deaths (mortality) -- Deaths in the population
 
----
 
 
 ## [Why Population Dynamics?]{style="background: #4a1035ff; color: #bebe56ff"}
@@ -60,7 +59,6 @@ css: ../style.css
 
 How many fish can we harvest while maintaining the population?
 
----
 
 ## [Population Structure]{style="background: #4a1035ff; color: #bebe56ff"}
 
@@ -76,7 +74,6 @@ How many fish can we harvest while maintaining the population?
 - Mortality varies by age
 - Sex ratios affect reproductive capacity
 
----
 
 ## [Age Structure]{style="background: #4a1035ff; color: #bebe56ff"}
 
@@ -136,7 +133,6 @@ How many fish can we harvest while maintaining the population?
 :::
 ::: 
 
----
 
 ## [Size Structure]{style="background: #4a1035ff; color: #bebe56ff"}
 
@@ -153,7 +149,6 @@ How many fish can we harvest while maintaining the population?
 - Affected by recent recruitment and fishing
 - Important for fisheries management
 
----
 
 ## [Sex Ratio]{style="background: #4a1035ff; color: #bebe56ff"}
 
@@ -171,7 +166,6 @@ How many fish can we harvest while maintaining the population?
 - Overfishing can skew sex ratios
 - Particularly important for slow-growing species
 
----
 
 ## [Vital Rates]{style="background: #4a1035ff; color: #bebe56ff"}
 
@@ -207,7 +201,6 @@ How many fish can we harvest while maintaining the population?
 + They are the foundation for all population models and harvest decisions
 + Understanding and measuring them is essential for stock assessment
 
----
 
 ## [Vital rates equation]{style="background: #4a1035ff; color: #bebe56ff"}
 
@@ -223,7 +216,6 @@ $$N_{t+1} = N_t + R_t - M_t - C_t$$
 - $M_t$ = Mortality (natural deaths)
 - $C_t$ = Catch (fishing removals)
 
----
 
 ## [Understanding the Equation]{style="background: #4a1035ff; color: #bebe56ff"}
 
@@ -239,7 +231,6 @@ Next year's population = This year's fish + New recruits - Deaths from disease/p
 - Remove 2,000 by fishing
 - **Result: 10,000 + 3,000 - 1,500 - 2,000 = 9,500 fish next year**
 
----
 
 ## [Recruitment (R)]{style="background: #4a1035ff; color: #bebe56ff"}
 
@@ -278,7 +269,6 @@ Juveniles enter fishery
 :::
 ::: 
 
----
 
 ## [Growth (G)]{style="background: #4a1035ff; color: #bebe56ff"}
 
@@ -306,7 +296,6 @@ Where:
 - $t = Age$
 - $t_0$ = Theoretical age at zero length (usually close to 0)
 
----
 
 ## [Logic Behind Von Bertalanffy Model]{style="background: #4a1035ff; color: #bebe56ff"}
 
@@ -323,7 +312,6 @@ Where:
 - Energy allocation shifts from growth to reproduction
 - Food becomes limiting relative to body size
 
----
 
 ## [Real-World Example: Atlantic Cod]{style="background: #4a1035ff; color: #bebe56ff"}
 
@@ -348,7 +336,6 @@ Where:
 - Old cod (age 20+) are larger and valuable but grow slowly
 - Overfishing young fish removes future large fish
 
----
 
 ## [Real-World Example: Nile Perch in Lake Victoria]{style="background: #4a1035ff; color: #bebe56ff"}
 
@@ -366,7 +353,6 @@ Where:
 - **Age 20:** $L_{20} = 200(1 - e^{-0.08(20)}) ≈ 160$ cm
 - **Age 30:** $L_{30} = 200(1 - e^{-0.08(30)}) ≈ 182$ cm
 
----
 
 ## [Nile Perch: Management Implications]{style="background: #4a1035ff; color: #bebe56ff"}
 
@@ -397,7 +383,6 @@ Where:
 
 Slow-growing species like Nile Perch are more vulnerable to overfishing and take longer to recover than fast-growing species
 
----
 
 ## [Growth Curve Example]{style="background: #4a1035ff; color: #bebe56ff"}
 

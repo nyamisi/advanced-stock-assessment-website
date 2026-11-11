@@ -17,6 +17,7 @@ Download the **complete lecture slides** (every slide of each lecture) for offli
 |:-:|:--------|:-----------:|:-----------------:|:------------------:|
 | 1 | Course introduction | [Open](1_intro.html) | [⬇ PDF](../downloads/AF603_L1_Course_Introduction.pdf){.download-btn download="AF603_L1_Course_Introduction.pdf"} | [⬇ HTML](../downloads/AF603_L1_Course_Introduction.html){.download-btn download="AF603_L1_Course_Introduction.html"} |
 | 2 | Fish population dynamics | [Open](2_popl_dynamics.html) | [⬇ PDF](../downloads/AF603_L2_Fish_Population_Dynamics.pdf){.download-btn download="AF603_L2_Fish_Population_Dynamics.pdf"} | [⬇ HTML](../downloads/AF603_L2_Fish_Population_Dynamics.html){.download-btn download="AF603_L2_Fish_Population_Dynamics.html"} |
+| 3 | Data used in stock assessment | [Open](3_data_used.html) | [⬇ PDF](../downloads/AF603_L3_Data_Used_in_Stock_Assessment.pdf){.download-btn download="AF603_L3_Data_Used_in_Stock_Assessment.pdf"} | [⬇ HTML](../downloads/AF603_L3_Data_Used_in_Stock_Assessment.html){.download-btn download="AF603_L3_Data_Used_in_Stock_Assessment.html"} |
 
 ## Which format should I choose?
 

@@ -13,6 +13,7 @@ $chrome = @('C:\Program Files\Google\Chrome\Application\chrome.exe',
 $decks = [ordered]@{
   '1_intro.html'         = 'AF603_L1_Course_Introduction'
   '2_popl_dynamics.html' = 'AF603_L2_Fish_Population_Dynamics'
+  '3_data_used.html'     = 'AF603_L3_Data_Used_in_Stock_Assessment'
 }
 
 New-Item -ItemType Directory -Force -Path $out | Out-Null
