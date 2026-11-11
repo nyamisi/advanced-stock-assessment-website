@@ -1,6 +1,6 @@
 ---
 title: "Course Modules"
-subtitle: "AF 603 -- Fish Population Dynamics and Stock Assessment"
+subtitle: "AF 603 -- Advanced Fish Population Dynamics and Stock Assessment"
 author: "Nyamisi Peter"
 format: html
 date: "2026-11-01"
