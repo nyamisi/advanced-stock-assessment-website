@@ -48,7 +48,6 @@ A successful stock assessment needs three types of data:
 | **Relative abundance data** | Is the stock increasing or decreasing? | CPUE, survey indices |
 | **Life history data** | How does the species grow, mature and die? | Age, growth, maturity, mortality |
 
-. . .
 
 Both fishery-dependent and fishery-independent sources contribute to meeting these requirements.
 
@@ -65,7 +64,6 @@ Both fishery-dependent and fishery-independent sources contribute to meeting the
 | **Cost** | Low (uses existing operations) | High (vessels, equipment, staff) |
 | **Main risk** | Biased by fisher behaviour | Short time series, limited area |
 
-. . .
 
 **Why both are important:** one is continuous and cheap; the other is unbiased and standardized. Together they give robust abundance estimates.
 

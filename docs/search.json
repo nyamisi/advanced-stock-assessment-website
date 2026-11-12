@@ -1089,14 +1089,14 @@
     "href": "lectures/3_data_used.html#three-core-data-requirements",
     "title": "AF 603 – Fish population dynamics and stock assessment",
     "section": "Three Core Data Requirements",
-    "text": "Three Core Data Requirements\nA successful stock assessment needs three types of data:\n\n\n\n\n\n\n\n\nData type\nQuestion it answers\nTypical examples\n\n\n\n\nCatch data\nHow much is being removed?\nLandings, discards, bycatch\n\n\nRelative abundance data\nIs the stock increasing or decreasing?\nCPUE, survey indices\n\n\nLife history data\nHow does the species grow, mature and die?\nAge, growth, maturity, mortality\n\n\n\n\nBoth fishery-dependent and fishery-independent sources contribute to meeting these requirements."
+    "text": "Three Core Data Requirements\nA successful stock assessment needs three types of data:\n\n\n\n\n\n\n\n\nData type\nQuestion it answers\nTypical examples\n\n\n\n\nCatch data\nHow much is being removed?\nLandings, discards, bycatch\n\n\nRelative abundance data\nIs the stock increasing or decreasing?\nCPUE, survey indices\n\n\nLife history data\nHow does the species grow, mature and die?\nAge, growth, maturity, mortality\n\n\n\nBoth fishery-dependent and fishery-independent sources contribute to meeting these requirements."
   },
   {
     "objectID": "lectures/3_data_used.html#fishery-dependent-vs.-fishery-independent",
     "href": "lectures/3_data_used.html#fishery-dependent-vs.-fishery-independent",
     "title": "AF 603 – Fish population dynamics and stock assessment",
     "section": "Fishery-Dependent vs. Fishery-Independent",
-    "text": "Fishery-Dependent vs. Fishery-Independent\n\n\n\n\n\n\n\n\n\nFishery-dependent\nFishery-independent\n\n\n\n\nSource\nThe fishing process itself\nScientific research activities\n\n\nWho collects\nFishers, port agents, observers\nScientists with standardized gear\n\n\nCoverage\nContinuous, all fishing grounds\nPeriodic, fixed stations\n\n\nCost\nLow (uses existing operations)\nHigh (vessels, equipment, staff)\n\n\nMain risk\nBiased by fisher behaviour\nShort time series, limited area\n\n\n\n\nWhy both are important: one is continuous and cheap; the other is unbiased and standardized. Together they give robust abundance estimates."
+    "text": "Fishery-Dependent vs. Fishery-Independent\n\n\n\n\n\n\n\n\n\nFishery-dependent\nFishery-independent\n\n\n\n\nSource\nThe fishing process itself\nScientific research activities\n\n\nWho collects\nFishers, port agents, observers\nScientists with standardized gear\n\n\nCoverage\nContinuous, all fishing grounds\nPeriodic, fixed stations\n\n\nCost\nLow (uses existing operations)\nHigh (vessels, equipment, staff)\n\n\nMain risk\nBiased by fisher behaviour\nShort time series, limited area\n\n\n\nWhy both are important: one is continuous and cheap; the other is unbiased and standardized. Together they give robust abundance estimates."
   },
   {
     "objectID": "lectures/3_data_used.html#what-is-fishery-dependent-data",
