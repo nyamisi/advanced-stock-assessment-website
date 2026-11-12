@@ -19,11 +19,11 @@ website:
             href: lectures/1_intro.qmd
           - text: "Fish population dynamics"
             href: lectures/2_popl_dynamics.qmd
-            href: lectures/downloads.qmd
           - text: "Data used in stock assessment"
             href: lectures/3_data_used.qmd
           - text: "---"
           - text: "⬇ Download slides (offline)"
+            href: lectures/downloads.qmd
           # - text: "Mortality population models"
           #   href: lectures/4_mortality_pop_models.qmd
           # - text: "The unit stock"
